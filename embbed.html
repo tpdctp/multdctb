@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>livestream</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+  <style>
+    body {
+      margin: 0px
+    }
+
+    .jwplayer {
+      position: absolute !important
+    }
+
+    .jwplayer.jw-flag-aspect-mode {
+      min-height: 100%;
+      max-height: 100%
+    }
+  </style>
+</head>
+
+<body>
+  <div id="jwplayerDiv"></div>
+  <script type="text/javascript">
+    // Function to get URL parameters
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // Get parameters from the URL
+    var fileUrl = getParameterByName('emmbed-url');
+    var kid = getParameterByName('kid');
+    var key = getParameterByName('key');
+    
+    // Determine stream type
+    var isMpd = fileUrl.endsWith('.mpd');
+    var isM3U8 = fileUrl.endsWith('.m3u8');
+
+    // Set up JWPlayer
+    var playerSetup = {
+      file: fileUrl,
+      position: 'bottom',
+      autostart: true,
+      stretching: "",
+      width: "100%"
+    };
+
+    if (isMpd) {
+      // Set up DRM for DASH with keys
+      playerSetup.type = 'dash';
+      playerSetup.drm = {
+        clearkey: {
+          keyId: kid,
+          key: key
+        }
+      };
+    } else if (isM3U8) {
+      // Set up DRM for HLS with keys
+      playerSetup.type = 'hls';
+      if (kid && key) {
+        playerSetup.drm = {
+          clearkey: {
+            keyId: kid,
+            key: key
+          }
+        };
+      }
+    } else {
+      // Default to HLS without keys
+      playerSetup.type = 'hls';
+    }
+
+    jwplayer("jwplayerDiv").setup(playerSetup);
+  </script>
+</body>
+
+</html>
