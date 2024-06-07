@@ -2,214 +2,331 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>TVTelugu || Video Player</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
-  <script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #333;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    
-    #videoForm {
-      background-color: #444;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVtelugu WEB Play</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
+    <style>
+      
 
-    #announcement {
-      margin-bottom: 16px;
-      color: 	#FFA500;
-    }
+     body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #000000;
+          color: #ffffff;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-align: center;
+          font-size: 16px;
+          line-height: 1.6;
+      }
 
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-    }
+      header {
+          background-color: #000000;
+          color: #ffffff;
+          padding: 1em 0;
+          box-sizing: border-box;
+          font-size: 2em;
+          border-bottom: 2px solid #444;
+          margin-bottom: 20px;
+      }
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 16px;
-      box-sizing: border-box;
-      border: 1px solid #666;
-      border-radius: 4px;
-      font-size: 14px;
-      background-color: #555;
-      color: #fff;
-    }
+      header h1 {
+          margin: 0;
+          font-size: 1.5em;
+      }
 
-    input[type="button"] {
-      background-color: #4caf50;
-      color: white;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-    }
+      nav {
+          margin-bottom: 20px;
+          text-align: center; /* Center-align the text in the navigation */
+      }
 
-    .jwplayer {
-      position: absolute !important
-    }
+      select {
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #3498db;
+          border-radius: 20px; /* Add border-radius to the dropdown */
+          cursor: pointer;
+          outline: none;
+          transition: border-color 0.3s ease;
+          text-align-last: center; /* Center-align text within the select element */
+      }
 
-    .jwplayer.jw-flag-aspect-mode {
-      min-height: 100%;
-      max-height: 100%
-    }
-  </style>
+      select:hover,
+      select:focus {
+          border-color: #2c3e50;
+      }
+
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 15px;
+          box-sizing: border-box;
+      }
+
+      .site-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusted grid size */
+          gap: 15px;
+          margin-top: 15px;
+      }
+
+      .site-card {
+          background-color: #444;
+          border: 1px solid #333;
+          border-radius: 8px;
+          overflow: hidden;
+          transition: transform 0.3s ease-in-out;
+          text-decoration: none;
+          color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          max-width: 150px; /* Set a maximum width for the site card */
+          margin: auto; /* Center the site card within its container */
+      }
+
+      .site-card:hover {
+          transform: scale(1.05);
+      }
+
+      .site-card img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-bottom: 1px solid #333;
+      }
+
+      .site-info {
+          padding: 10px; /* Reduce padding for the site info */
+          text-align: center;
+          flex-grow: 1;
+      }
+
+      .site-info h2 {
+          font-size: 0.9em; /* Adjust the font size for the channel name (h2) */
+          margin: 0;
+      }
+
+      .site-link {
+          margin-top: 10px;
+          color: #ffffff;
+          text-decoration: none;
+          background-color: #3498db;
+          padding: 10px;
+          border-radius: 5px;
+          display: inline-block;
+          transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .site-link:hover {
+          background-color: #2c3e50;
+          color: #ffffff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Modern Search Bar Styles */
+      .search-bar-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 70%; /* Adjusted width for better visibility on small screens */
+          margin: 0 auto;
+          position: relative;
+          overflow: hidden;
+          border-radius: 20px; /* Add border-radius for a curved end */
+      }
+
+      #channel-search {
+          padding: 10px;
+          border: none; /* Remove border to create a seamless appearance */
+          border-radius: 20px; /* Match the border-radius of the container */
+          width: 30%; /* Adjusted width for better visibility on small screens */
+          font-size: 16px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      #channel-search:focus {
+          outline: none;
+          background-color: #eee; /* Change background color when focused */
+      }
+
+        #search-btn {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px; /* Add border-radius to the search button */
+            padding: 10px 20px; /* Add padding to the search button */
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #search-btn:hover {
+            background-color: #2c3e50;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      #search-icon {
+          font-size: 30px;
+          color: #3498db;
+          transition: color 0.3s ease;
+      }
+
+      /* Media Query for Small Screens */
+      @media only screen and (max-width: 600px) {
+          .site-grid {
+              grid-template-columns: repeat(3, 1fr);
+          }
+
+          #channel-search {
+              width: 30%; /* Adjusted width for small screens */
+          }
+
+          #search-btn {
+              width: 30%; /* Adjusted width for small screens */
+          }
+
+          #search-bar {
+              align-items: stretch; /* Align items vertically to stretch the search bar */
+          }
+
+          #channel-search {
+              width: 30%; /* Make the input full width */
+              margin-bottom: 0; /* Remove margin at the bottom */
+          }
+      }
+      
+
+    </style>
 </head>
 
- 
-
-
 <body>
-  <div id="jwplayerDiv"></div>
-  <form id="videoForm">
-    <a text-align: center; "><img alt="" border="0" width="200" data-original-height="200" data-original-width="200" src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png"/></a>
+  
+   <header>
+        <a  style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="200" data-original-height="200" data-original-width="200" src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png"/></a>
+        
+<div class="container">
 
-    <div id="announcement">DASH and HLS with key and without also</div>
-    <div id="announcement">For without key, ignore kid and key, just add stream URL and click on play</div>
-    <label for="manifest">Stream Link:</label>
-    <input type="text" id="manifest" name="manifest" placeholder="Enter Stream link(mpd or m3u8)" required>
+        <nav>
 
-    <label for="keyId">Key ID:</label>
-    <input type="text" id="keyId" name="keyId" placeholder="Enter Key ID">
+            
+            </select>
 
-    <label for="key">Key:</label>
-    <input type="text" id="key" name="key" placeholder="Enter Key">
+        </nav>
 
-    <input type="button" value="Play Video" onclick="playVideo()">
-  </form>
+        
+    </header>
 
-  <script type="text/javascript">
-    // Check if JWPlayer is loaded
-    function waitForJWPlayer(callback) {
-      if (typeof jwplayer === 'function') {
-        // JWPlayer is loaded, execute callback
-        callback();
-      } else {
-        // JWPlayer not yet loaded, wait and check again
-        setTimeout(function () {
-          waitForJWPlayer(callback);
-        }, 100);
-      }
-    }
+    
 
-    function playVideo() {
-      // Hide the form after starting the video
-      var videoForm = document.getElementById("videoForm");
-      videoForm.style.display = "none";
+        <!-- add here -->
+<div class="site-grid">
 
-      // Make the JWPlayer fullscreen
-      var jwplayerDiv = document.getElementById("jwplayerDiv");
-      jwplayerDiv.classList.add("jwplayer-fullscreen");
+                <a href="https://tvtelugu.github.io/Live" class="site-card">
+                    <img src="https://yt3.googleusercontent.com/72uWDy4tWLmUXeLH9TiRXy-NjRZnYfMHLiqUbZParNUJibmXTiptyDpuh1RnhbHx9op1ITS2wg=s176-c-k-c0x00ffffff-no-rj" alt="Tata Play">
+                   </a>
 
-      // Wait for JWPlayer to be fully loaded and then set up the video player
-      waitForJWPlayer(function () {
-        setupVideoPlayer();
-      });
-    }
+                <a href="https://tvtelugu.github.io/web/telugu.html" class="site-card">
+                    <img src="https://yt3.googleusercontent.com/ytc/AIdro_lKULdxBE4H3HJlomG_vs3XMDk6FnCQA6zgO0EVZH5Kvg=s176-c-k-c0x00ffffff-no-rj" alt="Jio TV+">
+                   </a>
+    
+                <a href="https://tvtelugu.github.io/web/telugu.html" class="site-card">
+                    <img src="img/All.png" alt="Indian TV">
+                   </a>
+    
+                <a href="https://tvtelugu.github.io/radio/" class="site-card">
+                    <img src="https://raw.githubusercontent.com/tvtelugu/tvtelugu.github.io/main/web/img/Radio.png" alt="Listen Telugu Radio">
+                   </a>
 
-    function setupVideoPlayer() {
-      var manifestInput = document.getElementById("manifest");
-      var keyIdInput = document.getElementById("keyId");
-      var keyInput = document.getElementById("key");
+                <a href="https://t.me/tvtelugu" class="site-card">
+                    <img src="https://raw.githubusercontent.com/tvtelugu/tvtelugu.github.io/main/web/img/telegram.png" alt="Join Our Telgram Channel">
+                   </a>
 
-      var manifest = manifestInput.value;
-      var keyId = keyIdInput.value;
-      var key = keyInput.value;
+                <a href="https://www.whatsapp.com/channel/0029VaP2kFRDjiOWW7zY4A1Y" class="site-card">
+                    <img src="https://raw.githubusercontent.com/tvtelugu/tvtelugu.github.io/main/web/img/WHATSAPP.png" alt="Join Our Whatsapp Channel">
+                   </a>
+                
+</div>
 
-      var playerConfig = {
-        file: manifest,
-        autostart: true,
-        stretching: "",
-        width: "100%",
-        type: "dash",
-      };
+<!-- add here -->
 
-      if (keyId && key) {
-        // DRM settings only if both keyId and key are provided
-        playerConfig.drm = {
-          clearkey: {
-            keyId: keyId,
-            key: key,
-          },
-        };
-      }
-
-      jwplayer("jwplayerDiv").setup(playerConfig);
-    }
-
-    // Function to get URL parameters
-    function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, "\\$&");
-      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-
-    // Get parameters from the URL
-    var fileUrl = getParameterByName('emmbed-url');
-    var kid = getParameterByName('kid');
-    var key = getParameterByName('key');
-
-    // Determine stream type
-    var isMpd = fileUrl.endsWith('.mpd');
-    var isM3U8 = fileUrl.endsWith('.m3u8');
-
-    // Set up JWPlayer
-    var playerSetup = {
-      file: fileUrl,
-      position: 'bottom',
-      autostart: true,
-      stretching: "",
-      width: "100%"
-    };
-
-    if (isMpd) {
-      // Set up DRM for DASH with keys
-      playerSetup.type = 'dash';
-      playerSetup.drm = {
-        clearkey: {
-          keyId: kid,
-          key: key
-        }
-      };
-    } else if (isM3U8) {
-      // Set up DRM for HLS with keys
-      playerSetup.type = 'hls';
-      if (kid && key) {
-        playerSetup.drm = {
-          clearkey: {
-            keyId: kid,
-            key: key
+      <script>
+          // Function to store the selected group in localStorage
+          function saveSelectedGroup(selectedGroup) {
+              localStorage.setItem('selectedGroup', selectedGroup);
           }
-        };
-      }
-    } else {
-      // Default to HLS without keys
-      playerSetup.type = 'hls';
-    }
 
-    jwplayer("jwplayerDiv").setup(playerSetup);
-  </script>
+          // Function to retrieve the stored selected group from localStorage
+          function getStoredSelectedGroup() {
+              return localStorage.getItem('selectedGroup');
+          }
+
+          document.addEventListener("DOMContentLoaded", function () {
+              // Show loading screen
+              const loadingScreen = document.getElementById('loading-screen');
+              loadingScreen.style.display = 'flex';
+
+              // Update the progress bar width
+              const loadingBar = document.getElementById('loading-bar');
+              loadingBar.style.width = '100%';
+
+              // Hide loading screen after a delay (adjust as needed)
+              setTimeout(function () {
+                  loadingScreen.style.display = 'none';
+              }, 1000); // 1000 milliseconds = 1 second
+
+              // Check if there is a stored selected group
+              const storedSelectedGroup = getStoredSelectedGroup();
+              if (storedSelectedGroup) {
+                  // Set the selected group in the dropdown
+                  const selectElement = document.getElementById('channel-dropdown');
+                  selectElement.value = storedSelectedGroup;
+
+                  // Trigger the changeChannelGroup function with the stored value
+                  changeChannelGroup();
+              } else {
+                  // Trigger the changeChannelGroup function with the default value
+                  changeChannelGroup();
+              }
+          });
+
+        function searchChannels() {
+            const input = document.getElementById('channel-search').value.toLowerCase();
+            const allSiteCards = document.querySelectorAll('.site-card');
+
+            allSiteCards.forEach(card => {
+                const channelName = card.querySelector('.site-info h2').innerText.toLowerCase();
+                const displayStyle = channelName.includes(input) ? 'flex' : 'none';
+                card.style.display = displayStyle;
+            });
+
+            // Show all genre-specific channel grids
+            const genreGrids = document.querySelectorAll('.site-grid');
+            genreGrids.forEach(grid => {
+                grid.style.display = 'grid';
+            });
+        }
+
+          function changeChannelGroup() {
+              const selectElement = document.getElementById('channel-dropdown');
+              const selectedGroup = selectElement.options[selectElement.selectedIndex].value;
+
+              // Save the selected group to localStorage
+              saveSelectedGroup(selectedGroup);
+
+              // Hide all genre-specific channel grids
+              const genreGrids = document.querySelectorAll('.site-grid');
+              genreGrids.forEach(grid => {
+                  grid.style.display = 'none';
+              });
+
+              // Show the selected genre-specific channel grid
+              const selectedGrid = document.getElementById(`${selectedGroup}-channels`);
+              if (selectedGrid) {
+                  selectedGrid.style.display = 'grid';
+              }
+          }
+      </script>
+
 </body>
 
 </html>
