@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>TP Player</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://te.legra.ph/file/a8a6eec3142122379ea1e.jpg">
+   <style>
+    html {
+      font-family: Poppins;
+      background: #000;
+      margin: 0;
+      padding: 0
+    }
+
+    .loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      z-index: 9999;
+    }
+    
+    .loading-text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+    }
+
+
+
+    .loading-text span {
+      display: inline-block;
+      margin: 0 5px;
+      color: #6a00de;
+      font-family: 'Quattrocento Sans', sans-serif;
+    }
+
+    .loading-text span:nth-child(1) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0s infinite linear alternate;
+    }
+    
+    .loading-text span:nth-child(2) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0.2s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(3) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0.4s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(4) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0.6s infinite linear alternate;
+    }
+    
+    .loading-text span:nth-child(5) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 0.8s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(6) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(7) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1.2s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(8) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1.4s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(9) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1.6s infinite linear alternate;
+    }
+
+    .loading-text span:nth-child(10) {
+      filter: blur(0px);
+      animation: blur-text 1.5s 1.2s infinite linear alternate;
+    }
+
+    @keyframes blur-text {
+      0% {
+        filter: blur(0px);
+      }
+
+      100% {
+        filter: blur(4px);
+      }
+    }
+  </style>
+<style>
+  body {
+         margin: 0px
+       }
+
+       .jwplayer {
+            position: absolute !important
+         }
+
+       .jwplayer.jw-flag-aspect-mode {
+            min-height: 100%;
+           max-height: 100%
+         }
+</style>
+</head>
+<body>
+<script disable-devtool-auto='true' src=
+  'https://cdn.jsdelivr.net/npm/disable-devtool' clear-log='true'
+  disable-select='true' disable-copy='true' disable-cut='true'
+  disable-paste='true'></script>
+
+<script src="https://cdn.jwplayer.com/libraries/SAHhwvZq.js"></script>
+<script> jwplayer.defaults = jwDefaults; </script>
+<div id="jwplayerDiv"></div>  
+<script>
+// Function to get URL parameters
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+// Function to fetch JSON data based on channel ID
+function fetchChannelData(channelId, callback) {
+  // Construct the URL to fetch channel data
+  const url = `https://play.denver1769.in/get.php?id=${channelId}`;
+
+  
+  fetch(url)
+    .then(response => response.json())
+    .then(data => callback(data))
+    .catch(error => console.error('Error fetching JSON:', error));
+}
+
+// Define player setup function
+function setupPlayer(channelData) {
+  // Set up JWPlayer
+  var playerSetup = {
+    file: channelData.channel__url, // Using channel__url as file URL
+    skin: {
+      name: "Dev",
+      active: "RED", // Video forward colour
+      inactive: "white", // Buttons colours
+      background: "black" // Background
+    },
+    autostart: true,
+    preload: "none",
+    repeat: true,
+    volume: 100,
+    mute: false,
+    stretching: "exactfit",
+    width: "100%",
+    cast: {},
+  };
+
+  // Determine the type of stream
+  const isDash = channelData.channel__url.includes('.mpd');
+  const isHls = channelData.channel__url.includes('.m3u8');
+
+  if (isDash) {
+    // Set up DRM for DASH with keys if available
+    playerSetup.type = 'dash';
+
+    if (channelData.keyid && channelData.key) {
+      playerSetup.drm = {
+        clearkey: {
+          keyId: channelData.keyid,
+          key: channelData.key
+        }
+      };
+    }
+  } else if (isHls) {
+    // Set up DRM for HLS with keys if available
+    playerSetup.type = 'hls';
+
+    if (channelData.keyid && channelData.key) {
+      playerSetup.drm = {
+        clearkey: {
+          keyId: channelData.keyid,
+          key: channelData.key
+        }
+      };
+    }
+  } else {
+    // Default to HLS without keys
+    playerSetup.type = 'hls';
+  }
+  jwplayer("jwplayerDiv").setup(playerSetup);
+
+}
+// Fetch channel data and set up the player
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Get channel ID from the URL
+  var channelId = getParameterByName('id');
+
+  if (channelId) {
+    // Fetch the channel data for the given ID
+    fetchChannelData(channelId, function (channelData) {
+      if (channelData) {
+        // Set up the player with the retrieved channel data
+
+        setupPlayer(channelData);
+      } else {
+        console.error('Channel not found for ID:', channelId);
+      }
+    });
+  } else {
+    console.error('No channel ID specified in the URL');
+  }
+});
+</script>
+
+<div id="loading" class="loading">
+    <div class="loading-text">
+      <span class="loading-text-words">D</span>
+      <span class="loading-text-words">E</span>
+      <span class="loading-text-words">N</span>
+      <span class="loading-text-words">E</span>
+      <span class="loading-text-words">V</span>
+      <span class="loading-text-words">E</span>
+      <span class="loading-text-words">R</span>
+    </div>
+</div>
+
+<script>
+setTimeout(videovisible, 3000)
+function videovisible() {
+    document.getElementById('loading').style.display = 'none'
+}
+</script> 
+</body>
+</html>

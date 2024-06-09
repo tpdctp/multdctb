@@ -1,0 +1,3392 @@
+[
+  {
+    "channel_id": "578",
+    "channel_name": "&TV",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "1183",
+    "channel_name": "&Xplor HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "148",
+    "channel_name": "&pictures",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "267",
+    "channel_name": "&pictures HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "40",
+    "channel_name": "&tv HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "266",
+    "channel_name": "10 TV",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "974",
+    "channel_name": "1st Gujarat",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "1247",
+    "channel_name": "35 MM",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "774",
+    "channel_name": "4tv News",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "1019",
+    "channel_name": "7x Music",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "39",
+    "channel_name": "9X Jalwa",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "139",
+    "channel_name": "9XM",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "225",
+    "channel_name": "ABN Andhra Jyothy",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "102",
+    "channel_name": "ABP Ananda",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "73",
+    "channel_name": "ABP Asmita",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "155",
+    "channel_name": "ABP Majha",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "177",
+    "channel_name": "ABP News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1117",
+    "channel_name": "ABZY Movies",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "787",
+    "channel_name": "ANB NEWS",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "962",
+    "channel_name": "ANN News",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "286",
+    "channel_name": "APN News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "969",
+    "channel_name": "Aadinath TV",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "1058",
+    "channel_name": "Aaj Ki Khabar",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "153",
+    "channel_name": "Aaj Tak",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "689",
+    "channel_name": "Aaj Tak HD",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "129",
+    "channel_name": "Aakaash Aath",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "38",
+    "channel_name": "Aastha",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "283",
+    "channel_name": "Aastha Bhajan",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "1097",
+    "channel_name": "Aastha Gujarati",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "190",
+    "channel_name": "Al Jazeera",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "178",
+    "channel_name": "Amrita TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "937",
+    "channel_name": "Anaadi TV",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "282",
+    "channel_name": "Angel TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "130",
+    "channel_name": "Animal Planet",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "287",
+    "channel_name": "Animal Planet HD World",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "180",
+    "channel_name": "Anjan TV",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "285",
+    "channel_name": "Aradana TV",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "907",
+    "channel_name": "Argus News",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "292",
+    "channel_name": "Asianet HD",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "293",
+    "channel_name": "Asianet Movies",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "933",
+    "channel_name": "Asianet Movies",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "532",
+    "channel_name": "Asianet News",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "953",
+    "channel_name": "Asianet Plus",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "294",
+    "channel_name": "Asianet Plus",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "555",
+    "channel_name": "Asianet Suvarna News",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "960",
+    "channel_name": "Atmadarshan",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "105",
+    "channel_name": "Australia TV",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "935",
+    "channel_name": "Awakening",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "660",
+    "channel_name": "Ayush TV",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "729",
+    "channel_name": "B4U Bhojpuri",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "7",
+    "channel_name": "B4U Movies",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "9",
+    "channel_name": "B4U Music",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "188",
+    "channel_name": "BBC News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "296",
+    "channel_name": "BFLIX",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "1100",
+    "channel_name": "BIG TV Telugu",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "865",
+    "channel_name": "Bangla Bhakti",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "652",
+    "channel_name": "Bansal News",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "290",
+    "channel_name": "Bhakti TV",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "1010",
+    "channel_name": "Bharat 24",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1051",
+    "channel_name": "Bharat Express",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "291",
+    "channel_name": "Bharat Samachar",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "181",
+    "channel_name": "Bhojpuri Cinema",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "297",
+    "channel_name": "Big Magic",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "1042",
+    "channel_name": "Bless TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "806",
+    "channel_name": "Boogle Bollywood",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "910",
+    "channel_name": "C News Bharat",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "816",
+    "channel_name": "CBeeBies",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "204",
+    "channel_name": "CNBC Awaaz",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "303",
+    "channel_name": "CNBC Bajaar",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "304",
+    "channel_name": "CNBC TV18 Prime HD",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "168",
+    "channel_name": "CNBC-TV18",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "243",
+    "channel_name": "CNN",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "206",
+    "channel_name": "CNN News18",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "311",
+    "channel_name": "CTVN AKD Plus",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "648",
+    "channel_name": "Calcutta News",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "238",
+    "channel_name": "Cartoon Network",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "681",
+    "channel_name": "Cartoon Network HD+",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "157",
+    "channel_name": "Channel News Asia",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "161",
+    "channel_name": "Channel WIN",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "193",
+    "channel_name": "Chardikla Time TV",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "182",
+    "channel_name": "Cinema TV India",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "1204",
+    "channel_name": "City Music",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "543",
+    "channel_name": "Colors",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "26",
+    "channel_name": "Colors Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "896",
+    "channel_name": "Colors Bangla Cinema",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "305",
+    "channel_name": "Colors Bangla HD",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "53",
+    "channel_name": "Colors Cineplex",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "1000",
+    "channel_name": "Colors Cineplex Bollywood",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "61",
+    "channel_name": "Colors Cineplex HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "107",
+    "channel_name": "Colors Gujarati",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "692",
+    "channel_name": "Colors Gujarati Cinema",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "52",
+    "channel_name": "Colors HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "544",
+    "channel_name": "Colors Infinity",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "187",
+    "channel_name": "Colors Infinity HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "108",
+    "channel_name": "Colors Kannada",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "667",
+    "channel_name": "Colors Kannada Cinema",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "612",
+    "channel_name": "Colors Kannada HD",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "134",
+    "channel_name": "Colors Marathi",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "308",
+    "channel_name": "Colors Marathi HD",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "115",
+    "channel_name": "Colors Oriya",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "438",
+    "channel_name": "Colors Rishtey",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "533",
+    "channel_name": "Colors SUPER",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "418",
+    "channel_name": "Colors Tamil",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "674",
+    "channel_name": "Colors Tamil HD",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "306",
+    "channel_name": "Comedy Central",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "307",
+    "channel_name": "Comedy Central HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "99",
+    "channel_name": "D Tamil",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "314",
+    "channel_name": "DD Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "316",
+    "channel_name": "DD Bharati",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "317",
+    "channel_name": "DD Bihar",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "321",
+    "channel_name": "DD Chandana",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "323",
+    "channel_name": "DD Girnar",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "646",
+    "channel_name": "DD Gyan Darshan",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "324",
+    "channel_name": "DD India",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "325",
+    "channel_name": "DD Kashir",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "326",
+    "channel_name": "DD Kisan",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "330",
+    "channel_name": "DD Madhya Pradesh",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "991",
+    "channel_name": "DD Meghalaya",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "191",
+    "channel_name": "DD National",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "322",
+    "channel_name": "DD News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "691",
+    "channel_name": "DD News HD",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "331",
+    "channel_name": "DD North East",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "333",
+    "channel_name": "DD Odia",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "334",
+    "channel_name": "DD Podhigai",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "335",
+    "channel_name": "DD Punjabi",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "332",
+    "channel_name": "DD Rajasthan",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "336",
+    "channel_name": "DD Sahyadri",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "337",
+    "channel_name": "DD Saptagiri",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "223",
+    "channel_name": "DD Sports",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "338",
+    "channel_name": "DD Urdu",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "339",
+    "channel_name": "DD Uttar Pradesh",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "548",
+    "channel_name": "DD Yadagiri",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "775",
+    "channel_name": "DIVYA",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "60",
+    "channel_name": "DW",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "353",
+    "channel_name": "DY 365",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "1023",
+    "channel_name": "Daiji World TV",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "1078",
+    "channel_name": "Daily Post Punjab Haryana Himachal",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "51",
+    "channel_name": "Dangal",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "194",
+    "channel_name": "Dangal 2",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "874",
+    "channel_name": "Deployment channel 19.0",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "1161",
+    "channel_name": "Desh News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1037",
+    "channel_name": "Dhamaka Movies B4U",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "288",
+    "channel_name": "Dharma Sandesh",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "219",
+    "channel_name": "Discovery Channel",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "341",
+    "channel_name": "Discovery HD World",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "119",
+    "channel_name": "Discovery Kids",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "113",
+    "channel_name": "Discovery Science",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "228",
+    "channel_name": "Discovery Turbo",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "114",
+    "channel_name": "Disney",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "144",
+    "channel_name": "Disney Junior",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "224",
+    "channel_name": "E24",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "126",
+    "channel_name": "EPIC",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "88",
+    "channel_name": "ET NOW",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "950",
+    "channel_name": "ET Now Swadesh",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "358",
+    "channel_name": "ETV Abhiruchi",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "146",
+    "channel_name": "ETV Andhra Pradesh",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "905",
+    "channel_name": "ETV Bal Bharat",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "128",
+    "channel_name": "ETV Cinema",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "359",
+    "channel_name": "ETV HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "268",
+    "channel_name": "ETV Life",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "352",
+    "channel_name": "ETV Plus",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "83",
+    "channel_name": "ETV Telangana",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "145",
+    "channel_name": "ETV Telugu",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "790",
+    "channel_name": "Ek Onkar",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "1199",
+    "channel_name": "Ekamra  Music",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1206",
+    "channel_name": "Ekamra Baiscope",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1196",
+    "channel_name": "Ekamra Bharat Odia",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1198",
+    "channel_name": "Ekamra Cynema",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1208",
+    "channel_name": "Ekamra Halchal",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1200",
+    "channel_name": "Ekamra Jatra",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1207",
+    "channel_name": "Ekamra Manoranjan",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1197",
+    "channel_name": "Ekamra Nilachakra",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1202",
+    "channel_name": "Ekamra One paschima",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1201",
+    "channel_name": "Ekamra Paramatma",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1209",
+    "channel_name": "Ekamra snews",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "788",
+    "channel_name": "Enterr10 Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "693",
+    "channel_name": "Eurosport",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "812",
+    "channel_name": "Eurosport HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "634",
+    "channel_name": "Ezmall",
+    "channel_genre": "Shopping"
+  },
+  {
+    "channel_id": "784",
+    "channel_name": "FM News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "367",
+    "channel_name": "FOX Life HD",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "192",
+    "channel_name": "Fakt Marathi",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "227",
+    "channel_name": "Fashion TV",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "791",
+    "channel_name": "Fateh TV",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "830",
+    "channel_name": "Filamchi Bhojpuri",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "650",
+    "channel_name": "First India Rajasthan",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "10",
+    "channel_name": "Flowers",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "117",
+    "channel_name": "Food Food",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "131",
+    "channel_name": "France 24",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "136",
+    "channel_name": "GOOD TiMES",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "887",
+    "channel_name": "Garv Gurbani",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "361",
+    "channel_name": "Gemini Life",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "362",
+    "channel_name": "Gemini Movies HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "355",
+    "channel_name": "Gemini TV HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "1044",
+    "channel_name": "Global India",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1057",
+    "channel_name": "Global Punjab TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "356",
+    "channel_name": "God TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "823",
+    "channel_name": "Goldmines",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "278",
+    "channel_name": "Good News Today",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "269",
+    "channel_name": "Goodness",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "931",
+    "channel_name": "Green Chillies TV",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "867",
+    "channel_name": "Gubbare",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "552",
+    "channel_name": "Gujarat Samachar TV",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "365",
+    "channel_name": "Gulistan News",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "349",
+    "channel_name": "HM TV",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "988",
+    "channel_name": "Har Khabar",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "837",
+    "channel_name": "Hare Krsna",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "348",
+    "channel_name": "Harvest TV 24x7",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "912",
+    "channel_name": "Haryana Beats",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "1252",
+    "channel_name": "Haryana Buzz",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "846",
+    "channel_name": "Haryanvi Hits",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "344",
+    "channel_name": "Hindi Khabar",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "630",
+    "channel_name": "Hindu Dharmam",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "172",
+    "channel_name": "History TV18",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "616",
+    "channel_name": "History TV18 HD",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "27",
+    "channel_name": "IBC 24",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "1",
+    "channel_name": "INDIA TODAY",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "698",
+    "channel_name": "INH 24X7",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "807",
+    "channel_name": "In Goa 24x7",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "1242",
+    "channel_name": "In24 News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1203",
+    "channel_name": "India 24x7",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1084",
+    "channel_name": "India Daily Live",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "183",
+    "channel_name": "India News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "654",
+    "channel_name": "India News Gujarat",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "13",
+    "channel_name": "India News Haryana",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "222",
+    "channel_name": "India News MP CG",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "366",
+    "channel_name": "India News Punjab",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "14",
+    "channel_name": "India News Rajasthan",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "30",
+    "channel_name": "India News UP UK",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "104",
+    "channel_name": "India TV",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "685",
+    "channel_name": "India Voice",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1059",
+    "channel_name": "Indian News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "368",
+    "channel_name": "Indradhanu",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "633",
+    "channel_name": "Investigation Discovery",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "647",
+    "channel_name": "Isaiaruvi",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "888",
+    "channel_name": "Ishara",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "594",
+    "channel_name": "Ishwar TV",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "201",
+    "channel_name": "J Movies",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "233",
+    "channel_name": "Jai Maharashtra",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "370",
+    "channel_name": "Jaihind TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "537",
+    "channel_name": "Jalsha Movies HD",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "870",
+    "channel_name": "Jan TV",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "270",
+    "channel_name": "Janam TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "1040",
+    "channel_name": "Jansetu",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "371",
+    "channel_name": "Janta TV",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "701",
+    "channel_name": "Jantantra TV",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "1169",
+    "channel_name": "Jay Jagannath",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "199",
+    "channel_name": "Jaya Max",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "198",
+    "channel_name": "Jaya Plus",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "708",
+    "channel_name": "Jaya TV HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "372",
+    "channel_name": "Jeevan TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "1253",
+    "channel_name": "Jeewan Bhakti",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "373",
+    "channel_name": "Jinvani Channel",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "434",
+    "channel_name": "Jothi TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "380",
+    "channel_name": "KTV HD",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "211",
+    "channel_name": "Kairali News",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "25",
+    "channel_name": "Kairali TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "200",
+    "channel_name": "Kalaignar TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "375",
+    "channel_name": "Kalinga TV",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "376",
+    "channel_name": "Kanak News",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "566",
+    "channel_name": "Kannada Naaptol",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "377",
+    "channel_name": "Kappa TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "838",
+    "channel_name": "Kashish News",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "196",
+    "channel_name": "Kasthuri",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "378",
+    "channel_name": "Kaumudy TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "972",
+    "channel_name": "Khabar Fast",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "384",
+    "channel_name": "Khabarain Abhi Tak",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "379",
+    "channel_name": "Khushboo Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "381",
+    "channel_name": "Kolkata TV",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "847",
+    "channel_name": "Krishna Vani",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "961",
+    "channel_name": "Lakshya TV",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "947",
+    "channel_name": "Live Patna Sahib Patna",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "1060",
+    "channel_name": "Live Punjabi",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "949",
+    "channel_name": "Live Sri Naga Sai Mandir Coimbatore",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "793",
+    "channel_name": "Living India News",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "1151",
+    "channel_name": "MAHAA NEWS",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1070",
+    "channel_name": "MEDIA 9",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "399",
+    "channel_name": "MH One",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "970",
+    "channel_name": "MH One Dil Se",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "401",
+    "channel_name": "MH One News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "397",
+    "channel_name": "MH One Shraddha",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "591",
+    "channel_name": "MIRROR NOW",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "210",
+    "channel_name": "MN+ HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "234",
+    "channel_name": "MNX",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "599",
+    "channel_name": "MNX HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "103",
+    "channel_name": "MTV",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "236",
+    "channel_name": "MTV Beats",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "405",
+    "channel_name": "MTV Beats HD",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "406",
+    "channel_name": "MTV HD",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "390",
+    "channel_name": "Madha TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "841",
+    "channel_name": "Mahakaleshwar Temple, Ujjain",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "392",
+    "channel_name": "Makkal TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "391",
+    "channel_name": "MalaiMurasu Seithigal",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "904",
+    "channel_name": "Malayalam Naaptol",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "87",
+    "channel_name": "Manorama News",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "965",
+    "channel_name": "Manoranjan Grand",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "731",
+    "channel_name": "Manoranjan TV",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "891",
+    "channel_name": "Mantavya News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1243",
+    "channel_name": "Marudharhind TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "17",
+    "channel_name": "Mastiii",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "394",
+    "channel_name": "Mathrubhumi News",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "31",
+    "channel_name": "Mazhavil Manorama",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "395",
+    "channel_name": "Mazhavil Manorama HD",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "576",
+    "channel_name": "Media One",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "400",
+    "channel_name": "Mega Musiq",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "37",
+    "channel_name": "Mega TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "173",
+    "channel_name": "Movies Now",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "562",
+    "channel_name": "Movies Now HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "411",
+    "channel_name": "Murasu TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "1244",
+    "channel_name": "N Bharat",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1076",
+    "channel_name": "NB News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "977",
+    "channel_name": "ND24-Newsdaily.in",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "208",
+    "channel_name": "NDTV 24x7",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "179",
+    "channel_name": "NDTV India",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1159",
+    "channel_name": "NDTV MPCG",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "93",
+    "channel_name": "NDTV Profit Prime",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1152",
+    "channel_name": "NDTV Rajasthan",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "226",
+    "channel_name": "NEWS LIVE",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "976",
+    "channel_name": "NHK World Japan",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1103",
+    "channel_name": "NKTV BANGLA",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "894",
+    "channel_name": "NKTV PLUS",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "160",
+    "channel_name": "NTV Telugu",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "619",
+    "channel_name": "Naaptol",
+    "channel_genre": "Shopping"
+  },
+  {
+    "channel_id": "1043",
+    "channel_name": "Nakshatra Digital",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "408",
+    "channel_name": "Nambikkai TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "782",
+    "channel_name": "Namma TV",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "805",
+    "channel_name": "Nandighosha TV",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "184",
+    "channel_name": "Nat Geo Wild",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "413",
+    "channel_name": "Nat Geo Wild HD",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "137",
+    "channel_name": "National Geographic",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "605",
+    "channel_name": "National Geographic HD",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "1254",
+    "channel_name": "National News Live",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1245",
+    "channel_name": "National Today 24x7",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "567",
+    "channel_name": "Nepal 1",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "848",
+    "channel_name": "Network 10",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "414",
+    "channel_name": "News 1 India",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "913",
+    "channel_name": "News 1st Kannada",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "209",
+    "channel_name": "News 24",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "902",
+    "channel_name": "News 24 Madhyapradesh Chattisgarh",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1118",
+    "channel_name": "News 360",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "993",
+    "channel_name": "News Hour",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "831",
+    "channel_name": "News India 24x7",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "702",
+    "channel_name": "News J",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "36",
+    "channel_name": "News Nation",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "643",
+    "channel_name": "News State MP CG",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "613",
+    "channel_name": "News State UP Uttarakhand",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "968",
+    "channel_name": "News Tamil 24x7",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "207",
+    "channel_name": "News Time Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "22",
+    "channel_name": "News World India",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "68",
+    "channel_name": "News18 Assam North East",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "23",
+    "channel_name": "News18 Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "166",
+    "channel_name": "News18 Bihar Jharkhand",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "6",
+    "channel_name": "News18 Gujarati",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "106",
+    "channel_name": "News18 India",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "354",
+    "channel_name": "News18 Jammu Kashmir Ladakh Himachal",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "85",
+    "channel_name": "News18 Kannada",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "66",
+    "channel_name": "News18 Kerala",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "140",
+    "channel_name": "News18 Lokmat",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "203",
+    "channel_name": "News18 Madhya Pradesh Chhattisgarh",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "41",
+    "channel_name": "News18 Odia",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "232",
+    "channel_name": "News18 Punjab Haryana",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "205",
+    "channel_name": "News18 Rajasthan",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "58",
+    "channel_name": "News18 Tamil Nadu",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "79",
+    "channel_name": "News18 Uttar Pradesh Uttarakhand",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "448",
+    "channel_name": "News7",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "189",
+    "channel_name": "NewsX",
+    "channel_genre": "English News"
+  },
+  {
+    "channel_id": "138",
+    "channel_name": "Nick",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "433",
+    "channel_name": "Nick HD+",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "118",
+    "channel_name": "Nick Jr",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "908",
+    "channel_name": "Nimbark TV",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "417",
+    "channel_name": "North East Live",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "1205",
+    "channel_name": "Omm",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "431",
+    "channel_name": "Oscar Movies Bhojpuri.",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "1256",
+    "channel_name": "Oye Music",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1087",
+    "channel_name": "PRAVEG",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "92",
+    "channel_name": "PTC Chak De",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "922",
+    "channel_name": "PTC Music",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "91",
+    "channel_name": "PTC News",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "122",
+    "channel_name": "PTC Punjabi",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "794",
+    "channel_name": "PTC Punjabi Gold",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "773",
+    "channel_name": "PTC Simran",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "446",
+    "channel_name": "Paras Gold One",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "899",
+    "channel_name": "Pasand",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "420",
+    "channel_name": "Peace of Mind",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "421",
+    "channel_name": "Peppers TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "624",
+    "channel_name": "Pitaara TV",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "239",
+    "channel_name": "Pogo",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "509",
+    "channel_name": "Polimer News",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "272",
+    "channel_name": "Polimer TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "824",
+    "channel_name": "Power TV",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "423",
+    "channel_name": "Prag News",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "1116",
+    "channel_name": "Prajaa TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1115",
+    "channel_name": "Pratham Khabar 24x7",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1099",
+    "channel_name": "Prime 9 News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "869",
+    "channel_name": "Prime News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "221",
+    "channel_name": "Protidin Time",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "781",
+    "channel_name": "Prudent",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "661",
+    "channel_name": "Public Movies",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "424",
+    "channel_name": "Public Music",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "33",
+    "channel_name": "Public TV",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "1102",
+    "channel_name": "Pudhari News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "936",
+    "channel_name": "Punjabi Hits",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "220",
+    "channel_name": "Puthiya Thalaimurai",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "696",
+    "channel_name": "R Bharat",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "1133",
+    "channel_name": "R Plus",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1134",
+    "channel_name": "R Plus Gold",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "819",
+    "channel_name": "RDX Goa",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "72",
+    "channel_name": "REPUBLIC TV",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1165",
+    "channel_name": "Raapchik",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "426",
+    "channel_name": "Raj Digital Plus",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "425",
+    "channel_name": "Raj Musix",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "427",
+    "channel_name": "Raj Musix Kannada",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "541",
+    "channel_name": "Raj Musix Malayalam",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "429",
+    "channel_name": "Raj Musix Telugu",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "510",
+    "channel_name": "Raj News Kannada",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "428",
+    "channel_name": "Raj News Malayalam",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "525",
+    "channel_name": "Raj News Tamil",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "430",
+    "channel_name": "Raj News Telugu",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "439",
+    "channel_name": "Raj TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "449",
+    "channel_name": "Ramdhenu",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "101",
+    "channel_name": "Rang",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "1018",
+    "channel_name": "Real News Kerala",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "214",
+    "channel_name": "Rengoni TV",
+    "channel_genre": "Others"
+  },
+  {
+    "channel_id": "1124",
+    "channel_name": "Reporter TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "890",
+    "channel_name": "Republic Bangla",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "174",
+    "channel_name": "Romedy Now",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "1132",
+    "channel_name": "Rongeen TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "3",
+    "channel_name": "Ruposhi Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "98",
+    "channel_name": "Russia Today",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "556",
+    "channel_name": "SET",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "15",
+    "channel_name": "SET HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "940",
+    "channel_name": "SIRIKANNADA Alltime",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "34",
+    "channel_name": "SONY AATH",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "158",
+    "channel_name": "SONY BBC Earth",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "460",
+    "channel_name": "SONY BBC Earth HD",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "132",
+    "channel_name": "SONY MAX",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "120",
+    "channel_name": "SONY MAX 2",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "80",
+    "channel_name": "SONY MAX HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "558",
+    "channel_name": "SONY PIX",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "32",
+    "channel_name": "SONY PIX HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "559",
+    "channel_name": "SONY SAB",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "48",
+    "channel_name": "SONY SAB HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "150",
+    "channel_name": "SONY SPORTS TEN 1",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "81",
+    "channel_name": "SONY SPORTS TEN 1 HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "170",
+    "channel_name": "SONY SPORTS TEN 2",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "462",
+    "channel_name": "SONY SPORTS TEN 2 HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "171",
+    "channel_name": "SONY SPORTS TEN 3",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "464",
+    "channel_name": "SONY SPORTS TEN 3 HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "35",
+    "channel_name": "SONY SPORTS TEN 5 HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "45",
+    "channel_name": "SONY YAY!",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "245",
+    "channel_name": "STAR GOLD HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "516",
+    "channel_name": "STAR Maa HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "956",
+    "channel_name": "STAR Maa HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "8",
+    "channel_name": "STAR Plus HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "551",
+    "channel_name": "STAR Utsav",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "989",
+    "channel_name": "STV Haryana News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "490",
+    "channel_name": "SVBC 2",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "971",
+    "channel_name": "SVBC 3",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "546",
+    "channel_name": "Saam TV",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "1075",
+    "channel_name": "Sach Bedhadak",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "829",
+    "channel_name": "Sadhna News MP CG",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "827",
+    "channel_name": "Sadhna Plus News",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "447",
+    "channel_name": "Sadhna TV",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "436",
+    "channel_name": "Safari TV",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "973",
+    "channel_name": "Sahara Samay UP-UKD",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "1002",
+    "channel_name": "Saileela TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "596",
+    "channel_name": "Sakshi TV",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "518",
+    "channel_name": "Salaam TV",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "892",
+    "channel_name": "Samara News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "441",
+    "channel_name": "Samay",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "586",
+    "channel_name": "Sandesh News",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "1257",
+    "channel_name": "Sangam TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "215",
+    "channel_name": "Sangeet Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "217",
+    "channel_name": "Sangeet Marathi",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "213",
+    "channel_name": "Sansad TV",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "212",
+    "channel_name": "Sansad TV - Rajya Sabha",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "43",
+    "channel_name": "Sanskar",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "1119",
+    "channel_name": "Sanskriti 24x7",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "911",
+    "channel_name": "Santwani",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "455",
+    "channel_name": "Sathiyam TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "456",
+    "channel_name": "Satsang TV",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "44",
+    "channel_name": "Seithigal TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "457",
+    "channel_name": "Shalom TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "385",
+    "channel_name": "Sharnam TV",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "800",
+    "channel_name": "Shemaroo MarathiBana",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "818",
+    "channel_name": "Shemaroo TV",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "1045",
+    "channel_name": "Shemaroo UMANG",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "840",
+    "channel_name": "Shirdi Sai Baba",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "733",
+    "channel_name": "Showbox",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "1171",
+    "channel_name": "Shree Ichchhapuran Balaji Mandir",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "1007",
+    "channel_name": "Shri Ashtavinayak Mahaganpati, Ranjangaon",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1005",
+    "channel_name": "Shri Babulnaath Temple, Mumbai",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1004",
+    "channel_name": "Shri Ganga Aarti, Varanasi",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1008",
+    "channel_name": "Shri ISKCON Girgaon, Mumbai",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1006",
+    "channel_name": "Shri Mahalaxmi Temple, Mumbai",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "458",
+    "channel_name": "Shubh TV",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "445",
+    "channel_name": "Shubhavaarta TV",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "1170",
+    "channel_name": "Sidharth GOLD",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "978",
+    "channel_name": "Sidharth TV",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "611",
+    "channel_name": "Sirippoli",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "842",
+    "channel_name": "Somnath Temple",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "127",
+    "channel_name": "Sonic Nickelodeon",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "658",
+    "channel_name": "Sony Marathi",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "554",
+    "channel_name": "Sony Pal",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "56",
+    "channel_name": "Sony Wah",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "980",
+    "channel_name": "Sports 18 - 1",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "1033",
+    "channel_name": "Sports 18 - 1 HD",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "477",
+    "channel_name": "Sri Sankara TV",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "244",
+    "channel_name": "Star Bharat HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "632",
+    "channel_name": "Star GOLD 2",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "1769",
+    "channel_name": "Star GOLD Romance",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "468",
+    "channel_name": "Star Jalsha HD",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "388",
+    "channel_name": "Star Maa Gold",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "954",
+    "channel_name": "Star Maa Gold",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "387",
+    "channel_name": "Star Maa Movies HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "957",
+    "channel_name": "Star Maa Movies HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "469",
+    "channel_name": "Star Pravah HD",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "78",
+    "channel_name": "Star Sports 1 HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "24",
+    "channel_name": "Star Sports 1 Hindi HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "235",
+    "channel_name": "Star Sports 2 HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "246",
+    "channel_name": "Star Sports Select 1 HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "463",
+    "channel_name": "Star Sports Select 2 HD",
+    "channel_genre": "Sports"
+  },
+  {
+    "channel_id": "467",
+    "channel_name": "Star Suvarna HD",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "540",
+    "channel_name": "Star Suvarna Plus",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "496",
+    "channel_name": "Star Vijay HD",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "728",
+    "channel_name": "Subharti TV",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "475",
+    "channel_name": "Sudarshan News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "474",
+    "channel_name": "Sun Life",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "521",
+    "channel_name": "Sun TV HD",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "587",
+    "channel_name": "Super Hungama",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "229",
+    "channel_name": "Surya Movies",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "1031",
+    "channel_name": "Surya Samachar",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "230",
+    "channel_name": "Surya TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "883",
+    "channel_name": "Swar Shree",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "351",
+    "channel_name": "Swara Sagar",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "577",
+    "channel_name": "Swaraj Express SMBC",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1027",
+    "channel_name": "Swatantra TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "49",
+    "channel_name": "T News",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "1083",
+    "channel_name": "TABBAR HITS",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "90",
+    "channel_name": "TIMES NOW",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "135",
+    "channel_name": "TLC",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "480",
+    "channel_name": "TLC HD",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "485",
+    "channel_name": "TOTAL TV",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1079",
+    "channel_name": "TTN 24",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1074",
+    "channel_name": "TV 24",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1041",
+    "channel_name": "TV Punjab",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1009",
+    "channel_name": "TV27 News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "629",
+    "channel_name": "TV5 Kannada",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "65",
+    "channel_name": "TV5 Monde Asie",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "320",
+    "channel_name": "TV5 News",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "873",
+    "channel_name": "TV9 Bangla",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "706",
+    "channel_name": "TV9 Bharatvarsh",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "489",
+    "channel_name": "TV9 Gujarati",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "152",
+    "channel_name": "TV9 Kannada",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "97",
+    "channel_name": "TV9 Marathi",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "11",
+    "channel_name": "TV9 Telugu",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "723",
+    "channel_name": "Tamil Naaptol",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "866",
+    "channel_name": "Tara News",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "872",
+    "channel_name": "Tata Play Astro Duniya",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "618",
+    "channel_name": "Tata Play Beauty",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "1130",
+    "channel_name": "Tata Play Bollywood Masala",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "486",
+    "channel_name": "Tata Play Bollywood Premiere",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "741",
+    "channel_name": "Tata Play Classic Cinema",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "964",
+    "channel_name": "Tata Play Classic TV",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "641",
+    "channel_name": "Tata Play Cooking",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "71",
+    "channel_name": "Tata Play English in Hindi",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "645",
+    "channel_name": "Tata Play English in Telugu",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "121",
+    "channel_name": "Tata Play Fitness",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "627",
+    "channel_name": "Tata Play Fun Learn Junior",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "626",
+    "channel_name": "Tata Play Fun Learn Preschool",
+    "channel_genre": "Kids"
+  },
+  {
+    "channel_id": "772",
+    "channel_name": "Tata Play Gujarati Cinema",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "1056",
+    "channel_name": "Tata Play Har Ghar Startup",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "808",
+    "channel_name": "Tata Play Hits",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "789",
+    "channel_name": "Tata Play Hollywood Local",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "1167",
+    "channel_name": "Tata Play Hollywood Local Tamil",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1168",
+    "channel_name": "Tata Play Hollywood Local Telugu",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "735",
+    "channel_name": "Tata Play Ibaadat",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "929",
+    "channel_name": "Tata Play JEE Prep",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "95",
+    "channel_name": "Tata Play Javed Akhtar",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "622",
+    "channel_name": "Tata Play Marathi Cinema",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "928",
+    "channel_name": "Tata Play NEET Prep",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "571",
+    "channel_name": "Tata Play Punjab De Rang",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "959",
+    "channel_name": "Tata Play Romance",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "783",
+    "channel_name": "Tata Play Seniors",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "677",
+    "channel_name": "Tata Play ShortsTV",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "111",
+    "channel_name": "Tata Play Smart Manager",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "1003",
+    "channel_name": "Tata Play South Talkies",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "1073",
+    "channel_name": "Tata Play Telugu Classics",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "666",
+    "channel_name": "Tata Play Theatre HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "994",
+    "channel_name": "Tata Play Toons+",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "995",
+    "channel_name": "Tata Play Toons+",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "997",
+    "channel_name": "Tata Play Toons+",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "996",
+    "channel_name": "Tata Play Toons+",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "999",
+    "channel_name": "Tata Play Toons+",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "998",
+    "channel_name": "Tata Play Toons+",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "167",
+    "channel_name": "Tata Play Vedic Maths",
+    "channel_genre": "Knowledge"
+  },
+  {
+    "channel_id": "943",
+    "channel_name": "Tata Play Videshi Kahaniyan",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "986",
+    "channel_name": "Tata Play Zindagi",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "590",
+    "channel_name": "Telugu Naaptol",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "524",
+    "channel_name": "Thanthi TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "54",
+    "channel_name": "The Q",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "966",
+    "channel_name": "Times Now Navbharat",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "932",
+    "channel_name": "Times Now Navbharat HD",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "547",
+    "channel_name": "Times Now World",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "923",
+    "channel_name": "TravelXP 4K HDR",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "55",
+    "channel_name": "Travelxp",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "484",
+    "channel_name": "Travelxp HD",
+    "channel_genre": "Lifestyle"
+  },
+  {
+    "channel_id": "444",
+    "channel_name": "Travelxp Tamil",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "799",
+    "channel_name": "Twenty Four",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "1080",
+    "channel_name": "U Bangla TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "142",
+    "channel_name": "UTV Bindass",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "231",
+    "channel_name": "Udaya Movies",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "492",
+    "channel_name": "Udaya TV HD",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "1255",
+    "channel_name": "Update India",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "274",
+    "channel_name": "V6 Telugu",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "539",
+    "channel_name": "VH1 HD",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "497",
+    "channel_name": "VTV News",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "893",
+    "channel_name": "Valam TV",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1246",
+    "channel_name": "Vande Bharat News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "499",
+    "channel_name": "Vasanth TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "500",
+    "channel_name": "Vedic",
+    "channel_genre": "Spiritual"
+  },
+  {
+    "channel_id": "659",
+    "channel_name": "Vendhar TV",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "585",
+    "channel_name": "Vissa TV",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "1077",
+    "channel_name": "Vistara News",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "255",
+    "channel_name": "WION",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "1085",
+    "channel_name": "WPN World Punjabi TV",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "845",
+    "channel_name": "Wah Punjabi",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "553",
+    "channel_name": "We TV",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "276",
+    "channel_name": "WoW Cinema One",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "1101",
+    "channel_name": "Woman",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "258",
+    "channel_name": "Zee 24 Ghanta",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "507",
+    "channel_name": "Zee 24 Kalak",
+    "channel_genre": "Gujarati"
+  },
+  {
+    "channel_id": "261",
+    "channel_name": "Zee 24 Taas",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "100",
+    "channel_name": "Zee Action",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "523",
+    "channel_name": "Zee Anmol",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "64",
+    "channel_name": "Zee Anmol Cinema",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "254",
+    "channel_name": "Zee Bangla Cinema",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "522",
+    "channel_name": "Zee Bangla HD",
+    "channel_genre": "Bengali"
+  },
+  {
+    "channel_id": "20",
+    "channel_name": "Zee Bihar Jharkhand",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "814",
+    "channel_name": "Zee Biskope",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "175",
+    "channel_name": "Zee Bollywood",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "260",
+    "channel_name": "Zee Business",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "123",
+    "channel_name": "Zee Cinema",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "503",
+    "channel_name": "Zee Cinema HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "252",
+    "channel_name": "Zee Cinemalu",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "636",
+    "channel_name": "Zee Cinemalu HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "727",
+    "channel_name": "Zee Classic",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "262",
+    "channel_name": "Zee Delhi NCR Haryana",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "12",
+    "channel_name": "Zee Ganga",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "514",
+    "channel_name": "Zee Hindustan",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "256",
+    "channel_name": "Zee Kannada",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "675",
+    "channel_name": "Zee Kannada HD",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "684",
+    "channel_name": "Zee Keralam",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "694",
+    "channel_name": "Zee Keralam HD",
+    "channel_genre": "Malayalam"
+  },
+  {
+    "channel_id": "512",
+    "channel_name": "Zee Madhya Pradesh Chattisgarh",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "251",
+    "channel_name": "Zee Marathi",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "501",
+    "channel_name": "Zee Marathi HD",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "259",
+    "channel_name": "Zee News",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "810",
+    "channel_name": "Zee Picchar",
+    "channel_genre": "Kannada"
+  },
+  {
+    "channel_id": "1181",
+    "channel_name": "Zee Picchar HD",
+    "channel_genre": "None"
+  },
+  {
+    "channel_id": "580",
+    "channel_name": "Zee Punjab Haryana Himachal Pradesh",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "796",
+    "channel_name": "Zee Punjabi",
+    "channel_genre": "Punjabi"
+  },
+  {
+    "channel_id": "583",
+    "channel_name": "Zee Rajasthan News",
+    "channel_genre": "Hindi"
+  },
+  {
+    "channel_id": "597",
+    "channel_name": "Zee Sarthak",
+    "channel_genre": "Odia"
+  },
+  {
+    "channel_id": "557",
+    "channel_name": "Zee TV",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "63",
+    "channel_name": "Zee TV HD",
+    "channel_genre": "Entertainment"
+  },
+  {
+    "channel_id": "249",
+    "channel_name": "Zee Talkies",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "515",
+    "channel_name": "Zee Talkies HD",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "257",
+    "channel_name": "Zee Tamil",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "608",
+    "channel_name": "Zee Tamil HD",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "250",
+    "channel_name": "Zee Telugu",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "635",
+    "channel_name": "Zee Telugu HD",
+    "channel_genre": "Telugu"
+  },
+  {
+    "channel_id": "797",
+    "channel_name": "Zee Thirai",
+    "channel_genre": "Tamil"
+  },
+  {
+    "channel_id": "1182",
+    "channel_name": "Zee Thirai HD",
+    "channel_genre": "Movies"
+  },
+  {
+    "channel_id": "637",
+    "channel_name": "Zee Uttar Pradesh Uttarakhand",
+    "channel_genre": "News"
+  },
+  {
+    "channel_id": "248",
+    "channel_name": "Zee YUVA",
+    "channel_genre": "Marathi"
+  },
+  {
+    "channel_id": "517",
+    "channel_name": "Zing",
+    "channel_genre": "Music"
+  },
+  {
+    "channel_id": "96",
+    "channel_name": "Zoom",
+    "channel_genre": "Music"
+  }
+]

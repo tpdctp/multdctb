@@ -1,0 +1,6193 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TATA</title>
+  <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://denver1769.pages.dev/Player/content/css/style.css">
+    <link rel="stylesheet" href="https://denver1769.pages.dev/Player/content/css/searchbox.css">
+    <link rel="stylesheet" href="https://denver1769.pages.dev/Player/content/css/channels.css">
+    <link rel="stylesheet" href="https://denver1769.pages.dev/Player/content/css/footer.css">
+    <link rel="stylesheet" href="https://denver1769.pages.dev/Player/content/css/contact.css">
+    <link rel="stylesheet" href="https://denver1769.pages.dev/Player/content/tools/tools.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">      
+    <link rel="stylesheet" href="theme.css">
+    	
+  <script src="https://denver1769.pages.dev/Player/content/css/sh.js"></script>
+  <style>body {background:black;}</style>  
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script> 
+
+</head>
+<body>
+	<script type="text/javascript">
+$(function(){$('.df-hide').on('click',function(){$('.pixabin-float-telegram').fadeOut(170);});});
+</script>
+<script>
+  window.onload = function() {
+  var puURL = '#';
+  var puTS = Math.round(+new Date()/1000);
+  console.log('T.'+localStorage.puTS+'/'+puTS);
+  if (typeof localStorage.puTS == 'undefined' || parseInt(localStorage.puTS) <= (puTS - 3600)) {
+    var links = document.getElementsByTagName('a');
+    for(var i = 0, len = links.length; i < len; i++) {
+      links[i].onclick = function (e) {
+        var puHref = this.getAttribute("href");
+          var puTarget = this.getAttribute("target");
+          if (puHref !== '#' && puHref !== 'javascript:void(0)') {
+          e.preventDefault();    
+          if (puTarget == '_blank') {
+            window.open(window.location.href);
+          }
+          window.open(puHref);
+          window.location.href = puURL;
+          localStorage.puTS = puTS;
+        }
+      }
+    }
+  }
+};
+    function toggleDarkMode() {
+			var body = document.body;
+			body.classList.toggle("dark-mode");
+		}
+</script>
+
+<div class="header">
+            <div class="brand"><span><h3>Denver</h3>&nbsp;<strong style="font-size: 13px; color: red;" >is</strong><strong style="font-size: 20px; color: red;">Alive</strong>
+</span>
+                <a id=""menu" href="#"> <img id="menuimg" src="https://denver1769.pages.dev/Player/content/img/app_logo/menu.png"> </a> </div>
+           <div class="links" id="drop">
+           	
+                    <a href="index.html" class="btn text-light">Home Page</a>
+
+<a href="https://t.me/Denver_IPYV" target="_blank" class="btn text-light">Contact</a>
+
+<a href="Copyright.html" target="_blank" class="btn text-light">Copyright</a>
+                    
+                    <button id="dark-mode-button">Theme Switch button
+  <label class="switch" id="drop">
+    <input type="checkbox" onclick="toggleDarkMode()">
+    <span class="slider"></span>
+  </label>
+</button>
+
+</div>
+</div>
+
+        <nav>
+  <select id="channel-dropdown" onchange="changeChannelGroup()">
+  	<option value="All">All</option>
+<option value="Entertainment">Entertainment</option>
+<option value="Movies">Movies</option>
+<option value="Sports">Sports</option>
+<option value="Music">Music</option>
+<option value="News">News</option>
+<option value="English News">English News</option>  
+<option value="Kids">Kids</option>
+<option value="Knowledge">Knowledge</option>
+<option value="Lifestyle">Lifestyle</option>
+<option value="Bengali">Bengali</option>
+<option value="Gujarati">Gujarati</option>
+<option value="Hindi">Hindi</option>
+<option value="Kannada">Kannada</option>
+<option value="Malayalam">Malayalam</option>
+<option value="Marathi">Marathi</option>
+<option value="Odia">Odia</option>
+<option value="Others">Others</option>
+<option value="Punjabi">Punjabi</option>
+<option value="Tamil">Tamil</option>
+<option value="Telugu">Telugu</option>
+<option value="shopping">shopping</option>
+<option value="Spiritual">Spiritual</option>
+<option value="Null">Null</option>
+<option value="Uncategorized">Uncategorized</option>
+            </select>
+        </nav>
+	
+<div class="no-items section" id="search_top" name="Search (Top)"></div><input class="fin" placeholder="Search Channel here..." type="text"></center>
+<div class="new">
+
+
+
+<div class="tvv-item">
+<a href="Player.html?id=959" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/959.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Romance</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=8" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/8.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">STAR Plus HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=121" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/121.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Fitness</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=618" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/618.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Beauty</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=641" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/641.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Cooking</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=840" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/840.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shirdi Sai Baba</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=22" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/22.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News World India</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=842" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/842.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Somnath Temple</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=244" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/244.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Bharat HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=48" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/48.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SAB HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=15" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/15.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SET HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=556" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/556.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SET</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=578" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/578.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">&TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=40" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/40.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">&tv HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=63" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/63.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee TV HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=557" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/557.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=52" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/52.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=943" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/943.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Videshi Kahaniyan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=559" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/559.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SAB</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=543" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/543.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=142" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/142.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">UTV Bindass</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=95" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/95.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Javed Akhtar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=964" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/964.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Classic TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=986" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/986.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Zindagi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=633" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/633.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Investigation Discovery</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=619" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/619.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Naaptol</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=438" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/438.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Rishtey</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=634" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/634.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ezmall</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=551" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/551.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">STAR Utsav</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=54" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/54.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">The Q</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=554" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/554.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sony Pal</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=297" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/297.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Big Magic</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=523" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/523.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Anmol</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=818" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/818.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shemaroo TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=51" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/51.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Dangal</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=180" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/180.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Anjan TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=888" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/888.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ishara</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1045" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1045.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shemaroo UMANG</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=307" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/307.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Comedy Central HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=808" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/808.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Hits</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=326" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/326.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Kisan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=187" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/187.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Infinity HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=191" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/191.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD National</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=544" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/544.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Infinity</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=306" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/306.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Comedy Central</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=486" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/486.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Bollywood Premiere</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=789" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/789.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Hollywood Local</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=245" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/245.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">STAR GOLD HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=632" class="tvv-thumb">
+<img class="lazyload" data-src="https://i.ibb.co/kJCTGhg/CC-20221111-203447.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star GOLD 2</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1769" class="tvv-thumb">
+<img class="lazyload" data-src="https://i.postimg.cc/wjXJPgjX/image.jpg" style="height: 70px">
+<div class="card-">
+<div class="tvv-name">Star GOLD Romance</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=80" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/80.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY MAX HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1130" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1130.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Bollywood Masala</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=503" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/503.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Cinema HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=132" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/132.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY MAX</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1101" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1101.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Woman</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=123" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/123.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=175" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/175.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Bollywood</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=666" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/666.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Theatre HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=267" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/267.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">&pictures HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=741" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/741.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Classic Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=727" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/727.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Classic</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=148" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/148.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">&pictures</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=677" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/677.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play ShortsTV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1183" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1183.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">&Xplor HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=61" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/61.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Cineplex HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=53" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/53.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Cineplex</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=730" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/730.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">B4U Kadak</div>
+</div>
+</a>
+</div>
+
+
+<div class="tvv-item">
+<a href="Player.html?id=1003" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1003.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play South Talkies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=100" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/100.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Action</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=56" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/56.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sony Wah</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=7" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/7.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">B4U Movies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=182" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/182.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Cinema TV India</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=120" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/120.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY MAX 2</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=194" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/194.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Dangal 2</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=64" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/64.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Anmol Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=276" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/276.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">WoW Cinema One</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=296" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/296.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">BFLIX</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=823" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/823.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Goldmines</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1000" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1000.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Cineplex Bollywood</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1117" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1117.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ABZY Movies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=965" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/965.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Manoranjan Grand</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=173" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/173.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Movies Now</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=234" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/234.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MNX</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1037" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1037.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Dhamaka Movies B4U</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=731" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/731.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Manoranjan TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=562" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/562.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Movies Now HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=174" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/174.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Romedy Now</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=32" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/32.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY PIX HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=558" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/558.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY PIX</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=210" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/210.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MN+ HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=223" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/223.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Sports</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=78" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/78.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Sports 1 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=235" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/235.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Sports 2 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=24" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/24.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Sports 1 Hindi HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=246" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/246.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Sports Select 1 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=81" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/81.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SPORTS TEN 1 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=599" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/599.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MNX HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=462" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/462.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SPORTS TEN 2 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=463" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/463.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Sports Select 2 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=170" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/170.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SPORTS TEN 2</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=171" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/171.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SPORTS TEN 3</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=150" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/150.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SPORTS TEN 1</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=464" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/464.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SPORTS TEN 3 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=812" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/812.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Eurosport HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=35" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/35.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY SPORTS TEN 5 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=980" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/980.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sports 18 - 1</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1033" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1033.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sports 18 - 1 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=691" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/691.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD News HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=693" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/693.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Eurosport</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=322" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/322.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=783" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/783.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Seniors</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=179" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/179.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NDTV India</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=153" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/153.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aaj Tak</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1056" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1056.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Har Ghar Startup</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=259" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/259.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=177" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/177.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ABP News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=872" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/872.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Astro Duniya</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=209" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/209.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News 24</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=689" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/689.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aaj Tak HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=104" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/104.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=928" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/928.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play NEET Prep</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=106" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/106.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 India</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=929" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/929.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play JEE Prep</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=696" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/696.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">R Bharat</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=36" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/36.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News Nation</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=514" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/514.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Hindustan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=706" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/706.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV9 Bharatvarsh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=183" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/183.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=485" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/485.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TOTAL TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=932" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/932.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Times Now Navbharat HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1010" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1010.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Bharat 24</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=831" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/831.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News India 24x7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1031" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1031.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Surya Samachar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=475" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/475.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sudarshan News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=966" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/966.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Times Now Navbharat</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1084" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1084.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India Daily Live</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1051" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1051.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Bharat Express</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=286" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/286.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">APN News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=950" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/950.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ET Now Swadesh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1161" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1161.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Desh News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=414" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/414.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News 1 India</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=291" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/291.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Bharat Samachar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=344" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/344.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Hindi Khabar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=384" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/384.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Khabarain Abhi Tak</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=685" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/685.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India Voice</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=441" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/441.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Samay</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=869" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/869.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Prime News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=784" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/784.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">FM News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=278" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/278.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Good News Today</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=988" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/988.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Har Khabar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=260" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/260.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Business</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=848" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/848.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Network 10</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=213" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/213.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sansad TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=204" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/204.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">CNBC Awaaz</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=212" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/212.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sansad TV - Rajya Sabha</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=208" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/208.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NDTV 24x7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=547" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/547.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Times Now World</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=90" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/90.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TIMES NOW</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=701" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/701.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jantantra TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">INDIA TODAY</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=255" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/255.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">WION</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=72" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/72.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">REPUBLIC TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=324" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/324.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD India</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=189" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/189.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NewsX</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=206" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/206.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">CNN News18</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=591" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/591.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MIRROR NOW</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=93" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/93.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NDTV Profit Prime</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=190" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/190.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Al Jazeera</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=304" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/304.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">CNBC TV18 Prime HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=243" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/243.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">CNN</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=168" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/168.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">CNBC-TV18</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=188" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/188.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">BBC News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=157" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/157.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Channel News Asia</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=65" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/65.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV5 Monde Asie</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=105" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/105.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Australia TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=88" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/88.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ET NOW</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=976" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/976.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NHK World Japan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=98" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/98.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Russia Today</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=587" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/587.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Super Hungama</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=60" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/60.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DW</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=131" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/131.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">France 24</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=433" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/433.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nick HD+</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=138" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/138.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nick</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=114" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/114.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Disney</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=627" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/627.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Fun Learn Junior</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=71" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/71.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play English in Hindi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=681" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/681.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Cartoon Network HD+</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=238" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/238.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Cartoon Network</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=626" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/626.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Fun Learn Preschool</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=119" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/119.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Discovery Kids</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=239" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/239.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Pogo</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=127" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/127.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sonic Nickelodeon</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=994" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/994.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Toons+</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=45" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/45.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY YAY!</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=867" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/867.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Gubbare</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=905" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/905.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV Bal Bharat</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=118" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/118.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nick Jr</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=605" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/605.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">National Geographic HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=167" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/167.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Vedic Maths</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=144" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/144.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Disney Junior</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=111" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/111.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Smart Manager</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=816" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/816.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">CBeeBies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=413" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/413.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nat Geo Wild HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=137" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/137.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">National Geographic</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=184" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/184.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nat Geo Wild</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=287" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/287.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Animal Planet HD World</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=113" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/113.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Discovery Science</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=341" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/341.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Discovery HD World</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=172" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/172.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">History TV18</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=616" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/616.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">History TV18 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=130" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/130.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Animal Planet</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=219" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/219.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Discovery Channel</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=367" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/367.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">FOX Life HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=646" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/646.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Gyan Darshan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=158" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/158.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY BBC Earth</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=923" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/923.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TravelXP 4K HDR</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=460" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/460.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY BBC Earth HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=126" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/126.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">EPIC</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=480" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/480.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TLC HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=135" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/135.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TLC</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=484" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/484.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Travelxp HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=55" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/55.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Travelxp</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=136" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/136.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">GOOD TiMES</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=228" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/228.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Discovery Turbo</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=117" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/117.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Food Food</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=103" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/103.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MTV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=406" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/406.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MTV HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=735" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/735.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Ibaadat</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=224" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/224.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">E24</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=96" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/96.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zoom</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=227" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/227.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Fashion TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=139" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/139.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">9XM</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=236" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/236.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MTV Beats</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=405" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/405.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MTV Beats HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=17" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/17.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Mastiii</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=9" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/9.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">B4U Music</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=517" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/517.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zing</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=38" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/38.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aastha</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=39" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/39.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">9X Jalwa</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=43" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/43.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sanskar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=446" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/446.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Paras Gold One</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=397" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/397.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MH One Shraddha</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=539" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/539.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">VH1 HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=447" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/447.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sadhna TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=733" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/733.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Showbox</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=385" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/385.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sharnam TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=420" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/420.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Peace of Mind</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=373" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/373.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jinvani Channel</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=288" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/288.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Dharma Sandesh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=456" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/456.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Satsang TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=594" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/594.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ishwar TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=775" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/775.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DIVYA</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=500" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/500.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Vedic</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=283" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/283.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aastha Bhajan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=728" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/728.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Subharti TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=458" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/458.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shubh TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=969" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/969.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aadinath TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=911" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/911.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Santwani</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=935" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/935.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Awakening</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=837" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/837.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Hare Krsna</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1119" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1119.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sanskriti 24x7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=181" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/181.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Bhojpuri Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=12" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/12.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Ganga</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=830" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/830.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Filamchi Bhojpuri</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=814" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/814.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Biskope</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=431" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/431.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Oscar Movies Bhojpuri.</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=729" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/729.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">B4U Bhojpuri</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=970" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/970.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MH One Dil Se</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=899" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/899.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Pasand</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1165" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1165.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raapchik</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=79" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/79.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Uttar Pradesh Uttarakhand</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=166" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/166.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Bihar Jharkhand</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=838" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/838.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kashish News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=20" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/20.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Bihar Jharkhand</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=30" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/30.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India News UP UK</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=637" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/637.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Uttar Pradesh Uttarakhand</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=827" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/827.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sadhna Plus News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=316" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/316.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Bharati</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=613" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/613.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News State UP Uttarakhand</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=973" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/973.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sahara Samay UP-UKD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=339" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/339.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Uttar Pradesh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=203" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/203.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Madhya Pradesh Chhattisgarh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=512" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/512.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Madhya Pradesh Chattisgarh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=27" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/27.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">IBC 24</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=317" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/317.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Bihar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=698" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/698.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">INH 24X7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=222" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/222.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India News MP CG</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=902" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/902.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News 24 Madhyapradesh Chattisgarh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=652" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/652.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Bansal News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=829" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/829.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sadhna News MP CG</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=643" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/643.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News State MP CG</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=577" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/577.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Swaraj Express SMBC</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=993" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/993.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News Hour</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=937" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/937.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Anaadi TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1009" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1009.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV27 News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1159" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1159.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NDTV MPCG</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=205" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/205.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Rajasthan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=583" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/583.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Rajasthan News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=330" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/330.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Madhya Pradesh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=650" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/650.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">First India Rajasthan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1074" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1074.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV 24</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=5" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/5.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Patrika TV Rajasthan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=14" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/14.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India News Rajasthan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=332" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/332.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Rajasthan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1075" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1075.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sach Bedhadak</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=870" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/870.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jan TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1152" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1152.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NDTV Rajasthan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=354" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/354.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Jammu Kashmir Ladakh Himachal</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=518" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/518.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Salaam</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=365" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/365.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Gulistan News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=161" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/161.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Channel WIN</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=134" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/134.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Marathi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=338" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/338.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Urdu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=501" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/501.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Marathi HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=308" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/308.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Marathi HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=251" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/251.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Marathi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=469" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/469.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Pravah HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1188" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1188.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Jharkhand</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=622" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/622.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Marathi Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=658" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/658.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sony Marathi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=515" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/515.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Talkies HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=248" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/248.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee YUVA</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=249" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/249.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Talkies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=155" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/155.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ABP Majha</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=192" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/192.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Fakt Marathi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=800" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/800.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shemaroo MarathiBana</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=546" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/546.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Saam TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=140" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/140.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Lokmat</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=233" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/233.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jai Maharashtra</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=261" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/261.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee 24 Taas</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=97" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/97.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV9 Marathi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=999" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/999.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Toons+</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=336" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/336.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Sahyadri</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=217" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/217.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sangeet Marathi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=522" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/522.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Bangla HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=305" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/305.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Bangla HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1102" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1102.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Pudhari News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=26" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/26.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=34" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/34.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SONY AATH</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=468" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/468.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Jalsha HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=129" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/129.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aakaash Aath</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=995" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/995.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Toons+</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=254" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/254.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Bangla Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=379" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/379.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Khushboo Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=3" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/3.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ruposhi Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=896" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/896.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Bangla Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=537" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/537.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jalsha Movies HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=788" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/788.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Enterr10 Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1132" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1132.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Rongeen TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1134" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1134.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">R Plus Gold</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=23" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/23.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=258" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/258.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee 24 Ghanta</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=102" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/102.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ABP Ananda</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=381" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/381.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kolkata TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=207" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/207.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News Time Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=890" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/890.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Republic Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=311" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/311.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">CTVN AKD Plus</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=648" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/648.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Calcutta News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=215" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/215.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sangeet Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1133" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1133.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">R Plus</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1103" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1103.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NKTV BANGLA</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=314" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/314.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=635" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/635.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Telugu HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=873" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/873.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV9 Bangla</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=250" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/250.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=516" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/516.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">STAR Maa HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=359" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/359.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=145" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/145.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=355" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/355.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Gemini TV HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=956" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/956.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">STAR Maa HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=361" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/361.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Gemini Life</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=352" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/352.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV Plus</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=590" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/590.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Telugu Naaptol</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=585" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/585.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Vissa TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=362" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/362.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Gemini Movies HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=645" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/645.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play English in Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=996" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/996.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Toons+</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=387" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/387.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Maa Movies HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=636" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/636.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Cinemalu HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=388" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/388.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Maa Gold</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1168" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1168.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Hollywood Local Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=128" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/128.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=268" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/268.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV Life</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1073" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1073.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Telugu Classics</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=957" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/957.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Maa Movies HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=358" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/358.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV Abhiruchi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=146" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/146.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV Andhra Pradesh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=954" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/954.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Maa Gold</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=596" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/596.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sakshi TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=11" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/11.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV9 Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=225" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/225.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ABN Andhra Jyothy</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=160" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/160.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NTV Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=320" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/320.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV5 News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=274" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/274.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">V6 Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=83" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/83.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ETV Telangana</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=49" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/49.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">T News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=349" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/349.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">HM TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=430" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/430.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj News Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=266" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/266.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">10 TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1027" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1027.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Swatantra TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=774" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/774.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">4tv News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1099" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1099.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Prime 9 News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1100" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1100.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">BIG TV Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=252" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/252.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Cinemalu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=337" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/337.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Saptagiri</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1118" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1118.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News 360</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=429" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/429.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj Musix Telugu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=290" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/290.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Bhakti TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=285" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/285.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aradana TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=548" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/548.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Yadagiri</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=351" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/351.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Swara Sagar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=445" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/445.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shubhavaarta TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=630" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/630.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Hindu Dharmam</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=496" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/496.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Vijay HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=521" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/521.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sun TV HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1151" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1151.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MAHAA NEWS</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=608" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/608.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Tamil HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=257" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/257.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Tamil</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=474" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/474.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sun Life</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1167" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1167.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Hollywood Local Tamil</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=674" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/674.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Tamil HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=418" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/418.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Tamil</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=200" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/200.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kalaignar TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=99" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/99.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">D Tamil</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=426" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/426.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj Digital Plus</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=37" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/37.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Mega TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=439" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/439.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=997" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/997.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Toons+</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=708" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/708.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jaya TV HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=723" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/723.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tamil Naaptol</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=659" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/659.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Vendhar TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=392" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/392.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Makkal TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=499" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/499.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Vasanth TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=611" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/611.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sirippoli</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=272" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/272.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Polimer TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=201" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/201.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">J Movies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=444" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/444.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Travelxp Tamil</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=198" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/198.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jaya Plus</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=220" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/220.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Puthiya Thalaimurai</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=380" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/380.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">KTV HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=797" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/797.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Thirai</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=524" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/524.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Thanthi TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=509" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/509.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Polimer News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1182" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1182.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Thirai HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=58" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/58.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Tamil Nadu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=455" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/455.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sathiyam TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=44" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/44.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Seithigal TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=525" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/525.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj News Tamil</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=391" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/391.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MalaiMurasu Seithigal</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=702" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/702.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News J</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=968" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/968.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News Tamil 24x7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=199" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/199.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jaya Max</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=647" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/647.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Isaiaruvi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=425" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/425.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj Musix</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=434" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/434.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jothi TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=390" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/390.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Madha TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=400" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/400.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Mega Musiq</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=282" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/282.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Angel TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=490" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/490.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SVBC 2</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=334" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/334.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Podhigai</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=612" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/612.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Kannada HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=411" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/411.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Murasu TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=408" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/408.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nambikkai TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=492" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/492.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Udaya TV HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=108" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/108.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Kannada</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=467" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/467.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Suvarna HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=675" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/675.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Kannada HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=533" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/533.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors SUPER</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=372" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/372.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jeevan TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=256" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/256.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Kannada</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=940" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/940.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SIRIKANNADA Alltime</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=566" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/566.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kannada Naaptol</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=231" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/231.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Udaya Movies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=667" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/667.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Kannada Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=540" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/540.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Star Suvarna Plus</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1181" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1181.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Picchar HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=152" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/152.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV9 Kannada</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=196" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/196.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kasthuri</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=661" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/661.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Public Movies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=810" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/810.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Picchar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=33" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/33.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Public TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=555" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/555.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Asianet Suvarna News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=85" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/85.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Kannada</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=629" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/629.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV5 Kannada</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=510" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/510.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj News Kannada</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=824" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/824.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Power TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1077" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1077.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Vistara News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1116" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1116.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Prajaa TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=427" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/427.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj Musix Kannada</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=913" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/913.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News 1st Kannada</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=321" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/321.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Chandana</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=660" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/660.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ayush TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=772" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/772.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Gujarati Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=477" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/477.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sri Sankara TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=107" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/107.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Gujarati</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=692" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/692.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Gujarati Cinema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=489" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/489.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV9 Gujarati</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=586" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/586.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sandesh News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=552" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/552.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Gujarat Samachar TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=303" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/303.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">CNBC Bajaar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=971" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/971.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">SVBC 3</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=73" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/73.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ABP Asmita</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=6" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/6.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Gujarati</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=497" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/497.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">VTV News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=424" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/424.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Public Music</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=654" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/654.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India News Gujarat</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=507" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/507.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee 24 Kalak</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=974" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/974.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">1st Gujarat</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=323" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/323.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Girnar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=891" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/891.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Mantavya News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1097" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1097.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aastha Gujarati</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1087" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1087.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">PRAVEG</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=978" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/978.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sidharth TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=421" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/421.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Peppers TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=376" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/376.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kanak News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=115" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/115.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Colors Oriya</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=597" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/597.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Sarthak</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=41" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/41.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Odia</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1170" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1170.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Sidharth GOLD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=805" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/805.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nandighosha TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=448" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/448.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=375" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/375.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kalinga TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=907" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/907.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Argus News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=333" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/333.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Odia</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=230" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/230.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Surya TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1169" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1169.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jay Jagannath</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=294" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/294.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Asianet Plus</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=694" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/694.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Keralam HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=684" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/684.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Keralam</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=292" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/292.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Asianet HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=10" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/10.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Flowers</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=31" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/31.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Mazhavil Manorama</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=25" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/25.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kairali TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=395" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/395.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Mazhavil Manorama HD</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=178" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/178.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Amrita TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=553" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/553.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">We TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=904" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/904.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Malayalam Naaptol</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=229" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/229.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Surya Movies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=532" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/532.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Asianet News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=293" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/293.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Asianet Movies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=953" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/953.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Asianet Plus</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=436" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/436.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Safari TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=87" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/87.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Manorama News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=394" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/394.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Mathrubhumi News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=211" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/211.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kairali News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=66" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/66.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Kerala</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=933" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/933.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Asianet Movies</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=576" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/576.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Media One</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=428" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/428.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj News Malayalam</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=270" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/270.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Janam TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=799" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/799.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Twenty Four</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=370" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/370.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jaihind TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=269" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/269.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Goodness</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=377" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/377.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kappa TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=378" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/378.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Kaumudy TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=541" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/541.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Raj Musix Malayalam</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1124" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1124.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Reporter TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=356" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/356.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">God TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=796" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/796.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Punjabi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=348" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/348.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Harvest TV 24x7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=399" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/399.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MH One</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=457" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/457.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shalom TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=122" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/122.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">PTC Punjabi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=624" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/624.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Pitaara TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1083" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1083.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TABBAR HITS</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=571" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/571.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Punjab De Rang</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=232" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/232.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Punjab Haryana</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=580" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/580.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Punjab Haryana Himachal Pradesh</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=794" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/794.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">PTC Punjabi Gold</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=91" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/91.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">PTC News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=998" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/998.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tata Play Toons+</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=371" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/371.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Janta TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=401" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/401.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MH One News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=787" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/787.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ANB NEWS</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=13" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/13.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India News Haryana</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=366" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/366.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India News Punjab</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=972" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/972.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Khabar Fast</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=262" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/262.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Zee Delhi NCR Haryana</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1085" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1085.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">WPN World Punjabi TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=92" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/92.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">PTC Chak De</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=989" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/989.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">STV Haryana News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=793" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/793.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Living India News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=335" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/335.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Punjabi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=936" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/936.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Punjabi Hits</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=922" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/922.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">PTC Music</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1078" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1078.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Daily Post Punjab Haryana Himachal</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=773" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/773.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">PTC Simran</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=567" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/567.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nepal 1</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=193" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/193.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Chardikla Time TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=214" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/214.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Rengoni TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=68" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/68.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">News18 Assam North East</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=368" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/368.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Indradhanu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=353" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/353.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DY 365</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=423" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/423.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Prag News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=226" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/226.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NEWS LIVE</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=101" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/101.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Rang</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=417" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/417.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">North East Live</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=221" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/221.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Protidin Time</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=977" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/977.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ND24-Newsdaily.in</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=894" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/894.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NKTV PLUS</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=331" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/331.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD North East</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=325" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/325.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Kashir</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1115" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1115.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Pratham Khabar 24x7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1076" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1076.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">NB News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=991" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/991.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">DD Meghalaya</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=449" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/449.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ramdhenu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=791" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/791.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Fateh TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=790" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/790.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ek Onkar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=912" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/912.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Haryana Beats</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=807" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/807.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">In Goa 24x7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=782" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/782.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Namma TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=806" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/806.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Boogle Bollywood</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=781" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/781.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Prudent</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=866" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/866.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Tara News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=865" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/865.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Bangla Bhakti</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=819" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/819.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">RDX Goa</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=883" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/883.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Swar Shree</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=846" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/846.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Haryanvi Hits</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=887" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/887.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Garv Gurbani</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=908" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/908.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nimbark TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=893" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/893.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Valam TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=931" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/931.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Green Chillies TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=910" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/910.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">C News Bharat</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=841" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/841.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Mahakaleshwar Temple, Ujjain</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=892" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/892.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Samara News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=949" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/949.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Live Sri Naga Sai Mandir Coimbatore</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=960" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/960.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Atmadarshan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=947" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/947.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Live Patna Sahib Patna</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=847" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/847.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Krishna Vani</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=845" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/845.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Wah Punjabi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=962" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/962.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">ANN News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=961" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/961.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Lakshya TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1004" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1004.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shri Ganga Aarti, Varanasi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1005" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1005.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shri Babulnaath Temple, Mumbai</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1006" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1006.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shri Mahalaxmi Temple, Mumbai</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1007" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1007.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shri Ashtavinayak Mahaganpati, Ranjangaon</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1008" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1008.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shri ISKCON Girgaon, Mumbai</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1023" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1023.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Daiji World TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1002" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1002.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Saileela TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1018" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1018.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Real News Kerala</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1040" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1040.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Jansetu</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1019" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1019.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">7x Music</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1044" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1044.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Global India</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1058" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1058.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Aaj Ki Khabar</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1041" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1041.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TV Punjab</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1057" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1057.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Global Punjab TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1060" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1060.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Live Punjabi</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1059" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1059.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Indian News</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1070" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1070.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">MEDIA 9</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1079" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1079.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">TTN 24</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1080" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1080.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">U Bangla TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1042" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1042.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Bless TV</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1171" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1171.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Shree Ichchhapuran Balaji Mandir</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1197" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1197.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra Nilachakra</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1199" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1199.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra  Music</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1198" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1198.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra Cynema</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1196" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1196.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra Bharat Odia</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1201" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1201.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra Paramatma</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1200" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1200.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra Jatra</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1202" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1202.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra One paschima</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1204" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1204.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">City Music</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1209" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1209.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra snews</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1203" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1203.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">India 24x7</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1205" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1205.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Omm</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1207" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1207.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra Manoranjan</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1208" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1208.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra Halchal</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1206" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1206.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Ekamra Baiscope</div>
+</div>
+</a>
+</div>
+
+<div class="tvv-item">
+<a href="Player.html?id=1043" class="tvv-thumb">
+<img class="lazyload" data-src="https://tatalogo.pages.dev/1043.png" style="height: 90px">
+<div class="card-">
+<div class="tvv-name">Nakshatra Digital</div>
+</div>
+</a>
+</div>
+
+
+
+
+ 
+<br>
+	<br>
+		<br>
+			<br>
+				<br>
+<script>
+$(document).ready(function() { var dftr = $('select.dftr'), headerCount = $('#headerCount'); headerCount.html('select a filter or use search'); dftr.on('change', function() { dftr.attr('disabled', 'disabled'); var records = $('#tvvTable').find('.tvv-item'); records.hide(); var critriaAttributes = []; dftr.each(function() { var $this = $(this), $selectedLength = $this.find(':selected').length, $critriaAttribute = ''; if ($selectedLength > 0 && $this.val() != '0') { if ($selectedLength == 1) { $critriaAttribute += '[data-' + $this.data('attribute') + '*="' + $this.val() + '"]'; } else { var $startDataAttribute = '[data-' + $this.data('attribute') + '*="', $endDataAttribute = '"]', $selectedValues = $this.val().toString(); $critriaAttribute += $startDataAttribute + $selectedValues.replaceAll(',', ($endDataAttribute + ',' + $startDataAttribute)) + $endDataAttribute; } critriaAttributes.push($critriaAttribute); } }); var $showRecords = records; if (critriaAttributes.length > 0) { $.each(critriaAttributes, function(i, filterValue) { $showRecords = $showRecords.filter(filterValue); }); } $showRecords.show(); headerCount.html($showRecords.length + ' channels filtered'); dftr.removeAttr('disabled'); $(".fin").val(''); }); $(".fin").keyup(function() { var filter = $(this).val(), count = 0; $('select.dftr').prop('selectedIndex',0); $(".tvv-item").each(function() { if ($(this).text().search(new RegExp(filter, "i")) < 0) { $(this).fadeOut(); } else { $(this).show(); count++; } }); }); }); 
+</script> 
+</div>
+
+<!-----------------------------FOOTER-------------------------->
+<div class="footer bg-dark text-light">
+  <span class="text-danger">TATA Web</span> Ad-Free <span class="text-danger">Denver</span>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+	$(document).ready(function(){
+            $("#menuimg").click(function(){
+               $("#drop").slideToggle("fast"); 
+            });
+        });
+	</script>
+    <script>
+    // Function to fetch JSON data asynchronously
+async function fetchData() {
+    const response = await fetch('Category.json');
+    const jsonData = await response.json();
+
+    // Now you have your JSON data
+    return jsonData;
+}
+
+// Function to change channel group
+async function changeChannelGroup() {
+    var selectedValue = $("#channel-dropdown").val();
+    $(".tvv-item").hide();
+
+    // Fetch JSON data
+    const jsonData = await fetchData();
+
+    // Filter the items based on JSON data
+    for (var i = 0; i < jsonData.length; i++) {
+        var item = jsonData[i];
+        if (selectedValue === "All" || item.channel_genre === selectedValue) {
+            $(".tvv-item:has(.tvv-name:contains('" + item.channel_name + "'))").show();
+        }
+    }
+}
+
+// Initial fetch when the page loads
+fetchData();
+</script>
+<center>
+</body>
+</html>
