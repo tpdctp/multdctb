@@ -14,7 +14,7 @@ foreach ($fetcherData['data']['channels'] as $channel) {
     $channelData = $channel;
     break;
   }
-}
+} 
 
 if ($channelData === null) {
   echo '<h1>Error: Channel not found</h1>';
