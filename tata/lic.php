@@ -1,6 +1,6 @@
 <?php
 $fetcherJsonCacheFile = 'fetcher.json.cache';
-$fetcherJsonCacheExpire = 10000; // Cache expires every 3 hour.
+$fetcherJsonCacheExpire = 10800; // Cache expires every 3 hour.
 
 if (file_exists($fetcherJsonCacheFile) && (filemtime($fetcherJsonCacheFile) + $fetcherJsonCacheExpire > time())) {
   $fetcherJson = file_get_contents($fetcherJsonCacheFile);
