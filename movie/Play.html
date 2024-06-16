@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Making Clappr video player responsive</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <style>
+   body {
+          background : #000000;
+          
+      }
+
+  .video {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+    }
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="video">
+      <div class="embed-responsive embed-responsive-16by9">
+      <div id="player-container" class="embed-responsive-item"></div>
+    </div>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/clappr/0.2.98/clappr.min.js'></script>
+ 
+ <script>
+
+  new Clappr.Player({
+  source: videoData.link,
+  mute: false,
+  autoPlay: true,
+  parent: '#player-container',
+  width: '100%',
+  height: '100%',
+  hlsjsConfig: {
+    // here any hls.js configuration options
+  }
+})
+
+</script>
+
+  <script type="text/javascript">
+        // Function to get URL parameter by name
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        var id = getUrlParameter('id');
+        
+        // Load the m1.json file and get the video data by ID
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var data = JSON.parse(xhr.responseText);
+                var videoData = data.find(video => video.id === id);
+
+              new Clappr.Player("myElement").setup({
+                    title: videoData.name,
+                    description: "VaathalaTV",
+                    image: videoData.logo,
+                    aspectratio: '16:9',
+                    width: '100%',
+                    mute: false,
+                    autostart: true,
+                    file: videoData.link,
+                    type: "hls",
+                    captions: {color: '#ffb800', fontSize: 30, backgroundOpacity: 0},
+                    sharing: {
+                        sites: ['facebook', 'twitter']
+                    }
+                });
+            }
+        };
+        xhr.open('GET', 'movie.json', true);
+        xhr.send();
+    </script>
+
+</body>
+</html>
