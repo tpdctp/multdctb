@@ -171,24 +171,34 @@
         "k": "",
         "kid": ""
     },
-    {
-        "name": "And Pictures HD",
-        "id": "185",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/And_Pictures_HD.png",
-        "group": "🕊",
-        "link": "https://fifabangladesh.live/@RANAPKX73/stream.m3u8?id=185&e=.m3u8",
+     {
+        "name": "RC Studio",
+        "id": "3021",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/RC_Studio.png",
+        "group": "🕊 Entertainment",
+        "link": "https://fifabangladesh.live/@RANAPKX73/stream.m3u8?id=3021&e=.m3u8",
         "license_key": "",
         "k": "",
         "kid": ""
     },
     {
-        "name": "CNBC Awaaz",
-        "id": "190",
-        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/CNBC_Awaaz.png",
-        "group": "🕊",
-        "link": "https://fifabangladesh.live/@RANAPKX73/stream.m3u8?id=190&e=.m3u8",
+        "name": "Unique Tv",
+        "id": "3022",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Unique_Tv.png",
+        "group": "🕊 Entertainment",
+        "link": "https://fifabangladesh.live/@RANAPKX73/stream.m3u8?id=3022&e=.m3u8",
         "license_key": "",
         "k": "",
         "kid": ""
     },
+    {
+        "name": "Janadesh News",
+        "id": "3023",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Janadesh_News.png",
+        "group": "🕊 News",
+        "link": "https://fifabangladesh.live/@RANAPKX73/stream.m3u8?id=3023&e=.m3u8",
+        "license_key": "",
+        "k": "",
+        "kid": ""
+    }
 ]
