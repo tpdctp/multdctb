@@ -1,10 +1,16 @@
 [
     {
+        "id": 1,
         "title": "Sample Video 1",
-        "url": "http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/315923.mp4"
+        "url": "http://example.com/video1.mp4",
+        "description": "This is the first sample video.",
+        "poster": "http://example.com/poster1.jpg"
     },
     {
+        "id": 2,
         "title": "Sample Video 2",
-        "url": "http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/315931.mp4"
+        "url": "http://example.com/video2.mp4",
+        "description": "This is the second sample video.",
+        "poster": "http://example.com/poster2.jpg"
     }
 ]
