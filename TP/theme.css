@@ -93,8 +93,8 @@
 }
 
 body {
-			background-color: #000000; /* Light mode background color */
-			color: #000; /* Light mode text color */
+			background-color: #131720;
+    color: #131720;
 			transition: all 0.5s ease-in-out;
 		}
 		
@@ -105,13 +105,16 @@ body {
 		}
 		
 		.switch {
-			display: inline-block;
-			position: relative;
-			width: 60px;
-			height: 34px;
-			margin: 10px;
-			cursor: pointer;
-		}
+    display: inline-block;
+    position: fixed;
+    top: 80px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    width: 60px;
+    height: 34px;
+    margin: 0; /* Remove negative margin */
+    cursor: pointer;
+}
+
 		
 		.switch input {
 			display: none;
@@ -179,30 +182,21 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-.search-icon {
-  font-size: 20px;
-}
-
-function toggleDarkMode() {
-  var body = document.querySelector('body');
-  body.classList.toggle('dark-mode');
-}
-
-
-		input:checked + .slider {
-			background-color: var(--dark-black); /* Dark black color */
-		}
-		
-		input:checked + .slider:before {
-			transform: translateX(26px);
-		}
 		body {
   font-size: 18px;
   font-family: Arial, sans-serif;
   font-weight: bold;
   color: black;
-  background-color: white;
+  background-color: #131720;
 }
+
+        body.dark-mode .tvv-item {
+            background-color: black;
+        }
+
+        body.dark-mode .tvv-name {
+            color: black;
+        }
 
 .dark-mode {
   color: white;
@@ -218,6 +212,32 @@ function toggleDarkMode() {
   font-size: 20px;
   font-family: Arial, sans-serif;
 }
+
+input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .icon {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-size: cover;
+            transition: 0.4s;
+        }
+
+        .icon.moon {
+            background-image: url('https://i.postimg.cc/5tzDV0Rf/brightness.png'); /* Replace with URL to moon icon */
+        }
+
+        .icon.bulb {
+            background-image: url('https://i.postimg.cc/mZSfkP2D/moon-1.png'); /* Replace with URL to bulb icon */
+        }
 
 .footer {
   font-weight: bold;
