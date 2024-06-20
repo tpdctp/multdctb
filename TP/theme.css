@@ -304,7 +304,7 @@ header {
           color: #ffffff;
           display: flex;
           flex-direction: column;
-          max-width: 150px; /* Set a maximum width for the site card */
+          max-width: 100px; /* Set a maximum width for the site card */
           margin: auto; /* Center the site card within its container */
       }
 
