@@ -1,11 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>TP Player</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://te.legra.ph/file/a8a6eec3142122379ea1e.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="https://yt3.googleusercontent.com/72uWDy4tWLmUXeLH9TiRXy-NjRZnYfMHLiqUbZParNUJibmXTiptyDpuh1RnhbHx9op1ITS2wg=s900-c-k-c0x00ffffff-no-rj">
+
+  <!-- Credit to Denver -->
+  <!-- Credit to CodeCrafter -->
+<title>TATA PLAY</title>
    <style>
     html {
       font-family: Poppins;
@@ -131,118 +135,20 @@
 <script> jwplayer.defaults = jwDefaults; </script>
 <div id="jwplayerDiv"></div>  
 <script>
-// Function to get URL parameters
-function getParameterByName(name, url) {
-  if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, "\\$&");
-  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-    results = regex.exec(url);
-  if (!results) return null;
-  if (!results[2]) return '';
-  return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-
-// Function to fetch JSON data based on channel ID
-function fetchChannelData(channelId, callback) {
-  // Construct the URL to fetch channel data
-  const url = `https://captaintvwc.x10.mx/tataplay/get.php?id=${channelId}`;
-
-  
-  fetch(url)
-    .then(response => response.json())
-    .then(data => callback(data))
-    .catch(error => console.error('Error fetching JSON:', error));
-}
-
-// Define player setup function
-function setupPlayer(channelData) {
-  // Set up JWPlayer
-  var playerSetup = {
-    file: channelData.channel__url, // Using channel__url as file URL
-    skin: {
-      name: "Dev",
-      active: "RED", // Video forward colour
-      inactive: "white", // Buttons colours
-      background: "black" // Background
-    },
-    autostart: true,
-    preload: "none",
-    repeat: true,
-    volume: 100,
-    mute: false,
-    stretching: "exactfit",
-    width: "100%",
-    cast: {},
-  };
-
-  // Determine the type of stream
-  const isDash = channelData.channel__url.includes('.mpd');
-  const isHls = channelData.channel__url.includes('.m3u8');
-
-  if (isDash) {
-    // Set up DRM for DASH with keys if available
-    playerSetup.type = 'dash';
-
-    if (channelData.keyid && channelData.key) {
-      playerSetup.drm = {
-        clearkey: {
-          keyId: channelData.keyid,
-          key: channelData.key
-        }
-      };
-    }
-  } else if (isHls) {
-    // Set up DRM for HLS with keys if available
-    playerSetup.type = 'hls';
-
-    if (channelData.keyid && channelData.key) {
-      playerSetup.drm = {
-        clearkey: {
-          keyId: channelData.keyid,
-          key: channelData.key
-        }
-      };
-    }
-  } else {
-    // Default to HLS without keys
-    playerSetup.type = 'hls';
-  }
-  jwplayer("jwplayerDiv").setup(playerSetup);
-
-}
-// Fetch channel data and set up the player
-document.addEventListener('DOMContentLoaded', function () {
-
-  // Get channel ID from the URL
-  var channelId = getParameterByName('id');
-
-  if (channelId) {
-    // Fetch the channel data for the given ID
-    fetchChannelData(channelId, function (channelData) {
-      if (channelData) {
-        // Set up the player with the retrieved channel data
-
-        setupPlayer(channelData);
-      } else {
-        console.error('Channel not found for ID:', channelId);
-      }
-    });
-  } else {
-    console.error('No channel ID specified in the URL');
-  }
-});
+(function(_0x849da9,_0x1fbd70){const _0x5695cd=_0x4881,_0x32d339=_0x849da9();while(!![]){try{const _0x439159=parseInt(_0x5695cd(0x144))/0x1*(parseInt(_0x5695cd(0x13e))/0x2)+parseInt(_0x5695cd(0x145))/0x3+parseInt(_0x5695cd(0x12a))/0x4*(-parseInt(_0x5695cd(0x13b))/0x5)+-parseInt(_0x5695cd(0x12f))/0x6+parseInt(_0x5695cd(0x13a))/0x7+-parseInt(_0x5695cd(0x132))/0x8*(parseInt(_0x5695cd(0x13c))/0x9)+parseInt(_0x5695cd(0x139))/0xa;if(_0x439159===_0x1fbd70)break;else _0x32d339['push'](_0x32d339['shift']());}catch(_0x7a94bc){_0x32d339['push'](_0x32d339['shift']());}}}(_0x328f,0xe37e1));function getParameterByName(_0x55ea6b,_0x30a464){const _0x3f876f=_0x4881;if(!_0x30a464)_0x30a464=window['location']['href'];_0x55ea6b=_0x55ea6b[_0x3f876f(0x142)](/[\[\]]/g,'\x5c$&');var _0x5e5b2b=new RegExp(_0x3f876f(0x140)+_0x55ea6b+_0x3f876f(0x146)),_0x3b6d25=_0x5e5b2b['exec'](_0x30a464);if(!_0x3b6d25)return null;if(!_0x3b6d25[0x2])return'';return decodeURIComponent(_0x3b6d25[0x2][_0x3f876f(0x142)](/\+/g,'\x20'));}function fetchChannelData(_0x4e22a4,_0x52a448){const _0x4a62ec=_0x4881,_0x4824e9=_0x4a62ec(0x141)+_0x4e22a4;fetch(_0x4824e9)['then'](_0x4b70a3=>_0x4b70a3[_0x4a62ec(0x143)]())[_0x4a62ec(0x134)](_0x37f0a7=>_0x52a448(_0x37f0a7))[_0x4a62ec(0x12b)](_0x43086b=>console[_0x4a62ec(0x136)](_0x4a62ec(0x131),_0x43086b));}function _0x4881(_0x5f041b,_0x9a8c8c){const _0x328f47=_0x328f();return _0x4881=function(_0x488150,_0x85fdc5){_0x488150=_0x488150-0x129;let _0x766835=_0x328f47[_0x488150];return _0x766835;},_0x4881(_0x5f041b,_0x9a8c8c);}function _0x328f(){const _0x41889f=['json','1MqJPNb','4520847zDMlgu','(=([^&#]*)|&|#|$)','exactfit','Channel\x20not\x20found\x20for\x20ID:','4044164bWZqxO','catch','drm','No\x20channel\x20ID\x20specified\x20in\x20the\x20URL','keyid','7417212iAWZfw','includes','Error\x20fetching\x20JSON:','168824JBIgcc','key','then','channel__url','error','.m3u8','setup','18371260UzbfHl','7418607DkTydy','5nBuldr','639lktsKQ','dash','546978CYNvBP','type','[?&]','get.php?id=','replace'];_0x328f=function(){return _0x41889f;};return _0x328f();}function setupPlayer(_0x3d7eba){const _0x557603=_0x4881;var _0x4b28ec={'file':_0x3d7eba['channel__url'],'autostart':!![],'preload':'none','repeat':!![],'volume':0x64,'mute':![],'stretching':_0x557603(0x147),'width':'100%','cast':{}};const _0x76ac3=_0x3d7eba[_0x557603(0x135)][_0x557603(0x130)]('.mpd'),_0x35f8a0=_0x3d7eba[_0x557603(0x135)][_0x557603(0x130)](_0x557603(0x137));if(_0x76ac3)_0x4b28ec[_0x557603(0x13f)]=_0x557603(0x13d),_0x3d7eba[_0x557603(0x12e)]&&_0x3d7eba['key']&&(_0x4b28ec[_0x557603(0x12c)]={'clearkey':{'keyId':_0x3d7eba[_0x557603(0x12e)],'key':_0x3d7eba[_0x557603(0x133)]}});else _0x35f8a0?(_0x4b28ec[_0x557603(0x13f)]='hls',_0x3d7eba['keyid']&&_0x3d7eba[_0x557603(0x133)]&&(_0x4b28ec[_0x557603(0x12c)]={'clearkey':{'keyId':_0x3d7eba[_0x557603(0x12e)],'key':_0x3d7eba['key']}})):_0x4b28ec[_0x557603(0x13f)]='hls';jwplayer('jwplayerDiv')[_0x557603(0x138)](_0x4b28ec);}document['addEventListener']('DOMContentLoaded',function(){const _0x212257=_0x4881;var _0xa21746=getParameterByName('id');_0xa21746?fetchChannelData(_0xa21746,function(_0x228bb0){const _0x181470=_0x4881;_0x228bb0?setupPlayer(_0x228bb0):console['error'](_0x181470(0x129),_0xa21746);}):console[_0x212257(0x136)](_0x212257(0x12d));});
 </script>
 
 <div id="loading" class="loading">
     <div class="loading-text">
-      <span class="loading-text-words">T</span>
-      <span class="loading-text-words">V</span>
-      <span class="loading-text-words">T</span>
-      <span class="loading-text-words">E</span>
-      <span class="loading-text-words">L</span>
-      <span class="loading-text-words">U</span>
-      <span class="loading-text-words">G</span>
-      <span class="loading-text-words">U</span>
+<span style="color:#FF0000">T</span>
+<span style="color:#66CC66">A</span>
+<span style="color:#FF9966">T</span>
+<span style="color:#FFCCCC">A</span>
+<span style="color:#66CC66">-</span>
+<span style="color:#FF9966">P</span>
+<span style="color:#FFCCCC">L</span>
+<span style="color:#FF0066">A</span>
+<span style="color:#FF0000">Y</span>
     </div>
 </div>
 
