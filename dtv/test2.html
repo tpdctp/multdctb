@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown List Video Streaming with Clappr.js</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .video {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Select a Movie:</h1>
+    <select id="movie-select" class="form-control">
+      <option value="">Select a movie...</option>
+      <!-- Options will be dynamically populated from JSON -->
+    </select>
+    
+    <div class="video">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div id="player-container" class="embed-responsive-item"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clappr/0.2.98/clappr.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const player = new Clappr.Player({
+        mute: false,
+        autoPlay: true,
+        parent: '#player-container',
+        width: '100%',
+        height: '100%',
+        hlsjsConfig: {
+          // Additional hls.js configuration options if needed
+        }
+      });
+
+      const select = document.getElementById('movie-select');
+      const moviesUrl = 'movies.json'; // JSON file containing movie data
+
+      // Fetch movies JSON data
+      fetch(moviesUrl)
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(movie => {
+            const option = document.createElement('option');
+            option.value = movie.source;
+            option.textContent = movie.title;
+            select.appendChild(option);
+          });
+
+          // Handle change event on dropdown
+          select.addEventListener('change', function() {
+            const selectedSource = this.value;
+            if (selectedSource) {
+              player.load({ source: selectedSource });
+            }
+          });
+        })
+        .catch(error => console.error('Error fetching movies data:', error));
+    });
+  </script>
+</body>
+</html>
