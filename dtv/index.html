@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page with Channels and Popup Player</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Include CSS for styling -->
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Add your CSS file -->
 </head>
 <body>
+    <div class="container">
+        <h1>Welcome to Our Channel Grids</h1>
 
-<div class="container">
-    <h1>Channels</h1>
-
-    <div class="channel-block" id="channel-list">
-        <!-- Channels will be dynamically added here -->
+        <!-- Channel Grids -->
+        <div id="channel-grids"></div>
     </div>
-</div>
 
-<div id="player-popup" class="player-popup">
-    <div id="player-container"></div>
-    <span class="close-btn" onclick="closePopup()">×</span>
-</div>
+    <!-- Stylish Popup Web Player -->
+    <div id="popup-player" class="popup">
+        <div id="player-container"></div>
+        <button id="close-player">Close Player</button>
+    </div>
 
-<script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
-<script src="script.js"></script> <!-- JavaScript to fetch and display channels -->
+    <!-- JW Player Library -->
+    <script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+
+    <!-- Script to fetch channel data and initialize player -->
+    <script src="script.js"></script> <!-- Create this file to manage channel data and player initialization -->
 </body>
 </html>
