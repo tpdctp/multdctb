@@ -2,31 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dropdown List Video Streaming with Intro</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <title>IPTV Video Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
   <style>
     body {
-      background: #000000;
+      background: #000;
+      color: #fff;
     }
-
-    .video {
+    .video-container {
       padding: 20px;
       display: flex;
       justify-content: center;
       position: relative;
     }
-
     .embed-responsive {
       width: 100%;
     }
-
     .logo-container {
       position: absolute;
       top: 10px;
       left: 10px;
-      z-index: 1000; /* Ensure logo is above player controls */
+      z-index: 1000;
     }
-
     .video-selection {
       margin-top: 20px;
     }
@@ -34,7 +31,7 @@
 </head>
 <body>
 <div class="container">
-  <div class="video">
+  <div class="video-container">
     <div class="logo-container">
       <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" style="max-width: 100px; height: auto;">
     </div>
@@ -43,8 +40,8 @@
     </div>
   </div>
   <div class="video-selection">
-    <label for="movie-select" class="text-white">Select a Movie:</label>
-    <select id="movie-select" class="form-control">
+    <label for="channel-select">Select a Channel:</label>
+    <select id="channel-select" class="form-control">
       <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167178.mp4">I’ll Be Watching (2023)</option>
       <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167180.mp4">Jacir (2023)</option>
       <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167181.mp4">Jack Reacher: Never Go Back (2016)</option>
@@ -56,6 +53,7 @@
   </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clappr/0.2.98/clappr.min.js"></script>
 <script>
   const introVideo = 'https://github.com/tvtelugu/play/raw/main/tvtelugu.mp4'; // Intro video URL
   let mainVideo = '';
@@ -84,7 +82,7 @@
   });
 
   // Function to change video source based on dropdown selection
-  document.getElementById('movie-select').addEventListener('change', function() {
+  document.getElementById('channel-select').addEventListener('change', function() {
     mainVideo = this.value;
     playIntroThenMain(introVideo, mainVideo);
   });
