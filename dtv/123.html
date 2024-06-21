@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Player</title>
+    <!-- Include JW Player library -->
+    <script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <!-- CSS for styling -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        #player-container {
+            width: 100%;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Player container -->
+    <div id="player-container"></div>
+
+    <!-- Script to initialize JW Player -->
+    <script>
+        const player = jwplayer("player-container");
+        player.setup({
+            file: "https://jio.dinesh29.com.np/live/jio-universal/cnbc-tv18-prime-hd/index.ts",
+            type: "hls",
+            width: "100%",
+            aspectratio: "16:9",
+            autostart: true,
+            primary: "html5"
+        });
+    </script>
+</body>
+</html>
