@@ -61,24 +61,35 @@
   let mainVideo = '';
   const videoPlayer = document.getElementById('video-player');
 
-  // Play intro video initially
+  function playIntroThenMain(intro, main) {
+    videoPlayer.src = intro;
+    videoPlayer.play();
+    videoPlayer.onended = function() {
+      videoPlayer.src = main;
+      videoPlayer.play();
+    };
+  }
+
+  // Initial video setup
   videoPlayer.src = introVideo;
   videoPlayer.play();
-
-  videoPlayer.addEventListener('ended', function() {
-    if (mainVideo) {
-      videoPlayer.src = mainVideo;
-      videoPlayer.play();
-      mainVideo = ''; // Reset main video after playing
-    }
-  });
 
   // Function to change video source based on dropdown selection
   document.getElementById('movie-select').addEventListener('change', function() {
     mainVideo = this.value;
-    videoPlayer.src = introVideo;
-    videoPlayer.play();
+    playIntroThenMain(introVideo, mainVideo);
   });
+
+  // Error handling
+  videoPlayer.onerror = function() {
+    console.error('Error playing the video');
+    alert('Error playing the video');
+  };
+
+  // Play video on source change
+  videoPlayer.oncanplay = function() {
+    videoPlayer.play();
+  };
 </script>
 </body>
 </html>
