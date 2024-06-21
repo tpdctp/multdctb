@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>IPTV Video Player</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <title>Xtream Codes IPTV Movie Player</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
   <style>
     body {
       background: #000;
       color: #fff;
     }
+
     .video-container {
       padding: 20px;
       display: flex;
       justify-content: center;
       position: relative;
     }
+
     .embed-responsive {
       width: 100%;
     }
+
     .logo-container {
       position: absolute;
       top: 10px;
       left: 10px;
-      z-index: 1000;
+      z-index: 1000; /* Ensure logo is above player controls */
     }
+
     .video-selection {
       margin-top: 20px;
     }
@@ -36,11 +40,11 @@
       <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" style="max-width: 100px; height: auto;">
     </div>
     <div class="embed-responsive embed-responsive-16by9">
-      <video id="video-player" class="embed-responsive-item" controls></video>
+      <div id="player-container" class="embed-responsive-item"></div>
     </div>
   </div>
   <div class="video-selection">
-    <label for="channel-select">Select a Channel:</label>
+    <label for="channel-select">Select a Movie:</label>
     <select id="channel-select" class="form-control">
       <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167178.mp4">I’ll Be Watching (2023)</option>
       <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167180.mp4">Jacir (2023)</option>
