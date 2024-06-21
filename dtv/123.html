@@ -3,49 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi .ts Streaming Web Player</title>
-    <!-- Include JW Player library -->
-    <script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <title>Dropdown Video Player</title>
+    <!-- Include Clappr player library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clappr/0.2.98/clappr.min.js"></script>
     <!-- CSS for styling -->
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #000;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
         }
         #player-container {
-            width: 100%;
-            max-width: 800px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <h2>Select a Movie:</h2>
+    <!-- Dropdown list of movies -->
+    <select id="movie-select" onchange="changeVideo()">
+        <option value="">Select a movie...</option>
+        <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167178.mp4">I’ll Be Watching (2023)</option>
+        <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167180.mp4">Jacir (2023)</option>
+        <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167181.mp4">Jack Reacher: Never Go Back (2016)</option>
+        <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167182.mp4">Jailbreak (2017)</option>
+        <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167183.mp4">Jeepers Creepers: Reborn (2022)</option>
+        <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167184.mp4">Jessica Forever (2019)</option>
+        <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167185.mp4">Jethica (2023)</option>
+        <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167186.avi">Joe's War (2017)</option>
+    </select>
+
     <!-- Player container -->
     <div id="player-container"></div>
 
-    <!-- Script to initialize JW Player -->
+    <!-- Script to initialize Clappr player -->
     <script>
-        const player = jwplayer("player-container");
-        player.setup({
-            playlist: [
-                {
-                    file: "http://starshare.live:8080/live/rvdgdf7647564/bvchgfd235454/147859.ts",
-                    type: "hls"
-                },
-                {
-                    file: "http://starshare.live:8080/live/rvdgdf7647564/bvchgfd235454/147860.ts",
-                    type: "hls"
+        function changeVideo() {
+            var videoUrl = document.getElementById("movie-select").value;
+            if (videoUrl) {
+                if (player) {
+                    player.destroy();
                 }
-            ],
-            width: "100%",
-            aspectratio: "16:9",
-            autostart: true,
-            primary: "html5"
-        });
+                var playerElement = document.getElementById("player-container");
+                var player = new Clappr.Player({
+                    source: videoUrl,
+                    parentId: playerElement,
+                    width: '100%',
+                    height: '360px',
+                    autoPlay: true,
+                    mute: false,
+                    mediacontrol: {seekbar: '#00FF00', buttons: '#00FF00'},
+                    plugins: [Clappr.MediaControl, Clappr.DASH, Clappr.LevelSelector]
+                });
+            }
+        }
     </script>
 </body>
 </html>
