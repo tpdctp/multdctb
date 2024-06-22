@@ -34,10 +34,70 @@
       left: 10px;
       z-index: 1000;
     }
+
+    /* Loading animation styles */
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      z-index: 10000;
+    }
+    .loading-logo {
+      width: 30%;
+      height: auto;
+      animation: pulse 1.5s infinite;
+    }
+    .loading-bar {
+      width: 30%;
+      max-width: 300px;
+      height: 10px;
+      background: #000;
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .loading-bar-inner {
+      width: 0;
+      height: 100%;
+      background: #ed8f13;
+      animation: load 3s linear forwards;
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    @keyframes load {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-<div class="container">
+<div class="loading-container" id="loading-container">
+  <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" class="loading-logo">
+  <div class="loading-bar">
+    <div class="loading-bar-inner"></div>
+  </div>
+</div>
+<div class="container" id="main-content" style="display: none;">
   <div class="video-container">
     <div class="logo-container" id="logo-container">
       <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" style="max-width: 100px; height: auto;">
@@ -58,6 +118,8 @@
   let mainVideo = localStorage.getItem('selectedVideo') || '';
   const playerContainer = document.getElementById('player-container');
   const logoContainer = document.getElementById('logo-container');
+  const loadingContainer = document.getElementById('loading-container');
+  const mainContent = document.getElementById('main-content');
 
   // Initialize Clappr player
   const player = new Clappr.Player({
@@ -68,6 +130,13 @@
     autoPlay: true,
     mute: false,
     poster: 'https://github.com/tvtelugu/play/raw/main/images/poster.jpg' // Add a poster image if available
+  });
+
+  player.on(Clappr.Events.PLAYER_LOADEDMETADATA, function() {
+    setTimeout(() => {
+      loadingContainer.style.display = 'none';
+      mainContent.style.display = 'block';
+    }, 3000); // Set the loading screen duration to 3 seconds
   });
 
   player.on(Clappr.Events.PLAYER_ENDED, function() {
@@ -142,6 +211,12 @@
       e.preventDefault();
     }
   });
+
+  // Ensure loading screen stays for at least 3 seconds
+  setTimeout(() => {
+    loadingContainer.style.display = 'none';
+    mainContent.style.display = 'block';
+  }, 3000); // Minimum loading screen duration
 </script>
 </body>
 </html>
