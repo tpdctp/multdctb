@@ -106,8 +106,10 @@
   });
 
   player.on(Clappr.Events.PLAYER_LOADEDMETADATA, function() {
-    loadingContainer.style.display = 'none';
-    mainContent.style.display = 'block';
+    setTimeout(() => {
+      loadingContainer.style.display = 'none';
+      mainContent.style.display = 'block';
+    }, 3000); // Set the loading screen duration to 3 seconds
   });
 
   player.on(Clappr.Events.PLAYER_ENDED, function() {
@@ -182,6 +184,12 @@
       e.preventDefault();
     }
   });
+
+  // Ensure loading screen stays for at least 3 seconds
+  setTimeout(() => {
+    loadingContainer.style.display = 'none';
+    mainContent.style.display = 'block';
+  }, 3000); // Minimum loading screen duration
 </script>
 </body>
 </html>
