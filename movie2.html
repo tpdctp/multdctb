@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || Movies</title>
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
@@ -26,7 +27,7 @@
       z-index: 1000; /* Ensure logo is above player controls */
     }
     .video-selection {
-      margin-top: 0px;
+      margin-top: 20px;
     }
     .fullscreen-logo {
       position: fixed;
@@ -107,7 +108,7 @@
     </div>
   </div>
   <div class="video-selection">
-    <label for="channel-select">Select a Movie & Wait For 2min Until Player Load:</label>
+    <label for="channel-select">Select a Movie:</label>
     <select id="channel-select" class="form-control"></select>
   </div>
 </div>
@@ -153,7 +154,7 @@
       const select = document.getElementById('channel-select');
       data.forEach(movie => {
         const option = document.createElement('option');
-        option.value = movie.url;
+        option.value = movie.videoUrl;
         option.textContent = movie.title;
         select.appendChild(option);
       });
@@ -162,7 +163,7 @@
       if (mainVideo) {
         select.value = mainVideo;
         player.load(mainVideo);
-        const selectedMovie = data.find(movie => movie.url === mainVideo);
+        const selectedMovie = data.find(movie => movie.videoUrl === mainVideo);
         if (selectedMovie) {
           document.title = `🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || ${selectedMovie.title}`;
         }
@@ -193,24 +194,6 @@
   document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
   document.addEventListener('mozfullscreenchange', handleFullscreenChange);
   document.addEventListener('msfullscreenchange', handleFullscreenChange);
-
-  // Disable right-click context menu
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
-
-  // Disable specific keyboard shortcuts
-  document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
-      e.preventDefault();
-    }
-    if (e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'I')) {
-      e.preventDefault();
-    }
-    if (e.key === 'F12') {
-      e.preventDefault();
-    }
-  });
 
   // Ensure loading screen stays for at least 3 seconds
   setTimeout(() => {
