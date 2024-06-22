@@ -50,7 +50,6 @@
 <script>
   const introVideo = 'https://github.com/tvtelugu/play/raw/main/tvtelugu.mp4'; // Intro video URL
   let mainVideo = localStorage.getItem('selectedVideo') || '';
-
   const playerContainer = document.getElementById('player-container');
 
   // Initialize Clappr player
@@ -87,6 +86,10 @@
       if (mainVideo) {
         select.value = mainVideo;
         player.load(mainVideo);
+        const selectedMovie = data.find(movie => movie.url === mainVideo);
+        if (selectedMovie) {
+          document.title = `🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || ${selectedMovie.title}`;
+        }
       }
     });
 
@@ -95,6 +98,10 @@
     mainVideo = this.value;
     localStorage.setItem('selectedVideo', mainVideo);
     player.load(introVideo);
+
+    // Change the page title to the selected movie title
+    const selectedOption = this.options[this.selectedIndex];
+    document.title = `🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || ${selectedOption.textContent}`;
   });
 </script>
 </body>
