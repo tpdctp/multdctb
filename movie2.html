@@ -129,6 +129,19 @@
   document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
   });
+
+  // Disable specific keyboard shortcuts
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+      e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && (e.key === 'i' || e.key === 'I')) {
+      e.preventDefault();
+    }
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+  });
 </script>
 </body>
 </html>
