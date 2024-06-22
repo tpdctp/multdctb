@@ -28,12 +28,18 @@
     .video-selection {
       margin-top: 0px;
     }
+    .fullscreen-logo {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
 <div class="container">
   <div class="video-container">
-    <div class="logo-container">
+    <div class="logo-container" id="logo-container">
       <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" style="max-width: 100px; height: auto;">
     </div>
     <div class="embed-responsive embed-responsive-16by9">
@@ -49,8 +55,9 @@
 <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
 <script>
   const introVideo = 'https://github.com/tvtelugu/play/raw/main/tvtelugu.mp4'; // Intro video URL
-  let mainVideo = '';
+  let mainVideo = localStorage.getItem('selectedVideo') || '';
   const playerContainer = document.getElementById('player-container');
+  const logoContainer = document.getElementById('logo-container');
 
   // Initialize Clappr player
   const player = new Clappr.Player({
@@ -81,13 +88,42 @@
         option.textContent = movie.title;
         select.appendChild(option);
       });
+
+      // Set the selected option based on localStorage
+      if (mainVideo) {
+        select.value = mainVideo;
+        player.load(mainVideo);
+        const selectedMovie = data.find(movie => movie.url === mainVideo);
+        if (selectedMovie) {
+          document.title = `🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || ${selectedMovie.title}`;
+        }
+      }
     });
 
   // Function to change video source based on dropdown selection
   document.getElementById('channel-select').addEventListener('change', function() {
     mainVideo = this.value;
+    localStorage.setItem('selectedVideo', mainVideo);
     player.load(introVideo);
+
+    // Change the page title to the selected movie title
+    const selectedOption = this.options[this.selectedIndex];
+    document.title = `🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || ${selectedOption.textContent}`;
   });
+
+  // Fullscreen change handler
+  function handleFullscreenChange() {
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+      logoContainer.classList.add('fullscreen-logo');
+    } else {
+      logoContainer.classList.remove('fullscreen-logo');
+    }
+  }
+
+  document.addEventListener('fullscreenchange', handleFullscreenChange);
+  document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+  document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+  document.addEventListener('msfullscreenchange', handleFullscreenChange);
 </script>
 </body>
 </html>
