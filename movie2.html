@@ -48,13 +48,11 @@
       align-items: center;
       background-color: #000;
       z-index: 10000;
-      opacity: 0.5; /* 50% transparency */
     }
     .loading-logo {
       width: 100px;
       height: auto;
       animation: pulse 1.5s infinite;
-      z-index: 1; /* Ensure logo is above loading bar */
     }
     .loading-bar {
       width: 80%;
@@ -64,7 +62,6 @@
       margin-top: 20px;
       border-radius: 5px;
       overflow: hidden;
-      z-index: 0; /* Ensure loading bar is below logo */
     }
     .loading-bar-inner {
       width: 0;
