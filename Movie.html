@@ -2,50 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || Movies</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || Movies</title>
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
   <style>
     body {
-  background: #000;
-  color: #fff;
-  font-size: 16px; /* Adjust font size for readability */
-}
-
+      background: #000;
+      color: #fff;
+    }
     .video-container {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full viewport height */
-}
-
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
     .embed-responsive {
       width: 100%;
     }
-   .logo-container {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 1000; /* Ensure logo is above player controls */
-  max-width: 80px; /* Adjust size for smaller screens */
-}
-    .video-selection {
-      margin-top: 0px;
+    .logo-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
     }
-   .fullscreen-logo {
-  position: fixed;
-  top: 5px;
-  left: 5px;
-  z-index: 1000;
-  max-width: 60px; /* Adjust size for smaller screens */
-}
-
-
-    /* Loading animation styles */
+    .fullscreen-logo {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
     .loading-container {
       position: fixed;
       top: 0;
@@ -107,7 +93,7 @@
     <div class="loading-bar-inner"></div>
   </div>
 </div>
-<div class="container" id="main-content" style="display: none;">
+<div class="container-fluid" id="main-content" style="display: none;">
   <div class="video-container">
     <div class="logo-container" id="logo-container">
       <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" style="max-width: 100px; height: auto;">
@@ -124,14 +110,13 @@
 
 <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
 <script>
-  const introVideo = 'https://github.com/tvtelugu/play/raw/main/tvtelugu.mp4'; // Intro video URL
+  const introVideo = 'https://github.com/tvtelugu/play/raw/main/tvtelugu.mp4';
   let mainVideo = localStorage.getItem('selectedVideo') || '';
   const playerContainer = document.getElementById('player-container');
   const logoContainer = document.getElementById('logo-container');
   const loadingContainer = document.getElementById('loading-container');
   const mainContent = document.getElementById('main-content');
 
-  // Initialize Clappr player
   const player = new Clappr.Player({
     source: introVideo,
     parentId: '#player-container',
@@ -139,24 +124,23 @@
     height: '100%',
     autoPlay: true,
     mute: false,
-    poster: 'https://github.com/tvtelugu/play/raw/main/images/poster.jpg' // Add a poster image if available
+    poster: 'https://github.com/tvtelugu/play/raw/main/images/poster.jpg'
   });
 
   player.on(Clappr.Events.PLAYER_LOADEDMETADATA, function() {
     setTimeout(() => {
       loadingContainer.style.display = 'none';
       mainContent.style.display = 'block';
-    }, 3000); // Set the loading screen duration to 3 seconds
+    }, 3000);
   });
 
   player.on(Clappr.Events.PLAYER_ENDED, function() {
     if (mainVideo) {
       player.load(mainVideo);
-      mainVideo = ''; // Reset main video after playing
+      mainVideo = '';
     }
   });
 
-  // Function to load video data from JSON file
   fetch('data.json')
     .then(response => response.json())
     .then(data => {
@@ -168,7 +152,6 @@
         select.appendChild(option);
       });
 
-      // Set the selected option based on localStorage
       if (mainVideo) {
         select.value = mainVideo;
         player.load(mainVideo);
@@ -179,18 +162,15 @@
       }
     });
 
-  // Function to change video source based on dropdown selection
   document.getElementById('channel-select').addEventListener('change', function() {
     mainVideo = this.value;
     localStorage.setItem('selectedVideo', mainVideo);
     player.load(introVideo);
 
-    // Change the page title to the selected movie title
     const selectedOption = this.options[this.selectedIndex];
     document.title = `🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || ${selectedOption.textContent}`;
   });
 
-  // Fullscreen change handler
   function handleFullscreenChange() {
     if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
       logoContainer.classList.add('fullscreen-logo');
@@ -204,12 +184,10 @@
   document.addEventListener('mozfullscreenchange', handleFullscreenChange);
   document.addEventListener('msfullscreenchange', handleFullscreenChange);
 
-  // Disable right-click context menu
   document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
   });
 
-  // Disable specific keyboard shortcuts
   document.addEventListener('keydown', function(e) {
     if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
       e.preventDefault();
@@ -222,11 +200,10 @@
     }
   });
 
-  // Ensure loading screen stays for at least 3 seconds
   setTimeout(() => {
     loadingContainer.style.display = 'none';
     mainContent.style.display = 'block';
-  }, 3000); // Minimum loading screen duration
+  }, 3000);
 </script>
 </body>
 </html>
