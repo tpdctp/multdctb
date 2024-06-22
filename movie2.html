@@ -11,7 +11,7 @@
       color: #fff;
     }
     .video-container {
-      padding: 0px;
+      padding: 0;
       display: flex;
       justify-content: center;
       position: relative;
@@ -24,9 +24,18 @@
       top: 10px;
       left: 10px;
       z-index: 1000; /* Ensure logo is above player controls */
+      opacity: 0.8; /* Set the transparency */
     }
     .video-selection {
-      margin-top: 0px;
+      margin-top: 0;
+    }
+    /* Fullscreen styles */
+    .clappr-container.fullscreen .logo-container {
+      display: block;
+    }
+    .logo-container img {
+      max-width: 100px;
+      height: auto;
     }
   </style>
 </head>
@@ -34,7 +43,7 @@
 <div class="container">
   <div class="video-container">
     <div class="logo-container">
-      <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" style="max-width: 100px; height: auto;">
+      <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo">
     </div>
     <div class="embed-responsive embed-responsive-16by9">
       <div id="player-container" class="embed-responsive-item"></div>
@@ -102,6 +111,15 @@
     // Change the page title to the selected movie title
     const selectedOption = this.options[this.selectedIndex];
     document.title = `🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || ${selectedOption.textContent}`;
+  });
+
+  // Monitor fullscreen change and update logo visibility
+  document.addEventListener('fullscreenchange', function() {
+    if (document.fullscreenElement) {
+      document.querySelector('.logo-container').style.display = 'block';
+    } else {
+      document.querySelector('.logo-container').style.display = 'none';
+    }
   });
 </script>
 </body>
