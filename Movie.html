@@ -41,15 +41,7 @@
   </div>
   <div class="video-selection">
     <label for="channel-select">Select a Movie:</label>
-    <select id="channel-select" class="form-control">
-      <option value="https://neohd.one/Gam%20Gam%20Ganesha%20(2024)%20720p%20HD%20-%20Bolly2Tolly.asia.mp4">Gum Gum Ganesha (2024)</option>
-      <option value="https://neohd.one/Love%20Me%20if%20You%20Dare%20(2024)%20720p%20HD%20-%20Bolly2Tolly.asia.mp4">Love me if you Dare(2024)</option>
-      <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167181.mp4">Jack Reacher: Never Go Back (2016)</option>
-      <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167182.mp4">Jailbreak (2017)</option>
-      <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167183.mp4">Jeepers Creepers: Reborn (2022)</option>
-      <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167184.mp4">Jessica Forever (2019)</option>
-      <option value="http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/167185.mp4">Jethica (2023)</option>
-    </select>
+    <select id="channel-select" class="form-control"></select>
   </div>
 </div>
 
@@ -76,6 +68,19 @@
       mainVideo = ''; // Reset main video after playing
     }
   });
+
+  // Function to load video data from JSON file
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      const select = document.getElementById('channel-select');
+      data.forEach(movie => {
+        const option = document.createElement('option');
+        option.value = movie.url;
+        option.textContent = movie.title;
+        select.appendChild(option);
+      });
+    });
 
   // Function to change video source based on dropdown selection
   document.getElementById('channel-select').addEventListener('change', function() {
