@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Xtream Codes IPTV Movie Player</title>
+  <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || Movies</title>
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
   <style>
     body {
@@ -10,7 +11,7 @@
       color: #fff;
     }
     .video-container {
-      padding: 20px;
+      padding: 0px;
       display: flex;
       justify-content: center;
       position: relative;
@@ -25,7 +26,7 @@
       z-index: 1000; /* Ensure logo is above player controls */
     }
     .video-selection {
-      margin-top: 20px;
+      margin-top: 0px;
     }
   </style>
 </head>
@@ -40,7 +41,7 @@
     </div>
   </div>
   <div class="video-selection">
-    <label for="channel-select">Select a Movie:</label>
+    <label for="channel-select">Select a Movie & Wait For 2min Until Player Load:</label>
     <select id="channel-select" class="form-control"></select>
   </div>
 </div>
@@ -48,7 +49,8 @@
 <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
 <script>
   const introVideo = 'https://github.com/tvtelugu/play/raw/main/tvtelugu.mp4'; // Intro video URL
-  let mainVideo = '';
+  let mainVideo = localStorage.getItem('selectedVideo') || '';
+
   const playerContainer = document.getElementById('player-container');
 
   // Initialize Clappr player
@@ -80,11 +82,18 @@
         option.textContent = movie.title;
         select.appendChild(option);
       });
+
+      // Set the selected option based on localStorage
+      if (mainVideo) {
+        select.value = mainVideo;
+        player.load(mainVideo);
+      }
     });
 
   // Function to change video source based on dropdown selection
   document.getElementById('channel-select').addEventListener('change', function() {
     mainVideo = this.value;
+    localStorage.setItem('selectedVideo', mainVideo);
     player.load(introVideo);
   });
 </script>
