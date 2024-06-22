@@ -3,37 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || Movies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
   <style>
     body {
-      background: #000;
-      color: #fff;
-    }
+  background: #000;
+  color: #fff;
+  font-size: 16px; /* Adjust font size for readability */
+}
+
     .video-container {
-      padding: 0px;
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
     .embed-responsive {
       width: 100%;
     }
-    .logo-container {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 1000; /* Ensure logo is above player controls */
-    }
+   .logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Ensure logo is above player controls */
+  max-width: 80px; /* Adjust size for smaller screens */
+}
     .video-selection {
       margin-top: 0px;
     }
-    .fullscreen-logo {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      z-index: 1000;
-    }
+   .fullscreen-logo {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 1000;
+  max-width: 60px; /* Adjust size for smaller screens */
+}
+
 
     /* Loading animation styles */
     .loading-container {
