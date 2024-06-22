@@ -1,52 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Making Clappr video player responsive</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+  <title>Xtream Codes IPTV Movie Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
   <style>
-   body {
-          background : #000000;
-          
-      }
-
-  .video {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
+    body {
+      background: #000;
+      color: #fff;
     }
-</style>
-
+    .video-container {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .embed-responsive {
+      width: 100%;
+    }
+    .logo-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000; /* Ensure logo is above player controls */
+    }
+    .video-selection {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <div class="container">
-  <div class="video">
-      <div class="embed-responsive embed-responsive-16by9">
+  <div class="video-container">
+    <div class="logo-container">
+      <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" style="max-width: 100px; height: auto;">
+    </div>
+    <div class="embed-responsive embed-responsive-16by9">
       <div id="player-container" class="embed-responsive-item"></div>
     </div>
-    </div>
+  </div>
+  <div class="video-selection">
+    <label for="channel-select">Select a Movie:</label>
+    <select id="channel-select" class="form-control"></select>
+  </div>
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/clappr/0.2.98/clappr.min.js'></script>
- 
- <script>
 
-  new Clappr.Player({
-  source: "http://starshare.live:8080/movie/rvdgdf7647564/bvchgfd235454/315952.mp4",
-  mute: false,
-  autoPlay: true,
-  parent: '#player-container',
-  width: '100%',
-  height: '100%',
-  hlsjsConfig: {
-    // here any hls.js configuration options
-  }
-})
+<script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script>
+  const introVideo = 'https://github.com/tvtelugu/play/raw/main/tvtelugu.mp4'; // Intro video URL
+  let mainVideo = '';
+  const playerContainer = document.getElementById('player-container');
 
+  // Initialize Clappr player
+  const player = new Clappr.Player({
+    source: introVideo,
+    parentId: '#player-container',
+    width: '100%',
+    height: '100%',
+    autoPlay: true,
+    mute: false,
+    poster: 'https://github.com/tvtelugu/play/raw/main/images/poster.jpg' // Add a poster image if available
+  });
+
+  player.on(Clappr.Events.PLAYER_ENDED, function() {
+    if (mainVideo) {
+      player.load(mainVideo);
+      mainVideo = ''; // Reset main video after playing
+    }
+  });
+
+  // Function to load video data from JSON file
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      const select = document.getElementById('channel-select');
+      data.forEach(movie => {
+        const option = document.createElement('option');
+        option.value = movie.url;
+        option.textContent = movie.title;
+        select.appendChild(option);
+      });
+    });
+
+  // Function to change video source based on dropdown selection
+  document.getElementById('channel-select').addEventListener('change', function() {
+    mainVideo = this.value;
+    player.load(introVideo);
+  });
 </script>
-
 </body>
 </html>
