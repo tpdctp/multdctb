@@ -43,6 +43,7 @@
       width: 100%;
       height: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background-color: #000;
@@ -52,6 +53,21 @@
       width: 100px;
       height: auto;
       animation: pulse 1.5s infinite;
+    }
+    .loading-bar {
+      width: 80%;
+      max-width: 300px;
+      height: 10px;
+      background: #333;
+      margin-top: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .loading-bar-inner {
+      width: 0;
+      height: 100%;
+      background: #ff0000;
+      animation: load 3s linear forwards;
     }
     @keyframes pulse {
       0% {
@@ -64,11 +80,22 @@
         transform: scale(1);
       }
     }
+    @keyframes load {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 <div class="loading-container" id="loading-container">
   <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" class="loading-logo">
+  <div class="loading-bar">
+    <div class="loading-bar-inner"></div>
+  </div>
 </div>
 <div class="container" id="main-content" style="display: none;">
   <div class="video-container">
