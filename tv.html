@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid-item a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Channel Grid</h1>
+    <div class="grid-container" id="channelGrid">
+        <!-- Channels will be dynamically inserted here -->
+    </div>
+    <script>
+        async function fetchChannels() {
+            try {
+                let response = await fetch('https://tplayapi.code-crafters.app/321codecrafters/fetcher.json');
+                let channels = await response.json();
+                let grid = document.getElementById('channelGrid');
+                
+                channels.forEach(channel => {
+                    let channelItem = document.createElement('div');
+                    channelItem.className = 'grid-item';
+                    channelItem.innerHTML = `
+                        <a href="player.html?channel=${channel.id}">
+                            <img src="${channel.poster}" alt="${channel.name}">
+                            <h3>${channel.name}</h3>
+                        </a>
+                    `;
+                    grid.appendChild(channelItem);
+                });
+            } catch (error) {
+                console.error('Error fetching channels:', error);
+            }
+        }
+
+        fetchChannels();
+    </script>
+</body>
+</html>
