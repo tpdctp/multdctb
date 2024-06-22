@@ -11,7 +11,7 @@
       color: #fff;
     }
     .video-container {
-      padding: 0;
+      padding: 0px;
       display: flex;
       justify-content: center;
       position: relative;
@@ -24,26 +24,23 @@
       top: 10px;
       left: 10px;
       z-index: 1000; /* Ensure logo is above player controls */
-      opacity: 0.50; /* Set the transparency */
     }
     .video-selection {
-      margin-top: 0;
+      margin-top: 0px;
     }
-    /* Fullscreen styles */
-    .clappr-container.fullscreen .logo-container {
-      display: block;
-    }
-    .logo-container img {
-      max-width: 100px;
-      height: auto;
+    .fullscreen-logo {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
     }
   </style>
 </head>
 <body>
 <div class="container">
   <div class="video-container">
-    <div class="logo-container">
-      <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo">
+    <div class="logo-container" id="logo-container">
+      <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" style="max-width: 100px; height: auto;">
     </div>
     <div class="embed-responsive embed-responsive-16by9">
       <div id="player-container" class="embed-responsive-item"></div>
@@ -60,6 +57,7 @@
   const introVideo = 'https://github.com/tvtelugu/play/raw/main/tvtelugu.mp4'; // Intro video URL
   let mainVideo = localStorage.getItem('selectedVideo') || '';
   const playerContainer = document.getElementById('player-container');
+  const logoContainer = document.getElementById('logo-container');
 
   // Initialize Clappr player
   const player = new Clappr.Player({
@@ -113,14 +111,19 @@
     document.title = `🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || ${selectedOption.textContent}`;
   });
 
-  // Monitor fullscreen change and update logo visibility
-  document.addEventListener('fullscreenchange', function() {
-    if (document.fullscreenElement) {
-      document.querySelector('.logo-container').style.display = 'block';
+  // Fullscreen change handler
+  function handleFullscreenChange() {
+    if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
+      logoContainer.classList.add('fullscreen-logo');
     } else {
-      document.querySelector('.logo-container').style.display = 'none';
+      logoContainer.classList.remove('fullscreen-logo');
     }
-  });
+  }
+
+  document.addEventListener('fullscreenchange', handleFullscreenChange);
+  document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+  document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+  document.addEventListener('msfullscreenchange', handleFullscreenChange);
 </script>
 </body>
 </html>
