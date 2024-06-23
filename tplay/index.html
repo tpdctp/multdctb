@@ -53,49 +53,45 @@
 </head>
 <body>
     <h1>Channel Grid</h1>
-    <div class="grid-container">
-        <div class="channel-card">
-            <a href="play.php?id=842">
-                <img src="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-56389-kfdgngts-v3/imageContent-56389-kfdgngts-m3.png" alt="Somnath Temple Logo" class="channel-logo">
-                <div class="channel-name">Somnath Temple</div>
-                <div class="channel-genre">Spiritual</div>
-            </a>
-        </div>
-        <div class="channel-card">
-            <a href="play.php?id=641">
-                <img src="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-23495-jf92iycg-v3/imageContent-23495-jf92iycg-m4.png" alt="Tata Play Cooking Logo" class="channel-logo">
-                <div class="channel-name">Tata Play Cooking</div>
-                <div class="channel-genre">Lifestyle</div>
-            </a>
-        </div>
-        <div class="channel-card">
-            <a href="play.php?id=618">
-                <img src="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-12282-ja02jlp4-v2/imageContent-12282-ja02jlp4-m2.png" alt="Tata Play Beauty Logo" class="channel-logo">
-                <div class="channel-name">Tata Play Beauty</div>
-                <div class="channel-genre">Lifestyle</div>
-            </a>
-        </div>
-        <div class="channel-card">
-            <a href="play.php?id=22">
-                <img src="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-52679-k7zx7qqg-v1/imageContent-52679-k7zx7qqg-m2.png" alt="News World India Logo" class="channel-logo">
-                <div class="channel-name">News World India</div>
-                <div class="channel-genre">Lifestyle</div>
-            </a>
-        </div>
-        <div class="channel-card">
-            <a href="play.php?id=8">
-                <img src="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-25307-jhrhflww-v1/imageContent-25307-jhrhflww-m1.png" alt="STAR Plus HD Logo" class="channel-logo">
-                <div class="channel-name">STAR Plus HD</div>
-                <div class="channel-genre">Entertainment</div>
-            </a>
-        </div>
-        <div class="channel-card">
-            <a href="play.php?id=959">
-                <img src="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-67692-kwmxxw08-v2/imageContent-67692-kwmxxw08-m3.png" alt="Tata Play Romance Logo" class="channel-logo">
-                <div class="channel-name">Tata Play Romance</div>
-                <div class="channel-genre">Entertainment</div>
-            </a>
-        </div>
+    <div class="grid-container" id="grid-container">
+        <!-- Channel cards will be dynamically inserted here -->
     </div>
+
+    <script>
+        // Fetch the channel data from the JSON file
+        fetch('channel.json')
+            .then(response => response.json())
+            .then(channelsData => {
+                const gridContainer = document.getElementById('grid-container');
+                channelsData.forEach(channel => {
+                    const channelCard = document.createElement('div');
+                    channelCard.classList.add('channel-card');
+
+                    const channelLink = document.createElement('a');
+                    channelLink.href = `play.php?id=${channel.channel_id}`;
+
+                    const channelLogo = document.createElement('img');
+                    channelLogo.src = channel.channel_logo;
+                    channelLogo.alt = `${channel.channel_name} Logo`;
+                    channelLogo.classList.add('channel-logo');
+
+                    const channelName = document.createElement('div');
+                    channelName.classList.add('channel-name');
+                    channelName.textContent = channel.channel_name;
+
+                    const channelGenre = document.createElement('div');
+                    channelGenre.classList.add('channel-genre');
+                    channelGenre.textContent = channel.channel_genre;
+
+                    channelLink.appendChild(channelLogo);
+                    channelLink.appendChild(channelName);
+                    channelLink.appendChild(channelGenre);
+
+                    channelCard.appendChild(channelLink);
+                    gridContainer.appendChild(channelCard);
+                });
+            })
+            .catch(error => console.error('Error fetching channel data:', error));
+    </script>
 </body>
 </html>
