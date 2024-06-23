@@ -18,113 +18,105 @@
 
 <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
 <script>
-    // Replace with actual API endpoint and appropriate handling
-    const apiUrl = "https://play.denver1769.in/get.php?id=<?php echo $_GET['id']; ?>";
+    // Replace with static or fetched data if necessary
+    const videoUrl = "https://play.denver1769.in/get.php?id=<?php echo $_GET['id']; ?>";
+    const logoUrl = ""; // Update with actual logo URL or leave empty
+    const videoTitle = ""; // Update with actual video title or leave empty
+    const keyid = ""; // Update with actual key ID or leave empty
+    const key = ""; // Update with actual key or leave empty
 
-    // Fetch data from the API
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            // Extract relevant data from the API response
-            const videoUrl = data.channel__url;
-            const logoUrl = ""; // Update with actual logo URL if available
-            const videoTitle = data.channel_name; // Assuming channel name as video title
-            const keyid = data.keyid; // Assuming DRM key ID is available
-            const key = data.key; // Assuming DRM key is available
+    const playerInstance = jwplayer("player").setup({
+        controls: true,
+        sharing: true,
+        displaytitle: true,
+        autoplay: true,
+        displaydescription: true,
+        abouttext: "Video Player By LOKIIPTV",
+        aboutlink: "https://t.me/lokiiptvofficial",
 
-            // Setup JWPlayer instance with fetched data
-            const playerInstance = jwplayer("player").setup({
-                controls: true,
-                sharing: true,
-                displaytitle: true,
-                autoplay: true,
-                displaydescription: true,
-                abouttext: "Video Player By LOKIIPTV",
-                aboutlink: "https://t.me/lokiiptvofficial",
+        skin: {
+            name: "netflix"
+        },
 
-                skin: {
-                    name: "netflix"
-                },
+        logo: {
+            file: logoUrl,
+            link: "https://t.me/lokiiptvofficial"
+        },
 
-                logo: {
-                    file: logoUrl,
-                    link: "https://t.me/lokiiptvofficial"
-                },
+        captions: {
+            color: "#FFF",
+            fontSize: 14,
+            backgroundOpacity: 0,
+            edgeStyle: "raised"
+        },
 
-                captions: {
-                    color: "#FFF",
-                    fontSize: 14,
-                    backgroundOpacity: 0,
-                    edgeStyle: "raised"
-                },
-
-                playlist: [
+        playlist: [
+            {
+                title: videoTitle,
+                description: "You're Watching",
+                image: logoUrl,
+                sources: [
                     {
-                        title: videoTitle,
-                        description: "You're Watching",
-                        image: logoUrl, // Assuming logo is used as image placeholder
-                        sources: [
-                            {
-                                file: videoUrl,
-                                type: "dash",
-                                label: "1080p",
-                                default: true,
-                                drm: {
-                                    "clearkey": {
-                                        "keyId": keyid,
-                                        "key": key
-                                    }
-                                }
+                        file: videoUrl,
+                        type: "dash",
+                        label: "1080p",
+                        default: true,
+                        drm: {
+                            "clearkey": {
+                                "keyId": keyid,
+                                "key": key
                             }
-                        ]
-                    }
-                ],
-                advertising: {
-                    client: "vast",
-                    schedule: [
-                        {
-                            offset: "pre",
-                            tag: ""
                         }
-                    ]
+                    }
+                ]
+            }
+        ],
+        advertising: {
+            client: "vast",
+            schedule: [
+                {
+                    offset: "pre",
+                    tag: ""
                 }
-            });
+            ]
+        }
+    });
 
-            // Additional JWPlayer customization or event handling can be added here
-            playerInstance.on("ready", function () {
-                const playerContainer = playerInstance.getContainer();
-                const buttonContainer = playerContainer.querySelector(".jw-button-container");
-                const spacer = buttonContainer.querySelector(".jw-spacer");
-                const timeSlider = playerContainer.querySelector(".jw-slider-time");
-                buttonContainer.replaceChild(timeSlider, spacer);
+    playerInstance.on("ready", function () {
+        const playerContainer = playerInstance.getContainer();
+        const buttonContainer = playerContainer.querySelector(".jw-button-container");
+        const spacer = buttonContainer.querySelector(".jw-spacer");
+        const timeSlider = playerContainer.querySelector(".jw-slider-time");
+        buttonContainer.replaceChild(timeSlider, spacer);
 
-                // Example: Adding custom rewind and forward buttons
-                const rewindContainer = playerContainer.querySelector(".jw-display-icon-rewind");
-                const forwardContainer = rewindContainer.cloneNode(true);
-                const forwardDisplayButton = forwardContainer.querySelector(".jw-icon-rewind");
-                forwardDisplayButton.style.transform = "scaleX(-1)";
-                forwardDisplayButton.ariaLabel = "Forward 10 Seconds";
-                const nextContainer = playerContainer.querySelector(".jw-display-icon-next");
-                nextContainer.parentNode.insertBefore(forwardContainer, nextContainer);
+        playerInstance.on("adBlock", () => {
+            const modal = document.querySelector("div.modal");
+            modal.style.display = "flex";
 
-                playerContainer.querySelector(".jw-display-icon-next").style.display = "none";
-                const rewindControlBarButton = buttonContainer.querySelector(".jw-icon-rewind");
-                const forwardControlBarButton = rewindControlBarButton.cloneNode(true);
-                forwardControlBarButton.style.transform = "scaleX(-1)";
-                forwardControlBarButton.ariaLabel = "Forward 10 Seconds";
-                rewindControlBarButton.parentNode.insertBefore(forwardControlBarButton, rewindControlBarButton.nextElementSibling);
-
-                [forwardDisplayButton, forwardControlBarButton].forEach((button) => {
-                    button.onclick = () => {
-                        playerInstance.seek(playerInstance.getPosition() + 10);
-                    };
-                });
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching or parsing data:', error);
-            alert('Error loading video. Please try again later.');
+            document.getElementById("close").addEventListener("click", () => location.reload());
         });
+
+        const rewindContainer = playerContainer.querySelector(".jw-display-icon-rewind");
+        const forwardContainer = rewindContainer.cloneNode(true);
+        const forwardDisplayButton = forwardContainer.querySelector(".jw-icon-rewind");
+        forwardDisplayButton.style.transform = "scaleX(-1)";
+        forwardDisplayButton.ariaLabel = "Forward 10 Seconds";
+        const nextContainer = playerContainer.querySelector(".jw-display-icon-next");
+        nextContainer.parentNode.insertBefore(forwardContainer, nextContainer);
+
+        playerContainer.querySelector(".jw-display-icon-next").style.display = "none";
+        const rewindControlBarButton = buttonContainer.querySelector(".jw-icon-rewind");
+        const forwardControlBarButton = rewindControlBarButton.cloneNode(true);
+        forwardControlBarButton.style.transform = "scaleX(-1)";
+        forwardControlBarButton.ariaLabel = "Forward 10 Seconds";
+        rewindControlBarButton.parentNode.insertBefore(forwardControlBarButton, rewindControlBarButton.nextElementSibling);
+
+        [forwardDisplayButton, forwardControlBarButton].forEach((button) => {
+            button.onclick = () => {
+                playerInstance.seek(playerInstance.getPosition() + 10);
+            };
+        });
+    });
 </script>
 </body>
 </html>
