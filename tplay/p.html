@@ -54,8 +54,8 @@
                     sharing: true,
                     displaytitle: true,
                     displaydescription: true,
-                    abouttext: 'Free Live TV',
-                    aboutlink: 'https://telegram.org',
+                    abouttext: 'TVTelugu',
+                    aboutlink: 'https://t.me/tvtelugu',
                     file: streamUrl,
                     type: 'hls',
                     width: '100%',
@@ -67,6 +67,31 @@
                     skin: {
                         name: 'netflix'
                     },
+
+                       logo: {
+            file: logoUrl,
+            link: "https://t.me/tvteluguofficial"
+        },
+
+        captions: {
+            color: "#FFF",
+            fontSize: 14,
+            backgroundOpacity: 0,
+            edgeStyle: "raised"
+        },
+
+        playlist: [
+            {
+                title: videoTitle,
+                description: "You're Watching",
+                image: logoUrl,
+                sources: [
+                    {
+                        file: videoUrl,
+                        type: "dash",
+                        label: "1080p",
+                        default: true,
+                        
                     drm: {
                         clearkey: {
                             keyId: licenseData.lic_keyId,
