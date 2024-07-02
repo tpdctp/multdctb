@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tataplay Live</title>
+    <link rel="stylesheet" href="./player.css">
+    <style>
+        #player {
+            position: absolute;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+    <!-- JW Player CDN -->
+    <script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+</head>
+<body>
+    <div class="player-container">
+        <div id="player"></div>
+    </div>
+    <script>
+        // Function to fetch license data
+        function fetchLicenseData(url) {
+            return fetch(url)
+                .then(response => response.json())
+                .catch(error => {
+                    console.error('Error fetching license data:', error);
+                    showNotice('There is an error fetching license data.');
+                });
+        }
+
+        // Function to display a notice message
+        function showNotice(message) {
+            const noticeElement = document.createElement('div');
+            noticeElement.className = 'notice';
+            noticeElement.innerText = message;
+            document.querySelector('.player-container').appendChild(noticeElement);
+        }
+
+        // Get channel ID from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const channelId = urlParams.get('channel');
+
+        // Construct stream URL and license URL
+        const streamUrl = `https://yuvraj.fun/web/manifest.php?id=${channelId}`;
+        const licenseUrl = `https://yuvraj.fun/web/lic.php?id=${channelId}`;
+
+        // Fetch license data and initialize the player
+        fetchLicenseData(licenseUrl).then(licenseData => {
+            if (typeof licenseData === 'object' && licenseData.hasOwnProperty('lic_keyId') && licenseData.hasOwnProperty('lic_key')) {
+                jwplayer('player').setup({
+                    controls: true,
+                    sharing: true,
+                    displaytitle: true,
+                    displaydescription: true,
+                    abouttext: 'Free Live TV',
+                    aboutlink: 'https://telegram.org',
+                    file: streamUrl,
+                    type: 'hls',
+                    width: '100%',
+                    aspectratio: '16:9',
+                    autostart: true,
+                    mute: false,
+                    primary: 'html5',
+                    stretching: 'exactfit',
+                    skin: {
+                        name: 'netflix'
+                    },
+                    drm: {
+                        clearkey: {
+                            keyId: licenseData.lic_keyId,
+                            key: licenseData.lic_key
+                        }
+                    }
+                });
+            } else {
+                showNotice('License data is missing or invalid.');
+            }
+        });
+    </script>
+</body>
+</html>
