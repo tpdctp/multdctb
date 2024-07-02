@@ -3,69 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Channel Player</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        #player {
-            width: 80%;
-            height: 500px;
-            background-color: #000;
-        }
-    </style>
-    <script src="https://cdn.jwplayer.com/libraries/SAHhwvZq.js"></script>
+    <title>DASH and HLS Player</title>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
 <body>
-    <h1 id="channelName">Loading...</h1>
-    <div id="player">Player will load here</div>
+    <h1>Stream Player</h1>
+    <div>
+        <h2>DASH Player</h2>
+        <video id="dashPlayer" controls></video>
+    </div>
+    <div>
+        <h2>HLS Player</h2>
+        <video id="hlsPlayer" controls></video>
+    </div>
     <script>
-        async function fetchHMAC() {
-            try {
-                let response = await fetch('https://tplayapi.code-crafters.app/321codecrafters/hmac.json');
-                return await response.json();
-            } catch (error) {
-                console.error('Error fetching HMAC:', error);
-            }
-        }
+        const urlParams = new URLSearchParams(window.location.search);
+        const channelId = urlParams.get('channelId');
+        const streamUrl = `https://yuvraj.fun/web/manifest.php?id=${channelId}`;
+        const licenseUrl = `https://yuvraj.fun/web/lic.php?id=${channelId}`;
 
-        async function loadPlayer() {
-            let params = new URLSearchParams(window.location.search);
-            let channelId = params.get('channel');
-
-            if (channelId) {
-                try {
-                    let response = await fetch('https://tplayapi.code-crafters.app/321codecrafters/fetcher.json');
-                    let channels = await response.json();
-                    let channel = channels.find(ch => ch.id === channelId);
-
-                    if (channel) {
-                        document.getElementById('channelName').textContent = channel.name;
-                        let hmacData = await fetchHMAC();
-                        
-                        // Integrate JW Player with the fetched data
-                        jwplayer("player").setup({
-                            file: `${channel.stream_url}?hmac=${hmacData.token}`,
-                            width: "100%",
-                            height: "100%",
-                            autostart: true
-                        });
-                    } else {
-                        document.getElementById('channelName').textContent = 'Channel not found';
-                    }
-                } catch (error) {
-                    console.error('Error loading channel:', error);
+        // DASH Player
+        if (dashjs.MediaPlayer.isSupported()) {
+            const dashPlayer = dashjs.MediaPlayer().create();
+            dashPlayer.initialize(document.querySelector("#dashPlayer"), streamUrl, true);
+            dashPlayer.setProtectionData({
+                "com.widevine.alpha": {
+                    "serverURL": licenseUrl
                 }
-            } else {
-                document.getElementById('channelName').textContent = 'No channel selected';
-            }
+            });
+        } else {
+            console.error('DASH is not supported on this browser.');
         }
 
-        loadPlayer();
+        // HLS Player
+        if (Hls.isSupported()) {
+            const hls = new Hls();
+            hls.loadSource(streamUrl);
+            hls.attachMedia(document.getElementById('hlsPlayer'));
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                document.getElementById('hlsPlayer').play();
+            });
+        } else if (document.getElementById('hlsPlayer').canPlayType('application/vnd.apple.mpegurl')) {
+            document.getElementById('hlsPlayer').src = streamUrl;
+            document.getElementById('hlsPlayer').addEventListener('loadedmetadata', function () {
+                document.getElementById('hlsPlayer').play();
+            });
+        } else {
+            console.error('HLS is not supported on this browser.');
+        }
     </script>
 </body>
 </html>
