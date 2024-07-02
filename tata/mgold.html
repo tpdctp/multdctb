@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVTelugu</title>
+   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0px;
+        }
+ img {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+   }
+  .imgA1 {
+  z-index: 1;
+  }
+        .jwplayer {
+            position: absolute !important;
+        }
+        .jwplayer.jw-flag-aspect-mode {
+            min-height: 100%;
+            max-height: 100%;
+        }
+  </style>
+</head>
+<body>
+   <img class="imgA1" src="https://raw.githubusercontent.com/tvtelugu/tvtelugu.github.io/main/web/img/tvtelugu%20player.png">
+    <div class="player-container">
+    <div id="player"></div>
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <script>
+        // Initialize JW Player
+        var player = jwplayer("player-container");
+
+        // Setup JW Player configuration
+        player.setup({
+         "file": "https://bpprod7catchup.akamaized.net/bpk-tv/irdeto_com_Channel_257/output/manifest.mpd?begin=20240701T222754&end=20240703T062754",
+            "type": "dash",   
+               "drm": { "clearkey": {   
+   "keyId": "16c4ff98e39f577e8802d53e2d01a2c2",
+    "key": "1b7408d5c6059b295dd6c99078fc0a51"   
+                            }   
+                             },  
+            "width": "100%",
+            "stretching": "bestfit",
+            "autostart": "true",
+            "mute": "false",
+            "primary": "html5"
+        });
+    </script>
+</body>
+</html>
