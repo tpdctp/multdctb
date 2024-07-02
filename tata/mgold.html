@@ -1,36 +1,38 @@
 <html>
+
 <head>
-    <title>JWPlayer Example</title>
-        <script src="https://cdn.jwplayer.com/libraries/SAHhwvZq.js"></script>
-        </head>
-        <body>
-            <div id="video" style="min-height: 100%; max-height: 100%;"></div>
-              <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                                    const manifestUri = 'https://bpprod6catchup.akamaized.net/bpk-tv/irdeto_com_Channel_608/output/manifest.mpd?begin=20240702T000000&end=' ;
+    <script src="https://cdn.jwplayer.com/libraries/SAHhwvZq.js"></script>
+</head>
+
+<body>
+    <div id="video" </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const manifestUri = 'https://bpprod6catchup.akamaized.net/bpk-tv/irdeto_com_Channel_608/output/manifest.mpd?begin=20240702T000000&end=';
             jwplayer("video").setup({
-                            file: manifestUri,
-                                            type: 'dash',
-                                                            width: '100%',
-                                                                            aspectratio: '16:9',
-                                                                                            autostart: true,
-                                                                                                            preload: 'none',
-                                                                                                                            repeat: true,
-                                                                                                                                            volume: 100,
-                                                                                                                                                            mute: false,
-                                                                                                                                                                            stretching: 'exactfit',
-                                                                                                                                                                                            cast: {},
-                                                                                                                                                                                                            drm: {
-                                                                                                                                                                                                                                clearkey: {
-                                                                                                                                                                                                                                                        keyId: '7887ca1bf970518bb916d7f8a1dc8c2b',
-                                                                                                                                                                                                                                                                                key: '825da98186987d89f3c6bcccdb6c9e0c'
-                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                });
-jwplayer().on('error', function(event) {
-                            console.error('Error code', event.code, 'message', event.message);
-                                        });
-                                                });
-                                                    </script>
-                                                    </body>
-                                                    </html>
+                file: manifestUri,
+                type: 'dash',
+                width: '100%',
+                aspectratio: '16:9',
+                autostart: true,
+                preload: 'none',
+                repeat: true,
+                volume: 100,
+                mute: false,
+                stretching: 'exactfit',
+                cast: {},
+                drm: {
+                    clearkey: {
+                        keyId: '7887ca1bf970518bb916d7f8a1dc8c2b',
+                        key: '825da98186987d89f3c6bcccdb6c9e0c'
+                    }
+                }
+            });
+            jwplayer().on('error', function(event) {
+                console.error('Error code', event.code, 'message', event.message);
+            });
+        });
+    </script>
+</body>
+
+</html>
