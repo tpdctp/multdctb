@@ -43,8 +43,8 @@
         const channelId = urlParams.get('channel');
 
         // Construct stream URL and license URL
-        const streamUrl = `https://allinonereborn.in/tataplay_web/manifest.php?id=${channelId}`;
-        const licenseUrl = `https://allinonereborn.in/tataplay_web/lic.php?id=${channelId}`;
+        const streamUrl = `https://allinonereborn.in/manifest.php?id=${channelId}`;
+        const licenseUrl = `https://allinonereborn.in/lic.php?id=${channelId}`;
 
         // Fetch license data and initialize the player
         fetchLicenseData(licenseUrl).then(licenseData => {
