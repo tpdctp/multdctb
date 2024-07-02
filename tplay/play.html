@@ -18,12 +18,12 @@
 
 <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
 <script>
-    // Replace with static or fetched data if necessary
-    const videoUrl = "https://play.denver1769.in/get.php?id=<?php echo $_GET['id']; ?>";
+    const channelId = 'your_channel_id_here'; // Replace with your actual channel ID
+    const streamUrl = `https://yuvraj.fun/web/manifest.php?id=${channelId}`;
+    const licenseUrl = `https://yuvraj.fun/web/lic.php?id=${channelId}`;
+    
     const logoUrl = ""; // Update with actual logo URL or leave empty
     const videoTitle = ""; // Update with actual video title or leave empty
-    const keyid = ""; // Update with actual key ID or leave empty
-    const key = ""; // Update with actual key or leave empty
 
     const playerInstance = jwplayer("player").setup({
         controls: true,
@@ -57,14 +57,14 @@
                 image: logoUrl,
                 sources: [
                     {
-                        file: videoUrl,
+                        file: streamUrl,
                         type: "dash",
                         label: "1080p",
                         default: true,
                         drm: {
                             "clearkey": {
-                                "keyId": keyid,
-                                "key": key
+                                "keyId": "", // Update with actual key ID or leave empty
+                                "key": "" // Update with actual key or leave empty
                             }
                         }
                     }
