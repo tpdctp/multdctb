@@ -103,7 +103,7 @@
                 const searchBar = document.getElementById('search-bar');
 
                 // Populate the genre dropdown
-                const genres = [...new Set(channelsData.map(channel => channel.channel_genre))];
+                const genres = [...new Set(channelsData.map(channel => channel.group))];
                 genres.forEach(genre => {
                     const option = document.createElement('option');
                     option.value = genre;
@@ -117,8 +117,8 @@
                     const searchQuery = searchBar.value.toLowerCase();
                     const selectedGenre = genreSelect.value;
                     const filteredChannels = channelsData.filter(channel => {
-                        const matchesGenre = selectedGenre === '' || channel.channel_genre === selectedGenre;
-                        const matchesSearch = channel.channel_name.toLowerCase().includes(searchQuery);
+                        const matchesGenre = selectedGenre === '' || channel.group === selectedGenre;
+                        const matchesSearch = channel.name.toLowerCase().includes(searchQuery);
                         return matchesGenre && matchesSearch;
                     });
 
@@ -127,20 +127,20 @@
                         channelCard.classList.add('channel-card');
 
                         const channelLink = document.createElement('a');
-                        channelLink.href = `play.html?channel=${channel.channel_id}`;
+                        channelLink.href = `play.html?channel=${channel.id}`;
 
                         const channelLogo = document.createElement('img');
-                        channelLogo.src = channel.channel_logo;
-                        channelLogo.alt = `${channel.channel_name} Logo`;
+                        channelLogo.src = channel.logo;
+                        channelLogo.alt = `${channel.name} Logo`;
                         channelLogo.classList.add('channel-logo');
 
                         const channelName = document.createElement('div');
                         channelName.classList.add('channel-name');
-                        channelName.textContent = channel.channel_name;
+                        channelName.textContent = channel.name;
 
                         const channelGenre = document.createElement('div');
                         channelGenre.classList.add('channel-genre');
-                        channelGenre.textContent = channel.channel_genre;
+                        channelGenre.textContent = channel.group;
 
                         channelLink.appendChild(channelLogo);
                         channelLink.appendChild(channelName);
