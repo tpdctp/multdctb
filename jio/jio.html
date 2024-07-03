@@ -31,8 +31,24 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.4); /* 40% black overlay for glass effect */
-            backdrop-filter: blur(1px); /* Optional: Adds blur effect for glass-like appearance */
+            backdrop-filter: blur(10px); /* Adds blur effect for glass-like appearance */
             z-index: -1; /* Ensure it stays behind other content */
+            animation: glassTransform 6s linear infinite; /* Add animation for glass effect */
+        }
+
+        @keyframes glassTransform {
+            0% {
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(10px);
+            }
+            50% {
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(12px);
+            }
+            100% {
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(10px);
+            }
         }
 
         h1 {
