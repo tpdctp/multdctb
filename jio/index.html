@@ -1,241 +1,345 @@
-
-
-<html>
-
-	<head>
-		
-		<title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ - Jio TV+</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-		<link href="https://fonts.googleapis.com/css2?family=Gloock&amp;display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;display=swap" rel="stylesheet">
-		<link rel="shortcut icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
-		<link rel="stylesheet" href="style.css">
-		<!-- ===== Boxicons CSS ===== -->
-		<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-		<style>
-			body {
-			      /* display: flex; */
-			      align-items: center;
-			      justify-content: center;
-			      margin: 0 12px;
-			      height: 100%;
-			      background-color: #1F0C50;
-			
-			    }
-			
-			    .box-shadow {
-			      font-family: sans-serif;
-			      font-weight: 600;
-			      background-color: #2ecc71;
-			      color: white;
-			      padding: 10px;
-			      border-radius: 4px;
-			      box-shadow: 2px 2px 20px 23px #7fecad;
-			      background-color: #f8f8f8;
-			      padding: 20px;
-			      border-radius: 10px;
-			      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-			      text-align: center;
-			      font-family: 'Arial', sans-serif;
-			      font-size: 15px;
-			      color: #333;
-			    }
-			
-			    #title {
-			      font-family: 'Gloock', serif;
-			      font-weight: bold;
-			      font-size: 28px;
-			      color: #e61271;
-			      text-align: center;
-			      text-transform: uppercase;
-			      letter-spacing: 4px;
-			      margin: 20px 0;
-			      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-			      background-color: #f1f1f1;
-			      padding: 10px 20px;
-			      border-radius: 10px;
-			      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-			    }
-			
-			    a. {
-			      text-decoration: none !important;
-			    }
-
-
-header {
-  background-color: #0D012F;
-  color: #fff;
-  padding: 2px;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo-img {
-  width: 100px; /* Adjust the width of the logo */
-  height: 100px;
-  align: center;
-}
-
-.site-title {
-font-weight: bold;
-font-size: 18px;
-  margin: 0;
-}
-
-#kaya_head {
-font-weight: bold;
-  color: #FFFFFF;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-family: 'Tilt Warp', sans-serif;
-}
-
-		</style>
-		<link rel="stylesheet" href="/style.css">
-		<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
-		
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-
- <script>
-        // Function to generate HTML from JSON data
-        async function generateHtmlFromJson(url) {
-            try {
-                const response = await fetch(url);
-                const jsonData = await response.json();
-                if (!jsonData) {
-                    console.error('No JSON data available');
-                    return;
-                }
-
-                const listContainer = document.getElementById('listContainer');
-                jsonData.forEach(function(item) {
-                    const anchor = document.createElement('a');
-                    anchor.href = `Play.html?id=${item.id}`; // Assuming the JSON contains the URL for each item
-
-                    const cardDiv = document.createElement('div');
-                    cardDiv.classList.add('box1'); // Add the appropriate class
-
-                    const card = document.createElement('div');
-                    card.classList.add('card', 'w-40', 'bg-gray-100', 'rounded-xl', 'bg-base-100', 'shadow-lg', 'h-48', 'mb-4', 'flex', 'flex-col');
-
-                    const image = document.createElement('img');
-                    image.src = item.logo; // Assuming the JSON contains the image URL for each item
-                    image.classList.add('h-28', 'mt-5', 'm-auto', 'opacity-100');
-
-                    const title = document.createElement('h2');
-                    title.classList.add('text-center', 'text-sm', 'font-bold');
-                    title.textContent = item.name; // Assuming the JSON contains the title for each item
-
-                    const description = document.createElement('div');
-                    description.classList.add('mb-5', 'opacity-100');
-                    const descriptionText = document.createElement('p');
-                    descriptionText.classList.add('text-xs', 'text-center');
-                    descriptionText.textContent = item.group; // Assuming the JSON contains the description for each item
-
-                    description.appendChild(title);
-                    description.appendChild(descriptionText);
-
-                    card.appendChild(image);
-                    card.appendChild(description);
-                    anchor.appendChild(card);
-                    cardDiv.appendChild(anchor);
-                    listContainer.appendChild(cardDiv);
-                });
-            } catch (error) {
-                console.error('Error fetching or parsing JSON:', error);
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Wittgenstein', serif;
+            background: url('https://images.pexels.com/photos/4840134/pexels-photo-4840134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed; /* Background image */
+            background-size: cover;
+            color: #2c3e50; /* Dark blue text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            overflow: auto; /* Allow scrolling */
+            position: relative; /* Added relative position for pseudo-element */
         }
 
-        // Call the function with the URL of your JSON data
-        generateHtmlFromJson('jio.json');
-    </script>
+        /* Pseudo-element for the black glass overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* 40% black overlay for glass effect */
+            backdrop-filter: blur(10px); /* Optional: Adds blur effect for glass-like appearance */
+            z-index: -1; /* Ensure it stays behind other content */
+        }
 
-	</head>
-
-
-
-	<body data-sveltekit-preload-data="hover" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMS45LjEwIiwic2NvcmUiOjEwOTEwfV0=">
-		<div style="display: contents">
-  <!-- <header class="text-gray-600 body-font" style="margin: 20px;">
-    <h1 id="title">VAATHALA</h1>
-  </header> -->
-
-<!-- <header class="text-gray-600 body-font">
-<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"> <a href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"> <span class="ml-3 text-xl">VAATHALA</span> </a> <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center"> <a href="https://telegram.me/vaathala1" class="mr-5 hover:text-gray-900">Sony TV+</a> </nav>
-					<div class="">
-<div class="relative flex w-full flex-wrap items-stretch mt-4"></div></div></div></header> -->
-
-<header>
-    <div class="logo">
-      <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Logo" class="logo-img">
-      <h1 class="site-title"> </h1>
+        h1 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            color: #fff;
+            font-size: 2.5em; /* Adjusted size for better visibility */
+            background: linear-gradient(90deg, #ff007a, #ff5e00, #f9c81f, #00b2ff, #8e2de2); /* Multicolor gradient */
+            background-clip: text; /* Clips background to text */
+            -webkit-background-clip: text; /* Needed for WebKit browsers */
+            color: transparent; /* Hide the original text color */
+            animation: gradientShift 3s linear infinite; /* Animation for gradient */
+        }
+        .title-logo {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .select-container, .search-container {
+            position: relative;
+            width: 32%;
+        }
+        .material-icons {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #2c3e50; /* Dark blue icon color */
+        }
+        select, input {
+            width: 100%;
+            padding: 10px 10px 10px 40px;
+            border: 1px solid #3498db; /* Blue border color */
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+            background-color: #ffffff; /* White background for inputs */
+            color: #2c3e50; /* Dark blue text color */
+            /* Removed transition for background color and box-shadow */
+        }
+        select, input {
+            /* Removed hover effect */
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #ffffff; /* White background for select */
+        }
+        .select-container::after {
+            content: 'arrow_drop_down';
+            font-family: 'Material Icons';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #2c3e50; /* Dark blue icon color */
+        }
+        .search-container .material-icons {
+            color: #2c3e50; /* Dark blue icon color */
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .channel-card {
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            /* Removed transform effect and box-shadow */
+        }
+        .channel-logo {
+            height: 90px;
+            width: 90px;
+            object-fit: contain;
+            margin: 20px auto;
+        }
+        .channel-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50; /* Dark blue text color */
+            margin: 10px 0;
+        }
+        .channel-genre {
+            font-size: 14px;
+            color: #7f8c8d; /* Light grey text color for genre */
+            margin-bottom: 20px;
+        }
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8); /* Darker transparent background for loader */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            flex-direction: column;
+        }
+        .loader {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loader .dot {
+            width: 15px;
+            height: 15px;
+            background-color: #e50914; /* Netflix red color */
+            border-radius: 50%;
+            animation: bounce 0.6s infinite alternate;
+        }
+        .loader .dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .loader .dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-20px);
+                opacity: 0.7;
+            }
+        }
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 0%;
+            }
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #2c3e50; /* Dark blue background for footer */
+            color: #ffffff; /* White text color */
+            text-align: center;
+            border-radius: 5px;
+            /* Removed box-shadow */
+            width: 100%;
+            max-width: 600px;
+        }
+        .footer-text {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-container" id="loader-container">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
     </div>
-  </header>
+    <h1>
+        <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Title Logo" class="title-logo">
+        🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™
+    </h1>
+    <div class="controls">
+        <div class="select-container">
+            <i class="material-icons">category</i>
+            <select id="genre-select">
+                <option value="">All Genres</option>
+            </select>
+        </div>
+        <div class="select-container">
+            <i class="material-icons">language</i>
+            <select id="language-select">
+                <option value="">All Languages</option>
+            </select>
+        </div>
+        <div class="search-container">
+            <i class="material-icons">search</i>
+            <input type="text" id="search-bar" placeholder="Search channels...">
+        </div>
+    </div>
+    <div class="grid-container" id="grid-container">
+        <!-- Channel cards will be dynamically inserted here -->
+    </div>
+    <footer>
+        <p class="footer-text">© 2024 🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™. All rights reserved.</p>
+    </footer>
 
-</div>
-		<main class="">
-			<title>𝐉𝐈𝐎-𝐓𝐕</title>
-			<div class="container" bis_skin_checked="1">
-				<div class="flex flex-row mb-3 ml-1 gap-3 justify-center align-middle" bis_skin_checked="1" style="margin: 25px;">
-  <input type="search" id="searchInput" class="relative w-[100%] col-span-4 block mx-4 rounded-l border border-solid border-neutral-300 bg-black  bg-clip-padding px-3 py-1.5 text-base font-normal text-neutral-700 outline-none transition duration-300 ease-in-out focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:text-neutral-600 dark:placeholder:text-neutral-700" placeholder="Search"></div>
-				
-<!-- bg-transparent -->
+    <script>
+        // Show the loader
+        const loaderContainer = document.getElementById('loader-container');
+        function showLoader() {
+            loaderContainer.style.display = 'flex';
+        }
 
+        // Hide the loader
+        function hideLoader() {
+            loaderContainer.style.display = 'none';
+        }
 
+        showLoader();
 
-<div id="listContainer" class="container grid place-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 mx-auto" bis_skin_checked="1">
-				
+        // Fetch the channel data from the JSON file
+        fetch('jio.json')
+            .then(response => response.json())
+            .then(channelsData => {
+                const gridContainer = document.getElementById('grid-container');
+                const genreSelect = document.getElementById('genre-select');
+                const languageSelect = document.getElementById('language-select');
+                const searchBar = document.getElementById('search-bar');
 
+                // Populate the genre dropdown
+                const genres = [...new Set(channelsData.map(channel => channel.group))];
+                genres.forEach(genre => {
+                    const option = document.createElement('option');
+                    option.value = genre;
+                    option.textContent = genre;
+                    genreSelect.appendChild(option);
+                });
 
-		</main>
+                // Populate the language dropdown
+                const languages = [...new Set(channelsData.map(channel => channel.language))];
+                languages.forEach(language => {
+                    const option = document.createElement('option');
+                    option.value = language;
+                    option.textContent = language;
+                    languageSelect.appendChild(option);
+                });
 
+                // Function to render the channels based on filters
+                function renderChannels() {
+                    gridContainer.innerHTML = ''; // Clear the grid
+                    const searchQuery = searchBar.value.toLowerCase();
+                    const selectedGenre = genreSelect.value;
+                    const selectedLanguage = languageSelect.value;
+                    const filteredChannels = channelsData.filter(channel => {
+                        const matchesGenre = selectedGenre === '' || channel.group === selectedGenre;
+                        const matchesLanguage = selectedLanguage === '' || channel.language === selectedLanguage;
+                        const matchesSearch = channel.name.toLowerCase().includes(searchQuery);
+                        return matchesGenre && matchesLanguage && matchesSearch;
+                    });
 
+                    filteredChannels.forEach(channel => {
+                        const channelCard = document.createElement('div');
+                        channelCard.classList.add('channel-card');
 
-		<div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0px; top: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px;" bis_skin_checked="1"></div>
-		<script type="text/javascript" src="channel.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script>
-		 // Get search input element
-  const searchInput = document.getElementById('searchInput');
+                        const channelLink = document.createElement('a');
+                        channelLink.href = `Play.html?id=${channel.id}`;
 
-  // Add input event listener
-  searchInput.addEventListener('input', filterData);
+                        const channelLogo = document.createElement('img');
+                        channelLogo.src = channel.logo;
+                        channelLogo.alt = `${channel.name} Logo`;
+                        channelLogo.classList.add('channel-logo');
 
-  // Search functionality
-  function filterData() {
-    const updatedSearchValue = searchInput.value.toLowerCase();
+                        const channelName = document.createElement('div');
+                        channelName.classList.add('channel-name');
+                        channelName.textContent = channel.name;
 
-    // Get all box elements
-    const boxes = document.querySelectorAll('.box1');
+                        const channelGenre = document.createElement('div');
+                        channelGenre.classList.add('channel-genre');
+                        channelGenre.textContent = channel.group;
 
-    boxes.forEach((box) => {
-      const h2Text = box.querySelector('h2').textContent.toLowerCase();
-      const pText = box.querySelector('p').textContent.toLowerCase();
+                        channelLink.appendChild(channelLogo);
+                        channelLink.appendChild(channelName);
+                        channelLink.appendChild(channelGenre);
 
-      if (h2Text.includes(updatedSearchValue) || pText.includes(updatedSearchValue)) {
-        box.style.display = 'block'; // Show matching box
-      } else {
-        box.style.display = 'none'; // Hide non-matching box
-      }
-    });
-  }
-		</script>
+                        channelCard.appendChild(channelLink);
+                        gridContainer.appendChild(channelCard);
+                    });
+                }
 
+                // Initial render
+                renderChannels();
+                hideLoader();
 
-	</body>
-
+                // Event listeners for filtering
+                genreSelect.addEventListener('change', renderChannels);
+                languageSelect.addEventListener('change', renderChannels);
+                searchBar.addEventListener('input', renderChannels);
+            })
+            .catch(error => {
+                console.error('Error fetching channel data:', error);
+                hideLoader();
+            });
+    </script>
+</body>
 </html>
