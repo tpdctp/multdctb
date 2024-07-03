@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Channel Grid</title>
+    <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body {
@@ -24,17 +24,17 @@
             width: 50px;
             height: 50px;
             margin-right: 10px;
-            animation: bounce 2s infinite;
+            animation: pulseSpin 2s infinite;
         }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
+        @keyframes pulseSpin {
+            0% {
+                transform: scale(1) rotate(0deg);
             }
-            40% {
-                transform: translateY(-30px);
+            50% {
+                transform: scale(1.1) rotate(180deg);
             }
-            60% {
-                transform: translateY(-15px);
+            100% {
+                transform: scale(1) rotate(360deg);
             }
         }
         .controls {
@@ -146,6 +146,21 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        .footer-text {
+            margin: 0;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -178,6 +193,9 @@
     <div class="grid-container" id="grid-container">
         <!-- Channel cards will be dynamically inserted here -->
     </div>
+    <footer>
+        <p class="footer-text">© 2024 Channel Grid. All rights reserved.</p>
+    </footer>
 
     <script>
         // Show the loader
