@@ -10,8 +10,8 @@
     <style>
         body {
             font-family: 'Wittgenstein', serif;
-            background-color: #f0f0f5;
-            color: #333;
+            background-color: #121212; /* Black background */
+            color: #e0e0e0; /* Light grey text color */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -21,7 +21,7 @@
         h1 {
             display: flex;
             align-items: center;
-            color: inherit;
+            color: #e0e0e0; /* Light grey text color */
         }
         .title-logo {
             width: 50px;
@@ -46,24 +46,23 @@
             left: 10px;
             top: 50%;
             transform: translateY(-50%);
-            color: inherit;
+            color: #e0e0e0; /* Light grey icon color */
         }
         select, input {
             width: 100%;
             padding: 10px 10px 10px 40px;
-            border: 1px solid #ccc;
+            border: 1px solid #333; /* Darker border color */
             border-radius: 5px;
             outline: none;
             font-size: 16px;
-            background-color: inherit;
-            color: inherit;
-            border-color: #666;
+            background-color: #1e1e1e; /* Dark background for inputs */
+            color: #e0e0e0; /* Light grey text color */
         }
         select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background-color: inherit;
+            background-color: #1e1e1e; /* Dark background for select */
         }
         .select-container::after {
             content: 'arrow_drop_down';
@@ -73,7 +72,7 @@
             top: 50%;
             transform: translateY(-50%);
             pointer-events: none;
-            color: inherit;
+            color: #e0e0e0; /* Light grey icon color */
         }
         .grid-container {
             display: grid;
@@ -83,16 +82,16 @@
             max-width: 1200px;
         }
         .channel-card {
-            background-color: #fff;
+            background-color: #1e1e1e; /* Dark background for cards */
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
             overflow: hidden;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .channel-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
         }
         .channel-logo {
             height: 90px;
@@ -103,12 +102,12 @@
         .channel-name {
             font-size: 16px;
             font-weight: bold;
-            color: inherit;
+            color: #e0e0e0; /* Light grey text color */
             margin: 10px 0;
         }
         .channel-genre {
             font-size: 14px;
-            color: #777;
+            color: #bbb; /* Lighter grey for genre text */
             margin-bottom: 20px;
         }
         .loader-container {
@@ -117,7 +116,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background for loader */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -125,9 +124,9 @@
             flex-direction: column;
         }
         .loader {
-            border: 8px solid #f3f3f3;
+            border: 8px solid #333; /* Darker loader background */
             border-radius: 50%;
-            border-top: 8px solid #3498db;
+            border-top: 8px solid #3498db; /* Blue loader top */
             width: 60px;
             height: 60px;
             animation: spin 1s linear infinite;
@@ -143,11 +142,11 @@
         footer {
             margin-top: 40px;
             padding: 10px;
-            background-color: #333;
-            color: #fff;
+            background-color: #1e1e1e; /* Dark background for footer */
+            color: #e0e0e0; /* Light grey text color */
             text-align: center;
             border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
             width: 100%;
             max-width: 600px;
         }
