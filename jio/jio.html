@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Grid</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            justify-content: space-between;
+        }
+        select, input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+            width: 48%;
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-chevron-down" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 16px 16px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .channel-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .channel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .channel-logo {
+            height: 90px;
+            width: 90px;
+            object-fit: contain;
+            margin: 20px auto;
+        }
+        .channel-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0;
+        }
+        .channel-genre {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Channel Grid</h1>
+    <div class="controls">
+        <select id="genre-select">
+            <option value="">All Genres</option>
+        </select>
+        <input type="text" id="search-bar" placeholder="Search channels...">
+    </div>
+    <div class="grid-container" id="grid-container">
+        <!-- Channel cards will be dynamically inserted here -->
+    </div>
+
+    <script>
+        // Fetch the channel data from the JSON file
+        fetch('jio.json')
+            .then(response => response.json())
+            .then(channelsData => {
+                const gridContainer = document.getElementById('grid-container');
+                const genreSelect = document.getElementById('genre-select');
+                const searchBar = document.getElementById('search-bar');
+
+                // Populate the genre dropdown
+                const genres = [...new Set(channelsData.map(channel => channel.channel_genre))];
+                genres.forEach(genre => {
+                    const option = document.createElement('option');
+                    option.value = genre;
+                    option.textContent = genre;
+                    genreSelect.appendChild(option);
+                });
+
+                // Function to render the channels based on filters
+                function renderChannels() {
+                    gridContainer.innerHTML = ''; // Clear the grid
+                    const searchQuery = searchBar.value.toLowerCase();
+                    const selectedGenre = genreSelect.value;
+                    const filteredChannels = channelsData.filter(channel => {
+                        const matchesGenre = selectedGenre === '' || channel.channel_genre === selectedGenre;
+                        const matchesSearch = channel.channel_name.toLowerCase().includes(searchQuery);
+                        return matchesGenre && matchesSearch;
+                    });
+
+                    filteredChannels.forEach(channel => {
+                        const channelCard = document.createElement('div');
+                        channelCard.classList.add('channel-card');
+
+                        const channelLink = document.createElement('a');
+                        channelLink.href = `play.html?channel=${channel.channel_id}`;
+
+                        const channelLogo = document.createElement('img');
+                        channelLogo.src = channel.channel_logo;
+                        channelLogo.alt = `${channel.channel_name} Logo`;
+                        channelLogo.classList.add('channel-logo');
+
+                        const channelName = document.createElement('div');
+                        channelName.classList.add('channel-name');
+                        channelName.textContent = channel.channel_name;
+
+                        const channelGenre = document.createElement('div');
+                        channelGenre.classList.add('channel-genre');
+                        channelGenre.textContent = channel.channel_genre;
+
+                        channelLink.appendChild(channelLogo);
+                        channelLink.appendChild(channelName);
+                        channelLink.appendChild(channelGenre);
+
+                        channelCard.appendChild(channelLink);
+                        gridContainer.appendChild(channelCard);
+                    });
+                }
+
+                // Initial render
+                renderChannels();
+
+                // Event listeners for filtering
+                genreSelect.addEventListener('change', renderChannels);
+                searchBar.addEventListener('input', renderChannels);
+            })
+            .catch(error => console.error('Error fetching channel data:', error));
+    </script>
+</body>
+</html>
