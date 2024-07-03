@@ -19,21 +19,32 @@
             margin: 0;
             padding: 20px;
             overflow: auto; /* Allow scrolling */
+            position: relative; /* Added relative position for pseudo-element */
         }
+
+        /* Pseudo-element for the black glass overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* 40% black overlay for glass effect */
+            backdrop-filter: blur(1px); /* Optional: Adds blur effect for glass-like appearance */
+            z-index: -1; /* Ensure it stays behind other content */
+        }
+
         h1 {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
             padding: 15px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-            color: #3498db; /* Blue text color */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-            animation: titleAnimation 2s infinite; /* Animation */
+            color: #fff;
         }
         .title-logo {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             margin-right: 10px;
         }
         .controls {
@@ -44,10 +55,6 @@
             max-width: 600px;
             justify-content: space-between;
             flex-wrap: wrap;
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-            padding: 15px; /* Add padding to the controls container */
         }
         .select-container, .search-container {
             position: relative;
@@ -69,11 +76,10 @@
             font-size: 16px;
             background-color: #ffffff; /* White background for inputs */
             color: #2c3e50; /* Dark blue text color */
-            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+            /* Removed transition for background color and box-shadow */
         }
-        select:hover, input:hover {
-            background-color: #f0f0f0; /* Slightly grey background on hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        select, input {
+            /* Removed hover effect */
         }
         select {
             -webkit-appearance: none;
@@ -103,15 +109,10 @@
         }
         .channel-card {
             background-color: #ffffff; /* White background for cards */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+            border-radius: 5px;
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-        }
-        .channel-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+            /* Removed transform effect and box-shadow */
         }
         .channel-logo {
             height: 90px;
@@ -136,7 +137,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(255, 255, 255, 0.8); /* Light background for loader */
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for loader */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -166,28 +167,13 @@
             color: #ffffff; /* White text color */
             text-align: center;
             border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+            /* Removed box-shadow */
             width: 100%;
             max-width: 600px;
         }
         .footer-text {
             margin: 0;
             font-size: 14px;
-        }
-        /* Title animation */
-        @keyframes titleAnimation {
-            0% {
-                background: rgba(255, 255, 255, 0.8);
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-            50% {
-                background: rgba(255, 255, 255, 1);
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            }
-            100% {
-                background: rgba(255, 255, 255, 0.8);
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
         }
     </style>
 </head>
