@@ -10,27 +10,18 @@
     <style>
         body {
             font-family: 'Wittgenstein', serif;
-            background: url('https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed; /* Background image */
-            background-size: cover;
-            color: #4b4b4b; /* Dark ash text color */
+            background-color: #f0f0f5;
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0;
             padding: 20px;
-            overflow: auto; /* Allow scrolling */
         }
         h1 {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 15px;
-            background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
-            color: #5d9cec; /* Light blue text color */
-            backdrop-filter: blur(12px); /* Glass effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-            animation: glassAnimation 2s infinite; /* Animation */
+            color: inherit;
         }
         .title-logo {
             width: 50px;
@@ -55,31 +46,24 @@
             left: 10px;
             top: 50%;
             transform: translateY(-50%);
-            color: #4b4b4b; /* Dark ash icon color */
-            font-size: 24px; /* Adjust icon size */
+            color: inherit;
         }
         select, input {
             width: 100%;
             padding: 10px 10px 10px 40px;
-            border: 1px solid rgba(93, 156, 236, 0.5); /* Semi-transparent light blue border */
-            border-radius: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             outline: none;
             font-size: 16px;
-            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
-            color: #4b4b4b; /* Dark ash text color */
-            backdrop-filter: blur(12px); /* Glass effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
-        }
-        select:hover, input:hover {
-            background-color: rgba(255, 255, 255, 0.4); /* Slightly more opaque on hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+            background-color: inherit;
+            color: inherit;
+            border-color: #666;
         }
         select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background for select */
+            background-color: inherit;
         }
         .select-container::after {
             content: 'arrow_drop_down';
@@ -89,10 +73,7 @@
             top: 50%;
             transform: translateY(-50%);
             pointer-events: none;
-            color: #4b4b4b; /* Dark ash icon color */
-        }
-        .search-container .material-icons {
-            color: #4b4b4b; /* Dark ash icon color */
+            color: inherit;
         }
         .grid-container {
             display: grid;
@@ -102,17 +83,16 @@
             max-width: 1200px;
         }
         .channel-card {
-            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background for cards */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-            backdrop-filter: blur(12px); /* Glass effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .channel-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         .channel-logo {
             height: 90px;
@@ -123,12 +103,12 @@
         .channel-name {
             font-size: 16px;
             font-weight: bold;
-            color: #5d9cec; /* Light blue text color */
+            color: inherit;
             margin: 10px 0;
         }
         .channel-genre {
             font-size: 14px;
-            color: #7f8c8d; /* Light grey text color for genre */
+            color: #777;
             margin-bottom: 20px;
         }
         .loader-container {
@@ -137,7 +117,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(255, 255, 255, 0.8); /* Light background for loader */
+            background-color: rgba(255, 255, 255, 0.8);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -145,9 +125,9 @@
             flex-direction: column;
         }
         .loader {
-            border: 8px solid rgba(247, 249, 252, 0.5); /* Semi-transparent light ash loader background */
+            border: 8px solid #f3f3f3;
             border-radius: 50%;
-            border-top: 8px solid #5d9cec; /* Light blue loader top */
+            border-top: 8px solid #3498db;
             width: 60px;
             height: 60px;
             animation: spin 1s linear infinite;
@@ -163,32 +143,17 @@
         footer {
             margin-top: 40px;
             padding: 10px;
-            background-color: rgba(189, 195, 199, 0.8); /* Semi-transparent light ash background for footer */
-            color: #2c3e50; /* Dark blue text color */
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 600px;
         }
         .footer-text {
             margin: 0;
             font-size: 14px;
-        }
-        /* Glass effect animation for the title */
-        @keyframes glassAnimation {
-            0% {
-                background: rgba(255, 255, 255, 0.3);
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-            50% {
-                background: rgba(255, 255, 255, 0.4);
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-            }
-            100% {
-                background: rgba(255, 255, 255, 0.3);
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
         }
     </style>
 </head>
@@ -198,7 +163,7 @@
         <div class="loader"></div>
     </div>
     <h1>
-        <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-U-B.png" alt="Title Logo" class="title-logo">
+        <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Title Logo" class="title-logo">
         🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™
     </h1>
     <div class="controls">
@@ -285,11 +250,11 @@
                         channelCard.classList.add('channel-card');
 
                         const channelLink = document.createElement('a');
-                        channelLink.href = `Play.html?id=${channel.id}`;
+                        channelLink.href = Play.html?id=${channel.id};
 
                         const channelLogo = document.createElement('img');
                         channelLogo.src = channel.logo;
-                        channelLogo.alt = `${channel.name} Logo`;
+                        channelLogo.alt = ${channel.name} Logo;
                         channelLogo.classList.add('channel-logo');
 
                         const channelName = document.createElement('div');
