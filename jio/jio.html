@@ -10,18 +10,20 @@
     <style>
         body {
             font-family: 'Wittgenstein', serif;
-            background-color: #f0f0f5;
-            color: #333;
+            background-color: #ecf0f1; /* Light gray background to complement the logo */
+            color: #2c3e50; /* Dark blue text color */
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0;
             padding: 20px;
+            overflow: hidden; /* Prevent scrollbars */
         }
         h1 {
             display: flex;
             align-items: center;
-            color: inherit;
+            color: #3498db; /* Blue text color */
+            margin-bottom: 20px;
         }
         .title-logo {
             width: 50px;
@@ -46,24 +48,31 @@
             left: 10px;
             top: 50%;
             transform: translateY(-50%);
-            color: inherit;
+            color: #2c3e50; /* Dark blue icon color */
+            font-size: 24px; /* Adjust icon size */
         }
         select, input {
             width: 100%;
             padding: 10px 10px 10px 40px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid rgba(52, 152, 219, 0.5); /* Semi-transparent blue border */
+            border-radius: 10px;
             outline: none;
             font-size: 16px;
-            background-color: inherit;
-            color: inherit;
-            border-color: #666;
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+            color: #2c3e50; /* Dark blue text color */
+            backdrop-filter: blur(10px); /* Glass effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+        select:hover, input:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
         }
         select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background-color: inherit;
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for select */
         }
         .select-container::after {
             content: 'arrow_drop_down';
@@ -73,7 +82,10 @@
             top: 50%;
             transform: translateY(-50%);
             pointer-events: none;
-            color: inherit;
+            color: #2c3e50; /* Dark blue icon color */
+        }
+        .search-container .material-icons {
+            color: #2c3e50; /* Dark blue icon color */
         }
         .grid-container {
             display: grid;
@@ -83,16 +95,17 @@
             max-width: 1200px;
         }
         .channel-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for cards */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            backdrop-filter: blur(10px); /* Glass effect */
         }
         .channel-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
         }
         .channel-logo {
             height: 90px;
@@ -103,12 +116,12 @@
         .channel-name {
             font-size: 16px;
             font-weight: bold;
-            color: inherit;
+            color: #2c3e50; /* Dark blue text color */
             margin: 10px 0;
         }
         .channel-genre {
             font-size: 14px;
-            color: #777;
+            color: #7f8c8d; /* Light grey text color for genre */
             margin-bottom: 20px;
         }
         .loader-container {
@@ -117,7 +130,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for loader */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -125,9 +138,9 @@
             flex-direction: column;
         }
         .loader {
-            border: 8px solid #f3f3f3;
+            border: 8px solid rgba(236, 240, 241, 0.5); /* Semi-transparent light gray loader background */
             border-radius: 50%;
-            border-top: 8px solid #3498db;
+            border-top: 8px solid #3498db; /* Blue loader top */
             width: 60px;
             height: 60px;
             animation: spin 1s linear infinite;
@@ -143,11 +156,11 @@
         footer {
             margin-top: 40px;
             padding: 10px;
-            background-color: #333;
-            color: #fff;
+            background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent dark blue background for footer */
+            color: #ffffff; /* White text color */
             text-align: center;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
             width: 100%;
             max-width: 600px;
         }
@@ -250,11 +263,11 @@
                         channelCard.classList.add('channel-card');
 
                         const channelLink = document.createElement('a');
-                        channelLink.href = Play.html?id=${channel.id};
+                        channelLink.href = `Play.html?id=${channel.id}`;
 
                         const channelLogo = document.createElement('img');
                         channelLogo.src = channel.logo;
-                        channelLogo.alt = ${channel.name} Logo;
+                        channelLogo.alt = `${channel.name} Logo`;
                         channelLogo.classList.add('channel-logo');
 
                         const channelName = document.createElement('div');
