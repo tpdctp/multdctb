@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Channel Grid</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,23 +27,40 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
+        .select-container, .search-container {
+            position: relative;
+            width: 32%;
+        }
+        .material-icons {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+        }
         select, input {
-            padding: 10px;
+            width: 100%;
+            padding: 10px 10px 10px 40px;
             border: 1px solid #ccc;
             border-radius: 5px;
             outline: none;
             font-size: 16px;
-            width: 32%;
         }
         select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
             background-color: #fff;
-            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-chevron-down" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E');
-            background-repeat: no-repeat;
-            background-position: right 10px center;
-            background-size: 16px 16px;
+        }
+        .select-container::after {
+            content: 'arrow_drop_down';
+            font-family: 'Material Icons';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #666;
         }
         .grid-container {
             display: grid;
@@ -85,13 +103,22 @@
 <body>
     <h1>Channel Grid</h1>
     <div class="controls">
-        <select id="genre-select">
-            <option value="">All Genres</option>
-        </select>
-        <select id="language-select">
-            <option value="">All Languages</option>
-        </select>
-        <input type="text" id="search-bar" placeholder="Search channels...">
+        <div class="select-container">
+            <i class="material-icons">category</i>
+            <select id="genre-select">
+                <option value="">All Genres</option>
+            </select>
+        </div>
+        <div class="select-container">
+            <i class="material-icons">language</i>
+            <select id="language-select">
+                <option value="">All Languages</option>
+            </select>
+        </div>
+        <div class="search-container">
+            <i class="material-icons">search</i>
+            <input type="text" id="search-bar" placeholder="Search channels...">
+        </div>
     </div>
     <div class="grid-container" id="grid-container">
         <!-- Channel cards will be dynamically inserted here -->
