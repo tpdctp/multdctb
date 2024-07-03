@@ -17,13 +17,11 @@
             align-items: center;
             margin: 0;
             padding: 20px;
-            overflow: hidden; /* Prevent scrollbars */
         }
         h1 {
             display: flex;
             align-items: center;
             color: #3498db; /* Blue text color */
-            margin-bottom: 20px;
         }
         .title-logo {
             width: 50px;
@@ -49,30 +47,22 @@
             top: 50%;
             transform: translateY(-50%);
             color: #2c3e50; /* Dark blue icon color */
-            font-size: 24px; /* Adjust icon size */
         }
         select, input {
             width: 100%;
             padding: 10px 10px 10px 40px;
-            border: 1px solid rgba(52, 152, 219, 0.5); /* Semi-transparent blue border */
-            border-radius: 10px;
+            border: 1px solid #3498db; /* Blue border color */
+            border-radius: 5px;
             outline: none;
             font-size: 16px;
-            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+            background-color: #ffffff; /* White background for inputs */
             color: #2c3e50; /* Dark blue text color */
-            backdrop-filter: blur(10px); /* Glass effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
-        }
-        select:hover, input:hover {
-            background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
         }
         select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for select */
+            background-color: #ffffff; /* White background for select */
         }
         .select-container::after {
             content: 'arrow_drop_down';
@@ -84,9 +74,6 @@
             pointer-events: none;
             color: #2c3e50; /* Dark blue icon color */
         }
-        .search-container .material-icons {
-            color: #2c3e50; /* Dark blue icon color */
-        }
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -95,13 +82,12 @@
             max-width: 1200px;
         }
         .channel-card {
-            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background for cards */
-            border-radius: 10px;
+            background-color: #ffffff; /* White background for cards */
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-            backdrop-filter: blur(10px); /* Glass effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .channel-card:hover {
             transform: translateY(-5px);
@@ -138,7 +124,7 @@
             flex-direction: column;
         }
         .loader {
-            border: 8px solid rgba(236, 240, 241, 0.5); /* Semi-transparent light gray loader background */
+            border: 8px solid #ecf0f1; /* Light gray loader background */
             border-radius: 50%;
             border-top: 8px solid #3498db; /* Blue loader top */
             width: 60px;
@@ -156,10 +142,10 @@
         footer {
             margin-top: 40px;
             padding: 10px;
-            background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent dark blue background for footer */
+            background-color: #2c3e50; /* Dark blue background for footer */
             color: #ffffff; /* White text color */
             text-align: center;
-            border-radius: 10px;
+            border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
             width: 100%;
             max-width: 600px;
