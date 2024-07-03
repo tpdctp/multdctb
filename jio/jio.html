@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Wittgenstein', serif;
-            background: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed; /* Background image */
+            background: url('https://images.pexels.com/photos/243971/pexels-photo-243971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed; /* Background image */
             background-size: cover;
             color: #2c3e50; /* Dark blue text color */
             display: flex;
@@ -26,11 +26,10 @@
             margin-bottom: 20px;
             padding: 15px;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
             color: #3498db; /* Blue text color */
-            backdrop-filter: blur(12px); /* Glass effect */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-            animation: glassAnimation 2s infinite; /* Animation */
+            animation: titleAnimation 2s infinite; /* Animation */
         }
         .title-logo {
             width: 50px;
@@ -45,9 +44,8 @@
             max-width: 600px;
             justify-content: space-between;
             flex-wrap: wrap;
-            background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
             border-radius: 10px;
-            backdrop-filter: blur(12px); /* Glass effect */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
             padding: 15px; /* Add padding to the controls container */
         }
@@ -69,21 +67,19 @@
             border-radius: 5px;
             outline: none;
             font-size: 16px;
-            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+            background-color: #ffffff; /* White background for inputs */
             color: #2c3e50; /* Dark blue text color */
-            backdrop-filter: blur(12px); /* Glass effect */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
             transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
         }
         select:hover, input:hover {
-            background-color: rgba(255, 255, 255, 0.4); /* Slightly more opaque on hover */
+            background-color: #f0f0f0; /* Slightly grey background on hover */
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
         }
         select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background for select */
+            background-color: #ffffff; /* White background for select */
         }
         .select-container::after {
             content: 'arrow_drop_down';
@@ -106,13 +102,12 @@
             max-width: 1200px;
         }
         .channel-card {
-            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background for cards */
+            background-color: #ffffff; /* White background for cards */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
             overflow: hidden;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-            backdrop-filter: blur(12px); /* Glass effect */
         }
         .channel-card:hover {
             transform: translateY(-5px);
@@ -179,18 +174,18 @@
             margin: 0;
             font-size: 14px;
         }
-        /* Glass effect animation for the title */
-        @keyframes glassAnimation {
+        /* Title animation */
+        @keyframes titleAnimation {
             0% {
-                background: rgba(255, 255, 255, 0.3);
+                background: rgba(255, 255, 255, 0.8);
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
             50% {
-                background: rgba(255, 255, 255, 0.4);
+                background: rgba(255, 255, 255, 1);
                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             }
             100% {
-                background: rgba(255, 255, 255, 0.3);
+                background: rgba(255, 255, 255, 0.8);
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
         }
