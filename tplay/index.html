@@ -291,8 +291,7 @@
                         channelCard.classList.add('channel-card');
 
                         const channelLink = document.createElement('a');
-                        channelLink.href = channel.channel_url;
-                        channelLink.target = '_blank';
+                        channelLink.href = `https://tvteluguweb.000webhostapp.com/tata/play.php?id=${channel.channel_id}`;
 
                         const channelLogo = document.createElement('img');
                         channelLogo.src = channel.channel_logo;
