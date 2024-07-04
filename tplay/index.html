@@ -4,44 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™</title>
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: 'Wittgenstein';
-            src: url('path-to-wittgenstein-font.woff2') format('woff2');
-        }
         body {
             font-family: 'Wittgenstein', serif;
-            background-image: url('https://images.pexels.com/photos/4840134/pexels-photo-4840134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background: url('https://images.pexels.com/photos/4840134/pexels-photo-4840134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
             background-size: cover;
-            background-attachment: fixed;
+            color: #2c3e50;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             margin: 0;
             padding: 20px;
-            min-height: 100vh;
+            overflow: auto;
             position: relative;
         }
+
         body::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: inherit;
-            background-size: cover;
-            background-attachment: fixed;
-            filter: blur(1.2px);
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
             z-index: -1;
         }
+
         h1 {
-            color: #333;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            color: #fff;
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #ff007a, #ff5e00, #f9c81f, #00b2ff, #8e2de2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradientShift 3s linear infinite;
         }
+
+        .title-logo {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
         .controls {
             margin-bottom: 20px;
             display: flex;
@@ -49,35 +61,51 @@
             width: 100%;
             max-width: 600px;
             justify-content: space-between;
-            position: relative;
-            align-items: center;
+            flex-wrap: wrap;
         }
-        .controls select,
-        .controls input {
-            padding: 10px 40px 10px 10px; /* Adjust padding to accommodate icons */
-            border: 1px solid #ccc;
+
+        .select-container, .search-container {
+            position: relative;
+            width: 49%;
+        }
+
+        .material-icons {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #2c3e50;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px 10px 10px 40px;
+            border: 1px solid #3498db;
             border-radius: 5px;
             outline: none;
             font-size: 16px;
-            width: 48%;
+            background-color: #ffffff;
+            color: #2c3e50;
         }
-        .controls select {
+
+        select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            background-color: #fff;
-            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-chevron-down" viewBox="0 0 16 16"%3E%3Cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E');
-            background-repeat: no-repeat;
-            background-position: right 10px center;
-            background-size: 16px 16px;
+            background-color: #ffffff;
         }
-        .icon {
+
+        .select-container::after {
+            content: 'arrow_drop_down';
+            font-family: 'Material Icons';
             position: absolute;
+            right: 10px;
             top: 50%;
             transform: translateY(-50%);
-            left: 10px;
             pointer-events: none;
+            color: #2c3e50;
         }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -85,108 +113,154 @@
             width: 100%;
             max-width: 1200px;
         }
+
         .channel-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 5px;
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .channel-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
+
         .channel-logo {
             height: 90px;
             width: 90px;
             object-fit: contain;
             margin: 20px auto;
         }
+
         .channel-name {
             font-size: 16px;
             font-weight: bold;
-            color: #333;
+            color: #2c3e50;
             margin: 10px 0;
         }
+
         .channel-genre {
             font-size: 14px;
-            color: #777;
+            color: #7f8c8d;
             margin-bottom: 20px;
         }
-        #loading-screen {
+
+        .loader-container {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.9);
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
             display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
             flex-direction: column;
+        }
+
+        .loader {
+            position: relative;
+            display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 1000;
         }
-        #loading-logo {
-            width: 100px;
-            height: 100px;
-            background: url('your-logo-url.png') no-repeat center center;
-            background-size: contain;
-            margin-bottom: 20px;
+
+        .loader .dot {
+            width: 15px;
+            height: 15px;
+            background-color: #e50914;
+            border-radius: 50%;
+            animation: bounce 0.6s infinite alternate;
         }
-        #loading-bar {
-            width: 80%;
-            background: #ccc;
+
+        .loader .dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .loader .dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-20px);
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 0%;
+            }
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
             border-radius: 5px;
-            overflow: hidden;
+            width: 100%;
+            max-width: 600px;
         }
-        #loading-bar-inner {
-            height: 20px;
-            background: #76c7c0;
-            width: 0;
-            transition: width 0.3s;
+
+        .footer-text {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div id="loading-screen">
-        <div id="loading-logo"></div>
-        <div id="loading-bar">
-            <div id="loading-bar-inner"></div>
+    <div class="loader-container" id="loader-container">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
     </div>
-    <div class="glass-effect">
-        <h1>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™</h1>
-        <div class="controls">
-            <i class="fas fa-list icon"></i>
+    <h1>
+        <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Title Logo" class="title-logo">
+        🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™
+    </h1>
+    <div class="controls">
+        <div class="select-container">
+            <i class="material-icons">category</i>
             <select id="genre-select">
                 <option value="">All Genres</option>
             </select>
-            <i class="fas fa-search icon" style="left: 52%;"></i>
+        </div>
+        <div class="search-container">
+            <i class="material-icons">search</i>
             <input type="text" id="search-bar" placeholder="Search channels...">
         </div>
-        <div class="grid-container" id="grid-container">
-            <!-- Channel cards will be dynamically inserted here -->
-        </div>
     </div>
+    <div class="grid-container" id="grid-container">
+        <!-- Channel cards will be dynamically inserted here -->
+    </div>
+    <footer>
+        <p class="footer-text">© 2024 🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™. All rights reserved.</p>
+    </footer>
 
     <script>
-        // Simulate loading for demonstration purposes
-        let loadingProgress = 0;
-        const loadingBarInner = document.getElementById('loading-bar-inner');
-
-        function updateLoadingBar() {
-            loadingProgress += 10;
-            loadingBarInner.style.width = loadingProgress + '%';
-            if (loadingProgress < 100) {
-                setTimeout(updateLoadingBar, 300);
-            } else {
-                document.getElementById('loading-screen').style.display = 'none';
-            }
+        const loaderContainer = document.getElementById('loader-container');
+        function showLoader() {
+            loaderContainer.style.display = 'flex';
         }
-        setTimeout(updateLoadingBar, 300);
 
-        // Fetch the channel data from the JSON file
+        function hideLoader() {
+            loaderContainer.style.display = 'none';
+        }
+
+        showLoader();
+
         fetch('channel.json')
             .then(response => response.json())
             .then(channelsData => {
@@ -194,7 +268,6 @@
                 const genreSelect = document.getElementById('genre-select');
                 const searchBar = document.getElementById('search-bar');
 
-                // Populate the genre dropdown
                 const genres = [...new Set(channelsData.map(channel => channel.channel_genre))];
                 genres.forEach(genre => {
                     const option = document.createElement('option');
@@ -203,9 +276,8 @@
                     genreSelect.appendChild(option);
                 });
 
-                // Function to render the channels based on filters
                 function renderChannels() {
-                    gridContainer.innerHTML = ''; // Clear the grid
+                    gridContainer.innerHTML = '';
                     const searchQuery = searchBar.value.toLowerCase();
                     const selectedGenre = genreSelect.value;
                     const filteredChannels = channelsData.filter(channel => {
@@ -219,7 +291,8 @@
                         channelCard.classList.add('channel-card');
 
                         const channelLink = document.createElement('a');
-                        channelLink.href = `https://tvteluguweb.000webhostapp.com/tata/play.php?id=${channel.channel_id}`;
+                        channelLink.href = channel.channel_url;
+                        channelLink.target = '_blank';
 
                         const channelLogo = document.createElement('img');
                         channelLogo.src = channel.channel_logo;
@@ -235,22 +308,20 @@
                         channelGenre.textContent = channel.channel_genre;
 
                         channelLink.appendChild(channelLogo);
-                        channelLink.appendChild(channelName);
-                        channelLink.appendChild(channelGenre);
-
                         channelCard.appendChild(channelLink);
+                        channelCard.appendChild(channelName);
+                        channelCard.appendChild(channelGenre);
                         gridContainer.appendChild(channelCard);
                     });
+
+                    hideLoader();
                 }
 
-                // Initial render
-                renderChannels();
-
-                // Event listeners for filtering
                 genreSelect.addEventListener('change', renderChannels);
                 searchBar.addEventListener('input', renderChannels);
-            })
-            .catch(error => console.error('Error fetching channel data:', error));
+
+                renderChannels();
+            });
     </script>
 </body>
 </html>
