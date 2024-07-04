@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Channel Grid</title>
+    <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™</title>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f0f5;
+            background-image: url('your-background-image-url.jpg');
+            background-size: cover;
+            background-attachment: fixed;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0;
             padding: 20px;
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
         }
         h1 {
             color: #333;
@@ -48,7 +59,6 @@
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 20px;
             width: 100%;
-            max-width: 1200px;
         }
         .channel-card {
             background-color: #fff;
@@ -79,21 +89,76 @@
             color: #777;
             margin-bottom: 20px;
         }
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        #loading-logo {
+            width: 100px;
+            height: 100px;
+            background: url('your-logo-url.png') no-repeat center center;
+            background-size: contain;
+            margin-bottom: 20px;
+        }
+        #loading-bar {
+            width: 80%;
+            background: #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        #loading-bar-inner {
+            height: 20px;
+            background: #76c7c0;
+            width: 0;
+            transition: width 0.3s;
+        }
     </style>
 </head>
 <body>
-    <h1>Channel Grid</h1>
-    <div class="controls">
-        <select id="genre-select">
-            <option value="">All Genres</option>
-        </select>
-        <input type="text" id="search-bar" placeholder="Search channels...">
+    <div id="loading-screen">
+        <div id="loading-logo"></div>
+        <div id="loading-bar">
+            <div id="loading-bar-inner"></div>
+        </div>
     </div>
-    <div class="grid-container" id="grid-container">
-        <!-- Channel cards will be dynamically inserted here -->
+    <div class="glass-effect">
+        <h1>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™</h1>
+        <div class="controls">
+            <select id="genre-select">
+                <option value="">All Genres</option>
+            </select>
+            <input type="text" id="search-bar" placeholder="Search channels...">
+        </div>
+        <div class="grid-container" id="grid-container">
+            <!-- Channel cards will be dynamically inserted here -->
+        </div>
     </div>
 
     <script>
+        // Simulate loading for demonstration purposes
+        let loadingProgress = 0;
+        const loadingBarInner = document.getElementById('loading-bar-inner');
+
+        function updateLoadingBar() {
+            loadingProgress += 10;
+            loadingBarInner.style.width = loadingProgress + '%';
+            if (loadingProgress < 100) {
+                setTimeout(updateLoadingBar, 300);
+            } else {
+                document.getElementById('loading-screen').style.display = 'none';
+            }
+        }
+        setTimeout(updateLoadingBar, 300);
+
         // Fetch the channel data from the JSON file
         fetch('channel.json')
             .then(response => response.json())
