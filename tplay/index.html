@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™</title>
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        @font-face {
+            font-family: 'Wittgenstein';
+            src: url('path-to-wittgenstein-font.woff2') format('woff2');
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url('your-background-image-url.jpg');
+            font-family: 'Wittgenstein', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://images.pexels.com/photos/4840134/pexels-photo-4840134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-size: cover;
             background-attachment: fixed;
             display: flex;
@@ -35,16 +40,18 @@
             width: 100%;
             max-width: 600px;
             justify-content: space-between;
+            position: relative;
         }
-        select, input {
-            padding: 10px;
+        .controls select,
+        .controls input {
+            padding: 10px 40px 10px 10px; /* Adjust padding to accommodate icons */
             border: 1px solid #ccc;
             border-radius: 5px;
             outline: none;
             font-size: 16px;
             width: 48%;
         }
-        select {
+        .controls select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
@@ -53,6 +60,13 @@
             background-repeat: no-repeat;
             background-position: right 10px center;
             background-size: 16px 16px;
+        }
+        .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            pointer-events: none;
         }
         .grid-container {
             display: grid;
@@ -133,9 +147,11 @@
     <div class="glass-effect">
         <h1>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™</h1>
         <div class="controls">
+            <i class="fas fa-list icon"></i>
             <select id="genre-select">
                 <option value="">All Genres</option>
             </select>
+            <i class="fas fa-search icon" style="left: 52%;"></i>
             <input type="text" id="search-bar" placeholder="Search channels...">
         </div>
         <div class="grid-container" id="grid-container">
