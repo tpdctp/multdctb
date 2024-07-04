@@ -2240,7 +2240,7 @@
     {
         "channel_id": "996",
         "channel_name": "Tata Play Toons+",
-        "channel_genre": "None",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/TONSTEL_Thumbnail-v4/TONSTEL_Thumbnail.png"
     },
     {
@@ -2288,7 +2288,7 @@
     {
         "channel_id": "1168",
         "channel_name": "Tata Play Hollywood Local Telugu",
-        "channel_genre": "None",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/TPHLTE_Thumbnail-v5/TPHLTE_Thumbnail.png"
     },
     {
@@ -2300,7 +2300,7 @@
     {
         "channel_id": "1073",
         "channel_name": "Tata Play Telugu Classics",
-        "channel_genre": "None",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/TPTECL_Thumbnail-v1/TPTECL_Thumbnail.png"
     },
     {
@@ -2330,7 +2330,7 @@
     {
         "channel_id": "358",
         "channel_name": "ETV Abhiruchi",
-        "channel_genre": "Kannada",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11417-j9jqpcnc-v1/imageContent-11417-j9jqpcnc-m1.png"
     },
     {
@@ -2378,7 +2378,7 @@
     {
         "channel_id": "49",
         "channel_name": "T News",
-        "channel_genre": "Tamil",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-145-j5fpfoe8-v1/imageContent-145-j5fpfoe8-m1.png"
     },
     {
@@ -2402,37 +2402,37 @@
     {
         "channel_id": "1099",
         "channel_name": "Prime 9 News",
-        "channel_genre": "None",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/PR9NEWS_Thumbnail-v2/PR9NEWS_Thumbnail.png"
     },
     {
         "channel_id": "774",
         "channel_name": "4tv News",
-        "channel_genre": "Telugu",
+        "channel_genre": "Urdhu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-47248-k1vn9ouw-v2/imageContent-47248-k1vn9ouw-m4.png"
     },
     {
         "channel_id": "1027",
         "channel_name": "Swatantra TV",
-        "channel_genre": "None",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-73187-l8ou8wo8-v1/imageContent-73187-l8ou8wo8-m4.png"
     },
     {
         "channel_id": "1151",
         "channel_name": "MAHAA NEWS",
-        "channel_genre": "None",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/MHNEWS_Thumbnail-v1/MHNEWS_Thumbnail.png"
     },
     {
         "channel_id": "1100",
         "channel_name": "BIG TV Telugu",
-        "channel_genre": "None",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/BGTVTEL_Thumbnail-v2/BGTVTEL_Thumbnail.png"
     },
     {
         "channel_id": "1118",
         "channel_name": "News 360",
-        "channel_genre": "News",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/News360_Thumbnail-v3/News360_Thumbnail.png"
     },
     {
@@ -2444,7 +2444,7 @@
     {
         "channel_id": "1194",
         "channel_name": "BRK News",
-        "channel_genre": "None",
+        "channel_genre": "Telugu",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/BRKNEWS_Thumbnail-v1/BRKNEWS_Thumbnail.png"
     },
     {
@@ -2534,7 +2534,7 @@
     {
         "channel_id": "1167",
         "channel_name": "Tata Play Hollywood Local Tamil",
-        "channel_genre": "None",
+        "channel_genre": "Tamil",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/TPHLT_Thumbnail-v4/TPHLT_Thumbnail.png"
     },
     {
@@ -2564,7 +2564,7 @@
     {
         "channel_id": "708",
         "channel_name": "Jaya TV HD",
-        "channel_genre": "Telugu",
+        "channel_genre": "Tamil",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-38738-juc4a1ig-v5/imageContent-38738-juc4a1ig-m8.png"
     },
     {
@@ -2588,7 +2588,7 @@
     {
         "channel_id": "997",
         "channel_name": "Tata Play Toons+",
-        "channel_genre": "None",
+        "channel_genre": "Tamil",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/TONSTAM_Thumbnail-v6/TONSTAM_Thumbnail.png"
     },
     {
@@ -2636,7 +2636,7 @@
     {
         "channel_id": "1182",
         "channel_name": "Zee Thirai HD",
-        "channel_genre": "Movies",
+        "channel_genre": "Tamil",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/ZETIHD_Thumbnail-v2/ZETIHD_Thumbnail.png"
     },
     {
@@ -2774,7 +2774,7 @@
     {
         "channel_id": "490",
         "channel_name": "SVBC 2",
-        "channel_genre": "Telugu",
+        "channel_genre": "Tamil",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11882-j9l3qcrs-v1/imageContent-11882-j9l3qcrs-m1.png"
     },
     {
@@ -2798,7 +2798,7 @@
     {
         "channel_id": "372",
         "channel_name": "Jeevan TV",
-        "channel_genre": "Malayalam",
+        "channel_genre": "Kannada",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-12323-jaa5pzxs-v1/imageContent-12323-jaa5pzxs-m1.png"
     },
     {
@@ -2864,7 +2864,7 @@
     {
         "channel_id": "1181",
         "channel_name": "Zee Picchar HD",
-        "channel_genre": "None",
+        "channel_genre": "Kannada",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/ZEPIHD_Thumbnail-v1/ZEPIHD_Thumbnail.png"
     },
     {
@@ -2948,7 +2948,7 @@
     {
         "channel_id": "1077",
         "channel_name": "Vistara News",
-        "channel_genre": "None",
+        "channel_genre": "Kannada",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/VISNEWS_Thumbnail-v2/VISNEWS_Thumbnail.png"
     },
     {
@@ -2960,7 +2960,7 @@
     {
         "channel_id": "1116",
         "channel_name": "Prajaa TV",
-        "channel_genre": "None",
+        "channel_genre": "Kannada",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/PRJAATV_Thumbnail-v2/PRJAATV_Thumbnail.png"
     },
     {
@@ -3092,7 +3092,7 @@
     {
         "channel_id": "421",
         "channel_name": "Peppers TV",
-        "channel_genre": "Tamil",
+        "channel_genre": "Odia",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11667-j9kdkb6w-v1/imageContent-11667-j9kdkb6w-m1.png"
     },
     {
@@ -3110,7 +3110,7 @@
     {
         "channel_id": "1170",
         "channel_name": "Sidharth GOLD",
-        "channel_genre": "None",
+        "channel_genre": "Odia",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/SIDGL_Thumbnail-v1/SIDGL_Thumbnail.png"
     },
     {
@@ -3158,7 +3158,7 @@
     {
         "channel_id": "1169",
         "channel_name": "Jay Jagannath",
-        "channel_genre": "None",
+        "channel_genre": "Odia",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/JJAG_Thumbnail-v1/JJAG_Thumbnail.png"
     },
     {
@@ -3302,7 +3302,7 @@
     {
         "channel_id": "1124",
         "channel_name": "Reporter TV",
-        "channel_genre": "None",
+        "channel_genre": "Malayalam",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/RETV_Thumbnail-v2/RETV_Thumbnail.png"
     },
     {
@@ -3386,7 +3386,7 @@
     {
         "channel_id": "1083",
         "channel_name": "TABBAR HITS",
-        "channel_genre": "None",
+        "channel_genre": "Music",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/TABHIT_Thumbnail-v2/TABHIT_Thumbnail.png"
     },
     {
@@ -3428,7 +3428,7 @@
     {
         "channel_id": "998",
         "channel_name": "Tata Play Toons+",
-        "channel_genre": "None",
+        "channel_genre": "Kids",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/TONSPUN_Thumbnail-v4/TONSPUN_Thumbnail.png"
     },
     {
@@ -3470,7 +3470,7 @@
     {
         "channel_id": "989",
         "channel_name": "STV Haryana News",
-        "channel_genre": "None",
+        "channel_genre": "Haryana",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-71064-l427mi60-v2/imageContent-71064-l427mi60-m3.png"
     },
     {
@@ -3482,7 +3482,7 @@
     {
         "channel_id": "1078",
         "channel_name": "Daily Post Punjab Haryana Himachal",
-        "channel_genre": "None",
+        "channel_genre": "Punjabi",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/DAILYP_Thumbnail-v3/DAILYP_Thumbnail.png"
     },
     {
@@ -3506,7 +3506,7 @@
     {
         "channel_id": "1085",
         "channel_name": "WPN World Punjabi TV",
-        "channel_genre": "None",
+        "channel_genre": "Punjabi",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/WTVPunjabi_Thumbnail-v1/WTVPunjabi_Thumbnail.png"
     },
     {
@@ -3608,7 +3608,7 @@
     {
         "channel_id": "1076",
         "channel_name": "NB News",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/NBNEWS_Thumbnail-v2/NBNEWS_Thumbnail.png"
     },
     {
@@ -3626,13 +3626,13 @@
     {
         "channel_id": "1268",
         "channel_name": "NE NEWS",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/NENEWS_Thumbnail-v1/NENEWS_Thumbnail.png"
     },
     {
         "channel_id": "1115",
         "channel_name": "Pratham Khabar 24x7",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/PTKB_Thumbnail-v1/PTKB_Thumbnail.png"
     },
     {
@@ -3776,13 +3776,13 @@
     {
         "channel_id": "1256",
         "channel_name": "Oye Music",
-        "channel_genre": "None",
+        "channel_genre": "Music",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/OYEMUS_Thumbnail-v3/OYEMUS_Thumbnail.png"
     },
     {
         "channel_id": "1255",
         "channel_name": "Update India",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/UpdateIndia_Thumbnail-v2/UpdateIndia_Thumbnail.png"
     },
     {
@@ -3818,7 +3818,7 @@
     {
         "channel_id": "1254",
         "channel_name": "National News Live",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/NationalNewsLive_Thumbnail-v2/NationalNewsLive_Thumbnail.png"
     },
     {
@@ -3830,25 +3830,25 @@
     {
         "channel_id": "1008",
         "channel_name": "Shri ISKCON Girgaon, Mumbai",
-        "channel_genre": "None",
+        "channel_genre": "Live Darshan",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-72306-l6hr8log-v1/imageContent-72306-l6hr8log-m1.png"
     },
     {
         "channel_id": "1007",
         "channel_name": "Shri Ashtavinayak Mahaganpati, Ranjangaon",
-        "channel_genre": "None",
+        "channel_genre": "Live Darshan",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-72309-l6hro3js-v1/imageContent-72309-l6hro3js-m2.png"
     },
     {
         "channel_id": "1005",
         "channel_name": "Shri Babulnaath Temple, Mumbai",
-        "channel_genre": "None",
+        "channel_genre": "Live Darshan",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-72315-l6htmt2o-v1/imageContent-72315-l6htmt2o-m2.png"
     },
     {
         "channel_id": "1004",
         "channel_name": "Shri Ganga Aarti, Varanasi",
-        "channel_genre": "None",
+        "channel_genre": "Live Darshan",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-72303-l6hqin9k-v1/imageContent-72303-l6hqin9k-m2.png"
     },
     {
@@ -3860,7 +3860,7 @@
     {
         "channel_id": "1006",
         "channel_name": "Shri Mahalaxmi Temple, Mumbai",
-        "channel_genre": "None",
+        "channel_genre": "Live Darshan",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-72312-l6hsvue8-v1/imageContent-72312-l6hsvue8-m2.png"
     },
     {
@@ -3872,7 +3872,7 @@
     {
         "channel_id": "1002",
         "channel_name": "Saileela TV",
-        "channel_genre": "None",
+        "channel_genre": "Spiritual",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-72161-l60vjz1c-v3/imageContent-72161-l60vjz1c-m3.png"
     },
     {
@@ -3890,19 +3890,19 @@
     {
         "channel_id": "1041",
         "channel_name": "TV Punjab",
-        "channel_genre": "None",
+        "channel_genre": "Punjabi",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/TVP_Thumbnail-v1/TVP_Thumbnail.png"
     },
     {
         "channel_id": "1060",
         "channel_name": "Live Punjabi",
-        "channel_genre": "None",
+        "channel_genre": "Punjabi",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/LIVPU_Thumbnail-v1/LIVPU_Thumbnail.png"
     },
     {
         "channel_id": "1018",
         "channel_name": "Real News Kerala",
-        "channel_genre": "None",
+        "channel_genre": "Malayalam",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-73022-l8gzppv4-v1/imageContent-73022-l8gzppv4-m1.png"
     },
     {
@@ -3920,25 +3920,25 @@
     {
         "channel_id": "1070",
         "channel_name": "MEDIA 9",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/MEDI9_Thumbnail-v1/MEDI9_Thumbnail.png"
     },
     {
         "channel_id": "1058",
         "channel_name": "Aaj Ki Khabar",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/AAJKK_Thumbnail-v1/AAJKK_Thumbnail.png"
     },
     {
         "channel_id": "1059",
         "channel_name": "Indian News",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/INDNWS_Thumbnail-v1/INDNWS_Thumbnail.png"
     },
     {
         "channel_id": "1080",
         "channel_name": "U Bangla TV",
-        "channel_genre": "None",
+        "channel_genre": "Bengali",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/UBANTV_Thumbnail-v1/UBANTV_Thumbnail.png"
     },
     {
@@ -3950,7 +3950,7 @@
     {
         "channel_id": "1171",
         "channel_name": "Shree Ichchhapuran Balaji Mandir",
-        "channel_genre": "Spiritual",
+        "channel_genre": "Live Darshan",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/SIBM_Thumbnail-v4/SIBM_Thumbnail.png"
     },
     {
@@ -3998,7 +3998,7 @@
     {
         "channel_id": "1203",
         "channel_name": "India 24x7",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/IN24X7_Thumbnail-v1/IN24X7_Thumbnail.png"
     },
     {
@@ -4016,7 +4016,7 @@
     {
         "channel_id": "1204",
         "channel_name": "City Music",
-        "channel_genre": "None",
+        "channel_genre": "Music",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/CITYM_Thumbnail-v1/CITYM_Thumbnail.png"
     },
     {
@@ -4034,7 +4034,7 @@
     {
         "channel_id": "1208",
         "channel_name": "News 8 odia",
-        "channel_genre": "None",
+        "channel_genre": "Odia",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/EKMHCL_Thumbnail-v2/EKMHCL_Thumbnail.png"
     },
     {
@@ -4052,25 +4052,25 @@
     {
         "channel_id": "1245",
         "channel_name": "National Today 24x7",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/NATTODAY24X7_Thumbnail-v1/NATTODAY24X7_Thumbnail.png"
     },
     {
         "channel_id": "1246",
         "channel_name": "Vande Bharat News",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/VANDEBHNEWS_Thumbnail-v1/VANDEBHNEWS_Thumbnail.png"
     },
     {
         "channel_id": "1242",
         "channel_name": "In24 News",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/IN24NEWS_Thumbnail-v1/IN24NEWS_Thumbnail.png"
     },
     {
         "channel_id": "1209",
         "channel_name": "Ekamra snews",
-        "channel_genre": "None",
+        "channel_genre": "News",
         "channel_logo": "https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/EKSNWS_Thumbnail-v1/EKSNWS_Thumbnail.png"
     },
     {
