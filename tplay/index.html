@@ -12,26 +12,35 @@
             src: url('path-to-wittgenstein-font.woff2') format('woff2');
         }
         body {
-            font-family: 'Wittgenstein', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Wittgenstein', serif;
             background-image: url('https://images.pexels.com/photos/4840134/pexels-photo-4840134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-size: cover;
             background-attachment: fixed;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             margin: 0;
             padding: 20px;
+            min-height: 100vh;
+            position: relative;
         }
-        .glass-effect {
-            backdrop-filter: blur(20px);
-            background: #000;
-            border-radius: 10px;
-            padding: 20px;
-            width: 100%;
-            max-width: 1200px;
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: inherit;
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(1.2px);
+            z-index: -1;
         }
         h1 {
             color: #333;
+            text-align: center;
         }
         .controls {
             margin-bottom: 20px;
@@ -41,6 +50,7 @@
             max-width: 600px;
             justify-content: space-between;
             position: relative;
+            align-items: center;
         }
         .controls select,
         .controls input {
@@ -73,6 +83,7 @@
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 20px;
             width: 100%;
+            max-width: 1200px;
         }
         .channel-card {
             background-color: #fff;
