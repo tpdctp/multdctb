@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || 𝐓𝐀𝐓𝐀𝐏𝐋𝐀𝐘 </title>
+    <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || 𝐓𝐀𝐓𝐴𝐏𝐋𝐴𝐘 </title>
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
     <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="tt.css">
     <style>
         body {
             font-family: 'Wittgenstein', serif;
@@ -120,6 +119,7 @@
             border-radius: 5px;
             overflow: hidden;
             text-align: center;
+            position: relative;
         }
 
         .channel-logo {
@@ -139,7 +139,40 @@
         .channel-genre {
             font-size: 14px;
             color: #7f8c8d;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        .source-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        .source-button {
+            width: 30px;
+            height: 30px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .source-button:nth-child(2) {
+            background-color: #e74c3c;
+        }
+
+        .source-button:hover {
+            background-color: #2980b9;
+        }
+
+        .source-button:nth-child(2):hover {
+            background-color: #c0392b;
         }
 
         .loader-container {
@@ -217,18 +250,58 @@
             margin: 0;
             font-size: 14px;
         }
+
+        /* Video Popup */
+        .video-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-popup.active {
+            display: flex;
+        }
+
+        .video-popup .video-container {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            padding: 10px;
+        }
+
+        .video-popup .video-container iframe {
+            width: 100%;
+            height: 450px;
+        }
+
+        .video-popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-
-
-  
-      
-
-       
-   
-
-  
     <div class="loader-container" id="loader-container">
         <div class="loader">
             <div class="dot"></div>
@@ -238,9 +311,8 @@
     </div>
     <h1>
         <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Title Logo" class="title-logo">
-        🕊 𝐓𝐀𝐓𝐀𝐏𝐋𝐀𝐘
+        🕊 𝐓𝐀𝐓𝐴𝐏𝐋𝐴𝐘
     </h1>
-   <background class='hero' </background> 
     <div class="controls">
         <div class="select-container">
             <i class="material-icons">category</i>
@@ -260,8 +332,20 @@
         <p class="footer-text">© 2024 🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™. All rights reserved.</p>
     </footer>
 
+    <!-- Video Popup -->
+    <div class="video-popup" id="video-popup">
+        <div class="video-container">
+            <button class="close-btn" id="close-popup">✖</button>
+            <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
     <script>
         const loaderContainer = document.getElementById('loader-container');
+        const videoPopup = document.getElementById('video-popup');
+        const videoFrame = document.getElementById('video-frame');
+        const closePopupButton = document.getElementById('close-popup');
+
         function showLoader() {
             loaderContainer.style.display = 'flex';
         }
@@ -269,6 +353,18 @@
         function hideLoader() {
             loaderContainer.style.display = 'none';
         }
+
+        function showVideoPopup(url) {
+            videoFrame.src = url;
+            videoPopup.classList.add('active');
+        }
+
+        function hideVideoPopup() {
+            videoPopup.classList.remove('active');
+            videoFrame.src = '';
+        }
+
+        closePopupButton.addEventListener('click', hideVideoPopup);
 
         showLoader();
 
@@ -302,7 +398,7 @@
                         channelCard.classList.add('channel-card');
 
                         const channelLink = document.createElement('a');
-                        channelLink.href = `https://tvteluguweb.000webhostapp.com/tata/play.php?id=${channel.channel_id}`;
+                        channelLink.href = `#`;
 
                         const channelLogo = document.createElement('img');
                         channelLogo.src = channel.channel_logo;
@@ -317,10 +413,28 @@
                         channelGenre.classList.add('channel-genre');
                         channelGenre.textContent = channel.channel_genre;
 
+                        const source1Button = document.createElement('button');
+                        source1Button.classList.add('source-button');
+                        source1Button.addEventListener('click', () => {
+                        showVideoPopup(`https://tvteluguweb.000webhostapp.com/tata/play.php?id=${channel.channel_id}`);
+                        });
+
+                        const source2Button = document.createElement('button');
+                        source2Button.classList.add('source-button');
+                        source2Button.addEventListener('click', () => {
+                            showVideoPopup(`https://denverisalive.github.io/Player.html?id=${channel.channel_id}`);
+                        });
+
+                        const sourceButtonsContainer = document.createElement('div');
+                        sourceButtonsContainer.classList.add('source-buttons');
+                        sourceButtonsContainer.appendChild(source1Button);
+                        sourceButtonsContainer.appendChild(source2Button);
+
                         channelLink.appendChild(channelLogo);
                         channelCard.appendChild(channelLink);
                         channelCard.appendChild(channelName);
                         channelCard.appendChild(channelGenre);
+                        channelCard.appendChild(sourceButtonsContainer);
                         gridContainer.appendChild(channelCard);
                     });
 
@@ -333,6 +447,5 @@
                 renderChannels();
             });
     </script>
-      
 </body>
 </html>
