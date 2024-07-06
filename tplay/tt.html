@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || 𝐓𝐀𝐓𝐴𝐏𝐋𝐴𝐘 </title>
+    <title>🕊𝐓𝐕𝐓𝐞𝐥𝐮𝐠𝐮™ || 𝐓𝐀𝐓𝐀𝐏𝐋𝐀𝐘 </title>
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVtelugu.ico">
     <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -47,7 +47,11 @@
             color: transparent;
             animation: gradientShift 3s linear infinite;
         }
-
+        
+img[src="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"]
+{
+display: none;
+}
         .title-logo {
             width: 100px;
             height: 100px;
@@ -311,7 +315,7 @@
     </div>
     <h1>
         <img src="https://raw.githubusercontent.com/tvtelugu/play/main/images/TVTELUGU-B.png" alt="Title Logo" class="title-logo">
-        🕊 𝐓𝐀𝐓𝐴𝐏𝐋𝐴𝐘
+        🕊 𝐓𝐀𝐓𝐀𝐏𝐋𝐀𝐘
     </h1>
     <div class="controls">
         <div class="select-container">
@@ -345,6 +349,8 @@
         const videoPopup = document.getElementById('video-popup');
         const videoFrame = document.getElementById('video-frame');
         const closePopupButton = document.getElementById('close-popup');
+        const genreSelect = document.getElementById('genre-select');
+        const searchBar = document.getElementById('search-bar');
 
         function showLoader() {
             loaderContainer.style.display = 'flex';
@@ -368,12 +374,31 @@
 
         showLoader();
 
+        // Function to save the state to local storage
+        function saveState() {
+            localStorage.setItem('selectedGenre', genreSelect.value);
+            localStorage.setItem('searchQuery', searchBar.value);
+        }
+
+        // Function to load the state from local storage
+        function loadState() {
+            const savedGenre = localStorage.getItem('selectedGenre');
+            const savedQuery = localStorage.getItem('searchQuery');
+
+            if (savedGenre) {
+                genreSelect.value = savedGenre;
+            }
+
+            if (savedQuery) {
+                searchBar.value = savedQuery;
+            }
+        }
+
+        // Fetch channels and initialize
         fetch('channel.json')
             .then(response => response.json())
             .then(channelsData => {
                 const gridContainer = document.getElementById('grid-container');
-                const genreSelect = document.getElementById('genre-select');
-                const searchBar = document.getElementById('search-bar');
 
                 const genres = [...new Set(channelsData.map(channel => channel.channel_genre))];
                 genres.forEach(genre => {
@@ -422,7 +447,7 @@
                         const source2Button = document.createElement('button');
                         source2Button.classList.add('source-button');
                         source2Button.addEventListener('click', () => {
-                            showVideoPopup(`https://live.arcreation.xyz/play.php?id=${channel.channel_id}`);
+                            showVideoPopup(`https://tvteluguweb.000webhostapp.com/tata/play.html?channel=${channel.channel_id}`);
                         });
 
                         const sourceButtonsContainer = document.createElement('div');
@@ -441,9 +466,17 @@
                     hideLoader();
                 }
 
-                genreSelect.addEventListener('change', renderChannels);
-                searchBar.addEventListener('input', renderChannels);
+                genreSelect.addEventListener('change', () => {
+                    renderChannels();
+                    saveState();
+                });
 
+                searchBar.addEventListener('input', () => {
+                    renderChannels();
+                    saveState();
+                });
+
+                loadState();
                 renderChannels();
             });
     </script>
