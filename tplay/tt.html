@@ -369,83 +369,86 @@
         showLoader();
 
         fetch('channel.json')
-            .then(response => response.json())
-            .then(channelsData => {
-                const gridContainer = document.getElementById('grid-container');
-                const genreSelect = document.getElementById('genre-select');
-                const searchBar = document.getElementById('search-bar');
+    .then(response => response.json())
+    .then(channelsData => {
+        const gridContainer = document.getElementById('grid-container');
+        const genreSelect = document.getElementById('genre-select');
+        const searchBar = document.getElementById('search-bar');
 
-                const genres = [...new Set(channelsData.map(channel => channel.channel_genre))];
-                genres.forEach(genre => {
-                    const option = document.createElement('option');
-                    option.value = genre;
-                    option.textContent = genre;
-                    genreSelect.appendChild(option);
+        const genres = [...new Set(channelsData.map(channel => channel.channel_genre))];
+        genres.forEach(genre => {
+            const option = document.createElement('option');
+            option.value = genre;
+            option.textContent = genre;
+            genreSelect.appendChild(option);
+        });
+
+        function renderChannels() {
+            gridContainer.innerHTML = '';
+            const searchQuery = searchBar.value.toLowerCase();
+            const selectedGenre = genreSelect.value;
+            const filteredChannels = channelsData.filter(channel => {
+                const matchesGenre = selectedGenre === '' || channel.channel_genre === selectedGenre;
+                const matchesSearch = channel.channel_name.toLowerCase().includes(searchQuery);
+                return matchesGenre && matchesSearch;
+            });
+
+            filteredChannels.forEach(channel => {
+                const channelCard = document.createElement('div');
+                channelCard.classList.add('channel-card');
+
+                const channelLink = document.createElement('a');
+                channelLink.href = `#`;
+
+                const channelLogo = document.createElement('img');
+                channelLogo.src = channel.channel_logo;
+                channelLogo.alt = `${channel.channel_name} Logo`;
+                channelLogo.classList.add('channel-logo');
+
+                const channelName = document.createElement('div');
+                channelName.classList.add('channel-name');
+                channelName.textContent = channel.channel_name;
+
+                const channelGenre = document.createElement('div');
+                channelGenre.classList.add('channel-genre');
+                channelGenre.textContent = channel.channel_genre;
+
+                const source1Button = document.createElement('button');
+                source1Button.classList.add('source-button');
+                source1Button.addEventListener('click', () => {
+                    showVideoPopup(`https://tvteluguweb.000webhostapp.com/tata/play.php?id=${channel.channel_id}`);
                 });
 
-                function renderChannels() {
-                    gridContainer.innerHTML = '';
-                    const searchQuery = searchBar.value.toLowerCase();
-                    const selectedGenre = genreSelect.value;
-                    const filteredChannels = channelsData.filter(channel => {
-                        const matchesGenre = selectedGenre === '' || channel.channel_genre === selectedGenre;
-                        const matchesSearch = channel.channel_name.toLowerCase().includes(searchQuery);
-                        return matchesGenre && matchesSearch;
-                    });
+                const source2Button = document.createElement('button');
+                source2Button.classList.add('source-button');
+                source2Button.addEventListener('click', () => {
+                    const url = `https://live.arcreation.xyz/play.php?id=${channel.channel_id}`;
+                    console.log(`Source 2 URL: ${url}`);  // Debugging statement
+                    showVideoPopup(url);
+                });
 
-                    filteredChannels.forEach(channel => {
-                        const channelCard = document.createElement('div');
-                        channelCard.classList.add('channel-card');
+                const sourceButtonsContainer = document.createElement('div');
+                sourceButtonsContainer.classList.add('source-buttons');
+                sourceButtonsContainer.appendChild(source1Button);
+                sourceButtonsContainer.appendChild(source2Button);
 
-                        const channelLink = document.createElement('a');
-                        channelLink.href = `#`;
-
-                        const channelLogo = document.createElement('img');
-                        channelLogo.src = channel.channel_logo;
-                        channelLogo.alt = `${channel.channel_name} Logo`;
-                        channelLogo.classList.add('channel-logo');
-
-                        const channelName = document.createElement('div');
-                        channelName.classList.add('channel-name');
-                        channelName.textContent = channel.channel_name;
-
-                        const channelGenre = document.createElement('div');
-                        channelGenre.classList.add('channel-genre');
-                        channelGenre.textContent = channel.channel_genre;
-
-                        const source1Button = document.createElement('button');
-                        source1Button.classList.add('source-button');
-                        source1Button.addEventListener('click', () => {
-                        showVideoPopup(`https://tvteluguweb.000webhostapp.com/tata/play.php?id=${channel.channel_id}`);
-                        });
-
-                        const source2Button = document.createElement('button');
-                        source2Button.classList.add('source-button');
-                        source2Button.addEventListener('click', () => {
-                            showVideoPopup(`https://live.arcreation.xyz/play.php?id=${channel.channel_id}`);
-                        });
-
-                        const sourceButtonsContainer = document.createElement('div');
-                        sourceButtonsContainer.classList.add('source-buttons');
-                        sourceButtonsContainer.appendChild(source1Button);
-                        sourceButtonsContainer.appendChild(source2Button);
-
-                        channelLink.appendChild(channelLogo);
-                        channelCard.appendChild(channelLink);
-                        channelCard.appendChild(channelName);
-                        channelCard.appendChild(channelGenre);
-                        channelCard.appendChild(sourceButtonsContainer);
-                        gridContainer.appendChild(channelCard);
-                    });
-
-                    hideLoader();
-                }
-
-                genreSelect.addEventListener('change', renderChannels);
-                searchBar.addEventListener('input', renderChannels);
-
-                renderChannels();
+                channelLink.appendChild(channelLogo);
+                channelCard.appendChild(channelLink);
+                channelCard.appendChild(channelName);
+                channelCard.appendChild(channelGenre);
+                channelCard.appendChild(sourceButtonsContainer);
+                gridContainer.appendChild(channelCard);
             });
+
+            hideLoader();
+        }
+
+        genreSelect.addEventListener('change', renderChannels);
+        searchBar.addEventListener('input', renderChannels);
+
+        renderChannels();
+    });
+
     </script>
 </body>
 </html>
